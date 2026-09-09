@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#EE6C4D">
-    <meta name="description" content="PDF یار - مجموعه کامل ابزارهای حرفه‌ای PDF برای مدیریت، ویرایش و تبدیل فایل‌های PDF">
-    <meta name="keywords" content="PDF, ادغام PDF, تبدیل PDF, ویرایش PDF, OCR, هوش مصنوعی">
-    <meta name="author" content="جواد قیصری">
-    <meta property="og:title" content="PDF یار | ابزارهای حرفه‌ای PDF">
-    <meta property="og:description" content="همه ابزارهای مورد نیاز شما برای کار با فایل‌های PDF در یکجا">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pdfyar.ir">
-    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <meta name="theme-color" content="#EE6C4D" />
+    <meta name="description" content="PDF یار - مجموعه کامل ابزارهای حرفه‌ای PDF برای مدیریت، ویرایش و تبدیل فایل‌های PDF" />
+    <meta name="keywords" content="PDF, ادغام PDF, تبدیل PDF, ویرایش PDF, OCR, هوش مصنوعی" />
+    <meta name="author" content="جواد قیصری" />
+    <meta property="og:title" content="PDF یار | ابزارهای حرفه‌ای PDF" />
+    <meta property="og:description" content="همه ابزارهای مورد نیاز شما برای کار با فایل‌های PDF در یکجا" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pdfyar.ir" />
+    <meta name="robots" content="index, follow" />
     <title>PDF یار | ابزارهای حرفه‌ای مدیریت، ویرایش و تبدیل PDF</title>
 
-    <!-- ===== فونت وزیرمتن ===== -->
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <!-- فونت وزیرمتن -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" />
 
-    <!-- ===== کتابخانه‌ها ===== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PptxGenJS/3.12.0/pptxgen.bundle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
-    <!-- ===== کتابخانه‌های جدید ===== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@xenova/transformers@2.6.0/dist/transformers.min.js"></script>
+    <!-- کتابخانه‌های اصلی -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PptxGenJS/3.12.0/pptxgen.bundle.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js">
+    </script>
 
     <style>
-        /* ============================================================
-           RESET & BASE
-           ============================================================ */
+        /* ===== RESET & BASE ===== */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         html {
             scroll-behavior: smooth;
         }
-
         body {
-            font-family: 'Vazirmatn', 'Segoe UI', 'Tahoma', sans-serif;
+            font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
             background: #f5f7fa;
             color: #1a1a2e;
             min-height: 100vh;
@@ -54,103 +58,84 @@
             flex-direction: column;
             transition: background 0.3s, color 0.3s;
         }
-
         body.dark-mode {
             background: #0f0f1a;
             color: #e0e0e0;
         }
-
         a {
             text-decoration: none;
             color: inherit;
         }
-
         .container {
-            max-width: 1280px;
+            max-width: 1360px;
             margin: 0 auto;
-            padding: 0 24px;
+            padding: 0 20px;
             flex: 1;
             width: 100%;
         }
 
-        /* ============================================================
-           HEADER
-           ============================================================ */
+        /* ===== HEADER ===== */
         .header {
-            background: #fff;
-            border-radius: 20px;
-            padding: 16px 28px;
-            margin: 20px 0 28px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-            border: 1px solid rgba(0, 0, 0, 0.04);
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 24px;
+            padding: 12px 24px;
+            margin: 16px 0 24px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 16px;
+            gap: 12px;
             transition: background 0.3s, border-color 0.3s;
             position: sticky;
             top: 0;
             z-index: 100;
-            backdrop-filter: blur(12px);
-            background: rgba(255, 255, 255, 0.92);
         }
-
         body.dark-mode .header {
-            background: rgba(30, 30, 50, 0.92);
+            background: rgba(20, 20, 40, 0.85);
             border-color: rgba(255, 255, 255, 0.06);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         }
-
         .header-left {
             display: flex;
             align-items: center;
             gap: 14px;
         }
-
         .logo {
             display: flex;
             align-items: center;
             gap: 10px;
         }
-
         .logo .icon {
             width: 44px;
             height: 44px;
             background: linear-gradient(145deg, #EE6C4D, #D95A3A);
-            border-radius: 12px;
+            border-radius: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #fff;
             font-size: 22px;
             font-weight: 900;
-            box-shadow: 0 4px 12px rgba(238, 108, 77, 0.3);
+            box-shadow: 0 4px 16px rgba(238, 108, 77, 0.25);
         }
-
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-        }
-
         .logo-text h1 {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 800;
             letter-spacing: -0.5px;
             line-height: 1.2;
         }
-
         .logo-text h1 span {
             color: #EE6C4D;
         }
-
         .logo-text .subtitle {
             font-size: 11px;
             color: #999;
             font-weight: 400;
-            letter-spacing: 0.3px;
         }
-
         body.dark-mode .logo-text .subtitle {
             color: #777;
         }
@@ -158,10 +143,9 @@
         .nav-main {
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 4px;
             flex-wrap: wrap;
         }
-
         .nav-main a {
             padding: 8px 16px;
             border-radius: 30px;
@@ -171,38 +155,26 @@
             transition: 0.3s;
             position: relative;
         }
-
-        .nav-main a:hover {
+        .nav-main a:hover,
+        .nav-main a.active {
             color: #EE6C4D;
             background: rgba(238, 108, 77, 0.08);
         }
-
-        .nav-main a.active {
-            color: #EE6C4D;
-            background: rgba(238, 108, 77, 0.12);
-        }
-
         body.dark-mode .nav-main a {
             color: #aaa;
         }
-
-        body.dark-mode .nav-main a:hover {
-            color: #EE6C4D;
-            background: rgba(238, 108, 77, 0.15);
-        }
-
+        body.dark-mode .nav-main a:hover,
         body.dark-mode .nav-main a.active {
             color: #EE6C4D;
-            background: rgba(238, 108, 77, 0.2);
+            background: rgba(238, 108, 77, 0.15);
         }
 
         .header-actions {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             flex-wrap: wrap;
         }
-
         .btn-icon {
             width: 38px;
             height: 38px;
@@ -217,18 +189,15 @@
             align-items: center;
             justify-content: center;
         }
-
         .btn-icon:hover {
             background: #EE6C4D;
             color: #fff;
             transform: scale(1.05);
         }
-
         body.dark-mode .btn-icon {
             background: #2a2a44;
             color: #aaa;
         }
-
         body.dark-mode .btn-icon:hover {
             background: #EE6C4D;
             color: #fff;
@@ -247,30 +216,10 @@
             font-family: inherit;
             box-shadow: 0 4px 12px rgba(238, 108, 77, 0.25);
         }
-
         .btn-primary-sm:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(238, 108, 77, 0.35);
+            box-shadow: 0 8px 24px rgba(238, 108, 77, 0.35);
         }
-
-        .btn-outline-sm {
-            padding: 8px 20px;
-            border: 2px solid #EE6C4D;
-            border-radius: 30px;
-            background: transparent;
-            color: #EE6C4D;
-            font-size: 13px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.3s;
-            font-family: inherit;
-        }
-
-        .btn-outline-sm:hover {
-            background: #EE6C4D;
-            color: #fff;
-        }
-
         .mobile-menu-toggle {
             display: none;
             background: none;
@@ -280,12 +229,11 @@
             cursor: pointer;
             padding: 4px;
         }
-
         body.dark-mode .mobile-menu-toggle {
             color: #aaa;
         }
 
-        @media (max-width: 992px) {
+        @media (max-width: 1024px) {
             .nav-main {
                 display: none;
                 flex-direction: column;
@@ -294,63 +242,37 @@
                 border-top: 1px solid #eee;
                 margin-top: 12px;
             }
-
             body.dark-mode .nav-main {
                 border-top-color: #2a2a44;
             }
-
             .nav-main.open {
                 display: flex;
             }
-
             .nav-main a {
                 width: 100%;
                 text-align: center;
                 padding: 12px;
             }
-
             .mobile-menu-toggle {
                 display: block;
             }
-
             .header {
-                padding: 14px 18px;
-            }
-
-            .header-actions .btn-primary-sm,
-            .header-actions .btn-outline-sm {
-                font-size: 12px;
-                padding: 6px 14px;
+                padding: 12px 16px;
             }
         }
-
         @media (max-width: 600px) {
             .logo .icon {
                 width: 36px;
                 height: 36px;
                 font-size: 18px;
             }
-
             .logo-text h1 {
                 font-size: 18px;
             }
-
-            .logo-text .subtitle {
-                font-size: 10px;
-            }
-
-            .header {
-                padding: 12px 14px;
-                margin: 12px 0 18px;
-                border-radius: 14px;
-            }
-
-            .header-actions .btn-primary-sm,
-            .header-actions .btn-outline-sm {
+            .header-actions .btn-primary-sm {
                 font-size: 11px;
-                padding: 5px 12px;
+                padding: 6px 14px;
             }
-
             .btn-icon {
                 width: 34px;
                 height: 34px;
@@ -358,20 +280,21 @@
             }
         }
 
-        /* ============================================================
-           HERO
-           ============================================================ */
+        /* ===== HERO ===== */
         .hero {
             text-align: center;
-            padding: 48px 0 36px;
+            padding: 48px 20px 36px;
             background: linear-gradient(160deg, #fff 0%, #f8f9fc 100%);
-            border-radius: 24px;
+            border-radius: 28px;
             margin-bottom: 32px;
             border: 1px solid rgba(0, 0, 0, 0.04);
             position: relative;
             overflow: hidden;
         }
-
+        body.dark-mode .hero {
+            background: linear-gradient(160deg, #1a1a30 0%, #121225 100%);
+            border-color: rgba(255, 255, 255, 0.04);
+        }
         .hero::before {
             content: '';
             position: absolute;
@@ -382,40 +305,19 @@
             background: radial-gradient(ellipse at 70% 50%, rgba(238, 108, 77, 0.06) 0%, transparent 70%);
             pointer-events: none;
         }
-
-        body.dark-mode .hero {
-            background: linear-gradient(160deg, #1a1a30 0%, #121225 100%);
-            border-color: rgba(255, 255, 255, 0.04);
-        }
-
         body.dark-mode .hero::before {
-            background: radial-gradient(ellipse at 70% 50%, rgba(238, 108, 77, 0.1) 0%, transparent 70%);
+            background: radial-gradient(ellipse at 70% 50%, rgba(238, 108, 77, 0.08) 0%, transparent 70%);
         }
-
         .hero h2 {
-            font-size: 42px;
+            font-size: 40px;
             font-weight: 800;
             line-height: 1.2;
             position: relative;
             z-index: 1;
         }
-
         .hero h2 span {
             color: #EE6C4D;
-            position: relative;
         }
-
-        .hero h2 span::after {
-            content: '';
-            position: absolute;
-            bottom: 2px;
-            left: 0;
-            right: 0;
-            height: 6px;
-            background: rgba(238, 108, 77, 0.2);
-            border-radius: 10px;
-        }
-
         .hero .sub-hero {
             font-size: 18px;
             color: #666;
@@ -426,21 +328,18 @@
             position: relative;
             z-index: 1;
         }
-
         body.dark-mode .hero .sub-hero {
             color: #999;
         }
-
         .hero .badges {
-            margin-top: 18px;
+            margin-top: 20px;
             display: flex;
             justify-content: center;
-            gap: 14px;
+            gap: 12px;
             flex-wrap: wrap;
             position: relative;
             z-index: 1;
         }
-
         .hero .badges span {
             padding: 6px 18px;
             border-radius: 30px;
@@ -450,17 +349,14 @@
             font-weight: 500;
             border: 1px solid rgba(238, 108, 77, 0.1);
         }
-
         body.dark-mode .hero .badges span {
             background: rgba(238, 108, 77, 0.12);
             color: #aaa;
             border-color: rgba(238, 108, 77, 0.15);
         }
-
         .hero .badges span strong {
             color: #EE6C4D;
         }
-
         @media (max-width: 768px) {
             .hero h2 {
                 font-size: 30px;
@@ -469,10 +365,9 @@
                 font-size: 15px;
             }
             .hero {
-                padding: 32px 0 24px;
+                padding: 32px 16px 24px;
             }
         }
-
         @media (max-width: 480px) {
             .hero h2 {
                 font-size: 24px;
@@ -483,13 +378,10 @@
             }
         }
 
-        /* ============================================================
-           SEARCH
-           ============================================================ */
+        /* ===== SEARCH ===== */
         .search-section {
             margin-bottom: 24px;
         }
-
         .search-section input {
             width: 100%;
             padding: 14px 24px;
@@ -502,26 +394,21 @@
             transition: 0.3s;
             outline: none;
         }
-
         .search-section input:focus {
             border-color: #EE6C4D;
             box-shadow: 0 0 0 4px rgba(238, 108, 77, 0.1);
         }
-
         body.dark-mode .search-section input {
             background: #1e1e32;
             color: #e0e0e0;
             border-color: #2d2d44;
         }
-
         body.dark-mode .search-section input:focus {
             border-color: #EE6C4D;
             box-shadow: 0 0 0 4px rgba(238, 108, 77, 0.15);
         }
 
-        /* ============================================================
-           TOOLS
-           ============================================================ */
+        /* ===== TOOLS ===== */
         .tools-header {
             display: flex;
             justify-content: space-between;
@@ -530,7 +417,6 @@
             gap: 12px;
             margin-bottom: 20px;
         }
-
         .tools-header h3 {
             font-size: 22px;
             font-weight: 700;
@@ -538,17 +424,14 @@
             align-items: center;
             gap: 8px;
         }
-
         .tools-header h3 span {
             color: #EE6C4D;
         }
-
         .filter-bar {
             display: flex;
             flex-wrap: wrap;
             gap: 6px;
         }
-
         .filter-bar .tag {
             padding: 6px 16px;
             border-radius: 30px;
@@ -561,24 +444,20 @@
             transition: 0.3s;
             font-family: inherit;
         }
-
         .filter-bar .tag:hover {
             border-color: #EE6C4D;
             color: #EE6C4D;
         }
-
         .filter-bar .tag.active {
             background: #EE6C4D;
             color: #fff;
             border-color: #EE6C4D;
         }
-
         body.dark-mode .filter-bar .tag {
             background: #1e1e32;
             color: #aaa;
             border-color: #2d2d44;
         }
-
         body.dark-mode .filter-bar .tag.active {
             background: #EE6C4D;
             color: #fff;
@@ -586,15 +465,14 @@
 
         .tools-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-            gap: 18px;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
             margin-bottom: 40px;
         }
-
         .tool-card {
             background: #fff;
-            border-radius: 16px;
-            padding: 22px 18px;
+            border-radius: 18px;
+            padding: 20px 16px;
             box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
             border: 1px solid #f0f0f0;
             text-align: center;
@@ -602,45 +480,37 @@
             transition: 0.3s;
             position: relative;
         }
-
         .tool-card:hover {
             transform: translateY(-6px);
             box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
             border-color: #EE6C4D;
         }
-
         body.dark-mode .tool-card {
             background: #1a1a30;
             border-color: #2a2a44;
         }
-
         body.dark-mode .tool-card:hover {
             border-color: #EE6C4D;
             box-shadow: 0 12px 40px rgba(238, 108, 77, 0.08);
         }
-
         .tool-card .icon {
-            font-size: 36px;
+            font-size: 34px;
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
-
         .tool-card .name {
             font-size: 15px;
             font-weight: 700;
-            margin-bottom: 4px;
+            margin-bottom: 2px;
         }
-
         .tool-card .desc {
             font-size: 12px;
             color: #888;
             line-height: 1.5;
         }
-
         body.dark-mode .tool-card .desc {
             color: #777;
         }
-
         .tool-card .badge {
             display: inline-block;
             font-size: 9px;
@@ -651,7 +521,6 @@
             font-weight: 600;
             margin-top: 6px;
         }
-
         .tool-card .category-tag {
             position: absolute;
             top: 10px;
@@ -662,12 +531,10 @@
             background: rgba(0, 0, 0, 0.04);
             color: #999;
         }
-
         body.dark-mode .tool-card .category-tag {
             background: rgba(255, 255, 255, 0.04);
             color: #666;
         }
-
         @media (max-width: 600px) {
             .tools-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -684,137 +551,57 @@
             }
         }
 
-        @media (max-width: 400px) {
-            .tools-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 8px;
-            }
-        }
-
-        /* ============================================================
-           INFO SECTION
-           ============================================================ */
-        .info-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-            margin: 30px 0 40px;
-        }
-
-        .info-card {
-            background: #fff;
-            border-radius: 18px;
-            padding: 28px 24px;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-            border: 1px solid #f0f0f0;
-            text-align: center;
-            transition: 0.3s;
-        }
-
-        .info-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
-        }
-
-        body.dark-mode .info-card {
-            background: #1a1a30;
-            border-color: #2a2a44;
-        }
-
-        .info-card .icon {
-            font-size: 40px;
-            display: block;
-            margin-bottom: 12px;
-        }
-
-        .info-card h4 {
-            font-size: 18px;
-            margin-bottom: 8px;
-        }
-
-        .info-card h4 span {
-            color: #EE6C4D;
-        }
-
-        .info-card p {
-            color: #666;
-            font-size: 14px;
-            line-height: 1.8;
-        }
-
-        body.dark-mode .info-card p {
-            color: #999;
-        }
-
-        .info-card .highlight {
-            color: #EE6C4D;
-            font-weight: 600;
-        }
-
-        /* ============================================================
-           FOOTER
-           ============================================================ */
+        /* ===== FOOTER ===== */
         .footer {
             background: #fff;
             border-radius: 24px;
-            padding: 40px 36px 28px;
+            padding: 36px 32px 24px;
             margin: 20px 0 30px;
             border: 1px solid #f0f0f0;
             transition: background 0.3s, border-color 0.3s;
         }
-
         body.dark-mode .footer {
             background: #1a1a30;
             border-color: #2a2a44;
         }
-
         .footer-grid {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
             gap: 32px;
             margin-bottom: 28px;
         }
-
         .footer-brand h3 {
             font-size: 22px;
             font-weight: 800;
             margin-bottom: 8px;
         }
-
         .footer-brand h3 span {
             color: #EE6C4D;
         }
-
         .footer-brand p {
             color: #888;
             font-size: 14px;
             line-height: 1.8;
             max-width: 320px;
         }
-
         body.dark-mode .footer-brand p {
             color: #777;
         }
-
         .footer-col h4 {
             font-size: 15px;
             font-weight: 700;
             margin-bottom: 12px;
             color: #1a1a2e;
         }
-
         body.dark-mode .footer-col h4 {
             color: #e0e0e0;
         }
-
         .footer-col ul {
             list-style: none;
         }
-
         .footer-col ul li {
             margin-bottom: 6px;
         }
-
         .footer-col ul li a {
             color: #888;
             font-size: 13px;
@@ -822,26 +609,21 @@
             cursor: pointer;
             display: inline-block;
         }
-
         .footer-col ul li a:hover {
             color: #EE6C4D;
             transform: translateX(-4px);
         }
-
         body.dark-mode .footer-col ul li a {
             color: #777;
         }
-
         body.dark-mode .footer-col ul li a:hover {
             color: #EE6C4D;
         }
-
         .footer-social {
             display: flex;
             gap: 12px;
             margin-top: 16px;
         }
-
         .footer-social a {
             width: 40px;
             height: 40px;
@@ -854,23 +636,19 @@
             color: #555;
             transition: 0.3s;
         }
-
         .footer-social a:hover {
             background: #EE6C4D;
             color: #fff;
             transform: translateY(-3px);
         }
-
         body.dark-mode .footer-social a {
             background: #2a2a44;
             color: #aaa;
         }
-
         body.dark-mode .footer-social a:hover {
             background: #EE6C4D;
             color: #fff;
         }
-
         .footer-bottom {
             border-top: 1px solid #f0f0f0;
             padding-top: 20px;
@@ -882,43 +660,31 @@
             font-size: 13px;
             color: #888;
         }
-
         body.dark-mode .footer-bottom {
             border-top-color: #2a2a44;
             color: #777;
         }
-
-        .footer-bottom .designer {
-            font-weight: 600;
-        }
-
         .footer-bottom .designer strong {
             color: #EE6C4D;
         }
-
         .footer-bottom .links {
             display: flex;
             gap: 16px;
         }
-
         .footer-bottom .links a {
             color: #888;
             font-size: 12px;
             transition: 0.3s;
         }
-
         .footer-bottom .links a:hover {
             color: #EE6C4D;
         }
-
         body.dark-mode .footer-bottom .links a {
             color: #777;
         }
-
         body.dark-mode .footer-bottom .links a:hover {
             color: #EE6C4D;
         }
-
         @media (max-width: 992px) {
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
@@ -931,10 +697,9 @@
                 max-width: 100%;
             }
         }
-
         @media (max-width: 600px) {
             .footer {
-                padding: 24px 18px 18px;
+                padding: 24px 16px 18px;
                 border-radius: 16px;
             }
             .footer-grid {
@@ -951,9 +716,7 @@
             }
         }
 
-        /* ============================================================
-           MODAL
-           ============================================================ */
+        /* ===== MODAL ===== */
         .modal-overlay {
             display: none;
             position: fixed;
@@ -965,26 +728,22 @@
             justify-content: center;
             padding: 20px;
         }
-
         .modal-overlay.open {
             display: flex;
         }
-
         .modal-box {
             background: #fff;
-            border-radius: 24px;
-            max-width: 720px;
+            border-radius: 28px;
+            max-width: 760px;
             width: 100%;
             padding: 32px;
             max-height: 92vh;
             overflow-y: auto;
             animation: fadeUp 0.3s ease;
         }
-
         body.dark-mode .modal-box {
             background: #1a1a30;
         }
-
         @keyframes fadeUp {
             from {
                 opacity: 0;
@@ -995,7 +754,6 @@
                 transform: translateY(0);
             }
         }
-
         .modal-box h2 {
             font-size: 22px;
             margin-bottom: 6px;
@@ -1003,57 +761,47 @@
             align-items: center;
             gap: 10px;
         }
-
         .modal-box .desc {
             color: #666;
             font-size: 14px;
             margin-bottom: 18px;
         }
-
         body.dark-mode .modal-box .desc {
             color: #999;
         }
-
         .modal-box .upload-zone {
             border: 2px dashed #ddd;
-            border-radius: 14px;
+            border-radius: 16px;
             padding: 32px 20px;
             text-align: center;
             cursor: pointer;
             transition: 0.3s;
             margin-bottom: 16px;
         }
-
         .modal-box .upload-zone:hover {
             border-color: #EE6C4D;
             background: rgba(238, 108, 77, 0.04);
         }
-
         body.dark-mode .modal-box .upload-zone {
             border-color: #2a2a44;
         }
-
         body.dark-mode .modal-box .upload-zone:hover {
             border-color: #EE6C4D;
             background: rgba(238, 108, 77, 0.08);
         }
-
         .modal-box .upload-zone .icon {
             font-size: 44px;
             display: block;
             margin-bottom: 8px;
         }
-
         .modal-box .upload-zone p {
             color: #888;
             font-size: 14px;
         }
-
         .modal-box .upload-zone input[type="file"] {
             display: none;
         }
 
-        /* ===== صفحه‌بندی برای مرتب‌سازی ===== */
         .page-sort-container {
             display: none;
             margin: 12px 0;
@@ -1061,15 +809,12 @@
             border-radius: 12px;
             padding: 12px;
         }
-
         .page-sort-container.show {
             display: block;
         }
-
         body.dark-mode .page-sort-container {
             background: #2a2a44;
         }
-
         .page-sort-container .page-item {
             display: flex;
             justify-content: space-between;
@@ -1081,16 +826,13 @@
             cursor: grab;
             border: 1px solid #eee;
         }
-
         body.dark-mode .page-sort-container .page-item {
             background: #1a1a30;
             border-color: #2a2a44;
         }
-
         .page-sort-container .page-item:active {
             cursor: grabbing;
         }
-
         .page-sort-container .page-item .drag-handle {
             color: #999;
             font-size: 18px;
@@ -1101,7 +843,6 @@
             max-height: 200px;
             overflow-y: auto;
         }
-
         .modal-box .file-item {
             display: flex;
             justify-content: space-between;
@@ -1111,11 +852,9 @@
             border-radius: 10px;
             margin-bottom: 4px;
         }
-
         body.dark-mode .modal-box .file-item {
             background: #2a2a44;
         }
-
         .modal-box .file-item .remove {
             color: #e74c3c;
             cursor: pointer;
@@ -1126,18 +865,15 @@
             display: none;
             margin: 12px 0;
         }
-
         .modal-box .extra-input.show {
             display: block;
         }
-
         .modal-box .extra-input label {
             font-size: 13px;
             font-weight: 600;
             display: block;
             margin-bottom: 4px;
         }
-
         .modal-box .extra-input input,
         .modal-box .extra-input select {
             width: 100%;
@@ -1150,14 +886,12 @@
             color: #1a1a2e;
             transition: 0.3s;
         }
-
         .modal-box .extra-input input:focus,
         .modal-box .extra-input select:focus {
             border-color: #EE6C4D;
             outline: none;
             box-shadow: 0 0 0 4px rgba(238, 108, 77, 0.08);
         }
-
         body.dark-mode .modal-box .extra-input input,
         body.dark-mode .modal-box .extra-input select {
             background: #2a2a44;
@@ -1169,11 +903,9 @@
             display: none;
             margin-top: 14px;
         }
-
         .progress-container.show {
             display: block;
         }
-
         .progress-bar {
             width: 100%;
             height: 6px;
@@ -1181,7 +913,6 @@
             border-radius: 10px;
             overflow: hidden;
         }
-
         .progress-bar .fill {
             height: 100%;
             background: linear-gradient(135deg, #EE6C4D, #D95A3A);
@@ -1189,7 +920,6 @@
             width: 0%;
             transition: width 0.5s ease;
         }
-
         .progress-info {
             display: flex;
             justify-content: space-between;
@@ -1197,7 +927,6 @@
             color: #888;
             margin-top: 4px;
         }
-
         body.dark-mode .progress-info {
             color: #777;
         }
@@ -1210,38 +939,31 @@
             margin: 14px 0;
             border: 1px solid #d0e8ff;
         }
-
         .result-summary.show {
             display: block;
             animation: fadeUp 0.3s ease;
         }
-
         body.dark-mode .result-summary {
             background: rgba(238, 108, 77, 0.08);
             border-color: rgba(238, 108, 77, 0.15);
         }
-
         .result-summary .title {
             font-weight: 700;
             font-size: 15px;
             color: #2c3e50;
             margin-bottom: 4px;
         }
-
         body.dark-mode .result-summary .title {
             color: #e0e0e0;
         }
-
         .result-summary .detail {
             font-size: 13px;
             color: #555;
             line-height: 1.8;
         }
-
         body.dark-mode .result-summary .detail {
             color: #aaa;
         }
-
         .result-summary .detail .highlight {
             color: #EE6C4D;
             font-weight: 700;
@@ -1253,11 +975,9 @@
             margin-top: 14px;
             flex-wrap: wrap;
         }
-
         .result-actions.show {
             display: flex;
         }
-
         .result-actions button {
             padding: 10px 24px;
             border: none;
@@ -1268,39 +988,31 @@
             transition: 0.3s;
             font-family: inherit;
         }
-
         .result-actions .btn-view {
             background: #3498db;
             color: #fff;
         }
-
         .result-actions .btn-view:hover {
             background: #2980b9;
         }
-
         .result-actions .btn-download {
             background: #2ecc71;
             color: #fff;
         }
-
         .result-actions .btn-download:hover {
             background: #27ae60;
         }
-
         .result-actions .btn-new {
             background: #f0f0f0;
             color: #333;
         }
-
         .result-actions .btn-new:hover {
             background: #e0e0e0;
         }
-
         body.dark-mode .result-actions .btn-new {
             background: #2a2a44;
             color: #aaa;
         }
-
         body.dark-mode .result-actions .btn-new:hover {
             background: #3a3a5a;
         }
@@ -1311,7 +1023,6 @@
             margin-top: 16px;
             flex-wrap: wrap;
         }
-
         .actions button {
             padding: 12px 32px;
             border: none;
@@ -1322,38 +1033,31 @@
             transition: 0.3s;
             font-family: inherit;
         }
-
         .actions .btn-primary {
             background: linear-gradient(145deg, #EE6C4D, #D95A3A);
             color: #fff;
             box-shadow: 0 4px 16px rgba(238, 108, 77, 0.25);
         }
-
         .actions .btn-primary:hover:not(:disabled) {
             transform: translateY(-2px);
             box-shadow: 0 6px 24px rgba(238, 108, 77, 0.35);
         }
-
         .actions .btn-primary:disabled {
             opacity: 0.5;
             cursor: not-allowed;
             transform: none !important;
         }
-
         .actions .btn-secondary {
             background: #f0f0f0;
             color: #333;
         }
-
         .actions .btn-secondary:hover {
             background: #e0e0e0;
         }
-
         body.dark-mode .actions .btn-secondary {
             background: #2a2a44;
             color: #aaa;
         }
-
         body.dark-mode .actions .btn-secondary:hover {
             background: #3a3a5a;
         }
@@ -1371,22 +1075,17 @@
             z-index: 10;
             transition: 0.3s;
         }
-
         .close-modal:hover {
             color: #333;
         }
-
         body.dark-mode .close-modal {
             color: #777;
         }
-
         body.dark-mode .close-modal:hover {
             color: #fff;
         }
 
-        /* ============================================================
-           TOAST
-           ============================================================ */
+        /* ===== TOAST ===== */
         .toast {
             position: fixed;
             bottom: 30px;
@@ -1404,98 +1103,20 @@
             max-width: 90%;
             text-align: center;
         }
-
         .toast.show {
             display: block;
         }
-
         .toast.success {
             background: #2ecc71;
         }
-
         .toast.error {
             background: #e74c3c;
         }
-
         .toast.info {
             background: #3498db;
         }
 
-        /* ============================================================
-           SCROLLBAR
-           ============================================================ */
-        ::-webkit-scrollbar {
-            width: 5px;
-            height: 5px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #ccc;
-            border-radius: 10px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #EE6C4D;
-        }
-
-        body.dark-mode ::-webkit-scrollbar-thumb {
-            background: #444;
-        }
-
-        body.dark-mode ::-webkit-scrollbar-thumb:hover {
-            background: #EE6C4D;
-        }
-
-        /* ============================================================
-           UTILITY
-           ============================================================ */
-        .hidden {
-            display: none !important;
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .mt-8 {
-            margin-top: 8px;
-        }
-
-        .mt-12 {
-            margin-top: 12px;
-        }
-
-        .mb-8 {
-            margin-bottom: 8px;
-        }
-
-        .gap-8 {
-            gap: 8px;
-        }
-
-        .flex-wrap {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .year-badge {
-            display: inline-block;
-            background: linear-gradient(145deg, #EE6C4D, #D95A3A);
-            color: #fff;
-            padding: 2px 12px;
-            border-radius: 30px;
-            font-size: 11px;
-            font-weight: 600;
-            margin-right: 4px;
-        }
-
-        /* ============================================================
-           LOADING SPINNER
-           ============================================================ */
+        /* ===== SPINNER ===== */
         .spinner {
             display: none;
             width: 40px;
@@ -1506,19 +1127,41 @@
             animation: spin 1s linear infinite;
             margin: 10px auto;
         }
-
         .spinner.show {
             display: block;
         }
-
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
-        /* ============================================================
-           RESPONSIVE MODAL FIXES
-           ============================================================ */
+        /* ===== SCROLLBAR ===== */
+        ::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #EE6C4D;
+        }
+        body.dark-mode ::-webkit-scrollbar-thumb {
+            background: #444;
+        }
+        body.dark-mode ::-webkit-scrollbar-thumb:hover {
+            background: #EE6C4D;
+        }
+
+        /* ===== RESPONSIVE MODAL ===== */
         @media (max-width: 600px) {
             .modal-box {
                 padding: 20px;
@@ -1537,157 +1180,124 @@
 
     <div class="container">
 
-        <!-- ============================================================
-        HEADER
-        ============================================================ -->
-        <header class="header" id="mainHeader">
+        <!-- ===== HEADER ===== -->
+        <header class="header">
             <div class="header-left">
                 <div class="logo">
-                    <div class="icon" aria-hidden="true">P</div>
+                    <div class="icon">P</div>
                     <div class="logo-text">
                         <h1>PDF <span>یار</span></h1>
-                        <span class="subtitle">همه ابزارهای PDF در یکجا</span>
+                        <span class="subtitle">ابزارهای حرفه‌ای PDF</span>
                     </div>
                 </div>
                 <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="منو">☰</button>
             </div>
 
-            <nav class="nav-main" id="navMain" role="navigation" aria-label="منوی اصلی">
-                <a href="#" class="active" data-section="home" aria-current="page">🏠 خانه</a>
+            <nav class="nav-main" id="navMain">
+                <a href="#" class="active" data-section="home">🏠 خانه</a>
                 <a href="#" data-section="tools">🧰 ابزارها</a>
-                <a href="#" data-section="about">ℹ️ درباره ما</a>
-                <a href="#" data-section="blog">📝 وبلاگ</a>
+                <a href="#" data-section="about">ℹ️ درباره</a>
                 <a href="#" data-section="contact">📧 تماس</a>
             </nav>
 
             <div class="header-actions">
                 <button class="btn-icon" id="themeBtn" title="تغییر تم" aria-label="تغییر تم">🌙</button>
                 <button class="btn-icon" id="loginBtn" title="ورود" aria-label="ورود" style="background:#EE6C4D;color:#fff;">👤</button>
-                <button class="btn-primary-sm" id="getStartedBtn" aria-label="شروع کنید">شروع کنید</button>
-                <span style="font-size:13px;color:#888;background:#f8f9fa;padding:4px 14px;border-radius:30px;border:1px solid #eee;">
+                <button class="btn-primary-sm" id="getStartedBtn">شروع کنید</button>
+                <span style="font-size:12px;color:#888;background:#f8f9fa;padding:4px 14px;border-radius:30px;border:1px solid #eee;">
                     ✍️ <strong style="color:#EE6C4D;">جواد قیصری</strong>
                 </span>
             </div>
         </header>
 
-        <!-- ============================================================
-        HERO
-        ============================================================ -->
-        <section class="hero" id="home" aria-labelledby="hero-title">
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="home">
             <h2 id="hero-title">همه ابزارهای <span>PDF</span> در یکجا</h2>
             <p class="sub-hero">
-                فایل‌های PDF خود را سریع، ساده و حرفه‌ای مدیریت کنید.
-                <br>۴۰+ ابزار قدرتمند در اختیار شما
+                ویرایش، تبدیل، ادغام، فشرده‌سازی، OCR و مدیریت PDF با سرعت بالا
             </p>
             <div class="badges">
                 <span>🔒 <strong>امن</strong></span>
                 <span>⚡ <strong>سریع</strong></span>
                 <span>💯 <strong>رایگان</strong></span>
-                <span>📄 <strong>۴۰+</strong> ابزار</span>
-                <span>🤖 <strong>هوش مصنوعی</strong></span>
-                <span>🏷️ <span class="year-badge">۱۴۰۵</span></span>
+                <span>📄 <strong id="toolCountDisplay">۳۵</strong> ابزار</span>
+                <span>🏷️ <span style="background:linear-gradient(145deg,#EE6C4D,#D95A3A);color:#fff;padding:2px 12px;border-radius:30px;font-size:11px;font-weight:600;">۱۴۰۵</span></span>
             </div>
         </section>
 
-        <!-- ============================================================
-        SEARCH
-        ============================================================ -->
+        <!-- ===== SEARCH ===== -->
         <div class="search-section">
-            <input type="text" id="toolSearch" placeholder="🔍 دنبال چه ابزاری هستید؟ (مثال: ادغام، تبدیل، فشرده‌سازی...)" aria-label="جستجوی ابزار">
+            <input type="text" id="toolSearch" placeholder="🔍 جستجوی ابزار (مثال: ادغام، تبدیل، فشرده‌سازی...)" aria-label="جستجوی ابزار">
         </div>
 
-        <!-- ============================================================
-        TOOLS
-        ============================================================ -->
+        <!-- ===== TOOLS ===== -->
         <div class="tools-header" id="tools">
             <h3>🧰 <span>ابزارهای</span> PDF</h3>
-            <div class="filter-bar" id="filterBar" role="tablist">
-                <span class="tag active" data-filter="all" role="tab" aria-selected="true">همه</span>
-                <span class="tag" data-filter="organize" role="tab">سازمان‌دهی</span>
-                <span class="tag" data-filter="convert" role="tab">تبدیل</span>
-                <span class="tag" data-filter="edit" role="tab">ویرایش</span>
-                <span class="tag" data-filter="security" role="tab">امنیت</span>
-                <span class="tag" data-filter="ocr" role="tab">OCR</span>
-                <span class="tag" data-filter="ai" role="tab">هوش مصنوعی</span>
+            <div class="filter-bar" id="filterBar">
+                <span class="tag active" data-filter="all">همه</span>
+                <span class="tag" data-filter="organize">سازمان‌دهی</span>
+                <span class="tag" data-filter="convert">تبدیل</span>
+                <span class="tag" data-filter="edit">ویرایش</span>
+                <span class="tag" data-filter="security">امنیت</span>
+                <span class="tag" data-filter="ocr">OCR</span>
+                <span class="tag" data-filter="ai">هوش مصنوعی</span>
             </div>
         </div>
 
-        <div class="tools-grid" id="toolsGrid" role="list"></div>
+        <div class="tools-grid" id="toolsGrid"></div>
 
-        <!-- ============================================================
-        INFO SECTION
-        ============================================================ -->
-        <div class="info-section" id="about">
-            <div class="info-card">
-                <span class="icon" aria-hidden="true">📖</span>
-                <h4>درباره <span>PDF یار</span></h4>
-                <p>
+        <!-- ===== INFO ===== -->
+        <div class="info-section" id="about" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin:30px 0 40px;">
+            <div class="info-card" style="background:#fff;border-radius:18px;padding:28px 24px;box-shadow:0 2px 12px rgba(0,0,0,0.04);border:1px solid #f0f0f0;text-align:center;transition:0.3s;">
+                <span style="font-size:40px;display:block;margin-bottom:12px;">📖</span>
+                <h4 style="font-size:18px;margin-bottom:8px;">درباره <span style="color:#EE6C4D;">PDF یار</span></h4>
+                <p style="color:#666;font-size:14px;line-height:1.8;">
                     <strong>PDF یار</strong> یک پلتفرم حرفه‌ای برای مدیریت و پردازش فایل‌های PDF است.
                     تمام ابزارهای مورد نیاز شما برای کار با فایل‌های PDF در یکجا جمع‌آوری شده‌اند.
                     <br><br>
-                    <span class="highlight">✨ ۴۰+ ابزار واقعی</span>
-                    <br>
-                    <span class="highlight">🤖 هوش مصنوعی پیشرفته</span>
-                    <br>
-                    <span class="highlight">🔒 کاملاً امن و محرمانه</span>
+                    <span style="color:#EE6C4D;font-weight:600;">✨ 26 ابزار</span><br>
+                    <span style="color:#EE6C4D;font-weight:600;">🔒 کاملاً امن و محرمانه</span>
                 </p>
                 <div style="margin-top:12px;font-weight:600;color:#1a1a2e;">
                     طراحی و توسعه: <span style="color:#EE6C4D;">جواد قیصری</span>
-                    <br>
-                    <span style="font-size:12px;color:#888;">سال ۱۴۰۵</span>
+                    <br><span style="font-size:12px;color:#888;">سال ۱۴۰۵</span>
                 </div>
             </div>
-
-            <div class="info-card">
-                <span class="icon" aria-hidden="true">🔒</span>
-                <h4>حریم <span>خصوصی</span></h4>
-                <p>
+            <div class="info-card" style="background:#fff;border-radius:18px;padding:28px 24px;box-shadow:0 2px 12px rgba(0,0,0,0.04);border:1px solid #f0f0f0;text-align:center;transition:0.3s;">
+                <span style="font-size:40px;display:block;margin-bottom:12px;">🔒</span>
+                <h4 style="font-size:18px;margin-bottom:8px;">حریم <span style="color:#EE6C4D;">خصوصی</span></h4>
+                <p style="color:#666;font-size:14px;line-height:1.8;">
                     فایل‌های شما کاملاً <strong>خصوصی</strong> هستند.
                     تمام پردازش‌ها در مرورگر شما انجام می‌شود
                     و هیچ فایلی به سرور ارسال نمی‌شود.
                 </p>
-                <p style="margin-top:10px;font-size:13px;color:#888;">
-                    ✅ امن · ✅ محرمانه · ✅ خودکار حذف
-                </p>
+                <p style="margin-top:10px;font-size:13px;color:#888;">✅ امن · ✅ محرمانه · ✅ خودکار حذف</p>
             </div>
-
-            <div class="info-card">
-                <span class="icon" aria-hidden="true">🤖</span>
-                <h4>هوش <span>مصنوعی</span></h4>
-                <p>
+            <div class="info-card" style="background:#fff;border-radius:18px;padding:28px 24px;box-shadow:0 2px 12px rgba(0,0,0,0.04);border:1px solid #f0f0f0;text-align:center;transition:0.3s;">
+                <span style="font-size:40px;display:block;margin-bottom:12px;">🤖</span>
+                <h4 style="font-size:18px;margin-bottom:8px;">هوش <span style="color:#EE6C4D;">مصنوعی</span></h4>
+                <p style="color:#666;font-size:14px;line-height:1.8;">
                     🔹 خلاصه‌سازی خودکار PDF با AI<br>
                     🔹 پاسخ به سوالات از روی PDF<br>
                     🔹 تشخیص دست خط و امضا<br>
-                    🔹 ترجمه هوشمند
                 </p>
-                <p style="margin-top:8px;font-size:13px;color:#888;">
-                    🚀 قدرت AI در پردازش PDF
-                    <br>
-                    <span style="font-size:11px;">با استفاده از Transformers.js در مرورگر</span>
-                </p>
+                <p style="margin-top:8px;font-size:13px;color:#888;">🚀 قدرت AI در پردازش PDF</p>
             </div>
         </div>
 
-        <!-- ============================================================
-        FOOTER
-        ============================================================ -->
+        <!-- ===== FOOTER ===== -->
         <footer class="footer" id="contact">
             <div class="footer-grid">
                 <div class="footer-brand">
                     <h3>PDF <span>یار</span></h3>
-                    <p>
-                        مجموعه‌ای کامل از ابزارهای حرفه‌ای برای مدیریت، ویرایش و تبدیل فایل‌های PDF.
-                        تمام ابزارها به صورت رایگان و بدون نیاز به نصب در دسترس شماست.
-                    </p>
+                    <p>مجموعه‌ای کامل از ابزارهای حرفه‌ای برای مدیریت، ویرایش و تبدیل فایل‌های PDF. تمام ابزارها به صورت رایگان و بدون نیاز به نصب در دسترس شماست.</p>
                     <div class="footer-social">
-                        <a href="#" onclick="showToast('به زودی...', 'info')" title="تلگرام" aria-label="تلگرام">📱</a>
-                        <a href="#" onclick="showToast('به زودی...', 'info')" title="اینستاگرام" aria-label="اینستاگرام">📸</a>
-                        <a href="#" onclick="showToast('به زودی...', 'info')" title="لینکدین" aria-label="لینکدین">💼</a>
-                        <a href="#" onclick="showToast('به زودی...', 'info')" title="گیت‌هاب" aria-label="گیت‌هاب">🐙</a>
-                        <a href="#" onclick="showToast('به زودی...', 'info')" title="یوتیوب" aria-label="یوتیوب">▶️</a>
+                        <a href="#" onclick="showToast('به زودی...', 'info')" title="تلگرام">📱</a>
+                        <a href="#" onclick="showToast('به زودی...', 'info')" title="اینستاگرام">📸</a>
+                        <a href="#" onclick="showToast('به زودی...', 'info')" title="لینکدین">💼</a>
+                        <a href="#" onclick="showToast('به زودی...', 'info')" title="گیت‌هاب">🐙</a>
                     </div>
                 </div>
-
                 <div class="footer-col">
                     <h4>ابزارها</h4>
                     <ul>
@@ -1695,79 +1305,62 @@
                         <li><a href="#" data-tool="split">تقسیم PDF</a></li>
                         <li><a href="#" data-tool="compress">فشرده‌سازی</a></li>
                         <li><a href="#" data-tool="pdf-to-jpg">PDF به JPG</a></li>
-                        <li><a href="#" data-tool="pdf-to-word">PDF به Word</a></li>
                         <li><a href="#" data-tool="protect">محافظت PDF</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-col">
                     <h4>دسترسی</h4>
                     <ul>
                         <li><a href="#" onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'})">خانه</a></li>
                         <li><a href="#" onclick="document.getElementById('tools').scrollIntoView({behavior:'smooth'})">ابزارها</a></li>
-                        <li><a href="#" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">درباره ما</a></li>
-                        <li><a href="#" onclick="showToast('به زودی...', 'info')">وبلاگ</a></li>
-                        <li><a href="#" onclick="showToast('info@pdfyar.ir', 'info')">تماس با ما</a></li>
+                        <li><a href="#" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">درباره</a></li>
+                        <li><a href="#" onclick="showToast('info@pdfyar.ir', 'info')">تماس</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-col">
                     <h4>اطلاعات</h4>
                     <ul>
-                        <li><a href="#" onclick="showToast('حریم خصوصی: تمام فایل‌ها در مرورگر شما پردازش می‌شوند.', 'info')">حریم خصوصی</a></li>
-                        <li><a href="#" onclick="showToast('شرایط استفاده به زودی...', 'info')">شرایط استفاده</a></li>
-                        <li><a href="#" onclick="showToast('گزارش خطا به زودی...', 'info')">گزارش خطا</a></li>
-                        <li><a href="#" onclick="showToast('پیشنهاد ابزار به زودی...', 'info')">پیشنهاد ابزار</a></li>
-                        <li><a href="#" onclick="showToast('نسخه ۵.۱ - ۱۴۰۵', 'info')">نسخه</a></li>
+                        <li><a href="#" onclick="showToast('تمام فایل‌ها در مرورگر شما پردازش می‌شوند.', 'info')">حریم خصوصی</a></li>
+                        <li><a href="#" onclick="showToast('نسخه ۶ - ۱۴۰۵', 'info')">نسخه</a></li>
                     </ul>
                 </div>
             </div>
-
             <div class="footer-bottom">
                 <div>
                     © ۱۴۰۵ <strong>PDF یار</strong> — تمامی حقوق محفوظ است
                     <span style="margin:0 8px;">|</span>
                     طراحی و توسعه توسط <span class="designer"><strong>جواد قیصری</strong></span>
                     <span style="margin:0 8px;">|</span>
-                    <span style="font-size:11px;color:#aaa;">نسخه ۵.۱</span>
+                    <span style="font-size:11px;color:#aaa;">نسخه ۶</span>
                 </div>
                 <div class="links">
                     <a href="#" onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'})">خانه</a>
                     <a href="#" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">درباره</a>
                     <a href="#" onclick="showToast('info@pdfyar.ir', 'info')">تماس</a>
-                    <a href="#" onclick="showToast('به زودی...', 'info')">پشتیبانی</a>
                 </div>
             </div>
         </footer>
 
     </div>
 
-    <!-- ============================================================
-    MODAL
-    ============================================================ -->
-    <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <!-- ===== MODAL ===== -->
+    <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true">
         <div class="modal-box">
             <button class="close-modal" id="closeModal" aria-label="بستن">✕</button>
-            <h2 id="modalTitle">
-                <span class="icon" id="modalIcon">📄</span>
-                <span id="modalTitleText">ابزار</span>
-            </h2>
+            <h2 id="modalTitle"><span class="icon" id="modalIcon">📄</span><span id="modalTitleText">ابزار</span></h2>
             <p class="desc" id="modalDesc">توضیحات ابزار</p>
 
             <div class="upload-zone" id="uploadZone" role="button" tabindex="0">
-                <span class="icon" aria-hidden="true">📤</span>
+                <span class="icon">📤</span>
                 <p>فایل را اینجا بکشید یا کلیک کنید</p>
                 <input type="file" id="fileInput" accept=".pdf,.jpg,.jpeg,.png,.webp,.xlsx,.xls,.docx,.doc,.txt" aria-label="انتخاب فایل">
             </div>
 
             <div class="extra-input" id="extraInput">
                 <label id="extraLabel">تنظیمات</label>
-                <div id="extraRow">
-                    <input type="text" id="extraValue" placeholder="مقدار را وارد کنید...">
-                </div>
+                <div id="extraRow"><input type="text" id="extraValue" placeholder="مقدار را وارد کنید..."></div>
             </div>
 
-            <!-- صفحه‌بندی برای مرتب‌سازی -->
             <div class="page-sort-container" id="pageSortContainer">
                 <p style="font-size:13px;color:#888;margin-bottom:8px;">🔀 برای تغییر ترتیب، هر صفحه را بکشید و رها کنید</p>
                 <div id="pageSortList"></div>
@@ -1789,9 +1382,9 @@
                 <div class="title" id="resultTitle">✅ پردازش کامل شد</div>
                 <div class="detail" id="resultDetail"></div>
                 <div class="result-actions" id="resultActions">
-                    <button class="btn-view" id="viewResultBtn" aria-label="مشاهده فایل">👁️ مشاهده فایل</button>
-                    <button class="btn-download" id="downloadResultBtn" aria-label="دانلود فایل">⬇️ دانلود فایل</button>
-                    <button class="btn-new" id="newProcessBtn" aria-label="پردازش مجدد">🔄 پردازش مجدد</button>
+                    <button class="btn-view" id="viewResultBtn">👁️ مشاهده</button>
+                    <button class="btn-download" id="downloadResultBtn">⬇️ دانلود</button>
+                    <button class="btn-new" id="newProcessBtn">🔄 پردازش مجدد</button>
                 </div>
             </div>
 
@@ -1802,62 +1395,52 @@
         </div>
     </div>
 
-    <!-- ============================================================
-    TOAST
-    ============================================================ -->
+    <!-- ===== TOAST ===== -->
     <div class="toast" id="toast" role="alert"><span id="toastMessage"></span></div>
 
-    <!-- ============================================================
-    LOGIN MODAL
-    ============================================================ -->
-    <div class="modal-overlay" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+    <!-- ===== LOGIN MODAL ===== -->
+    <div class="modal-overlay" id="loginModal" role="dialog" aria-modal="true">
         <div class="modal-box" style="max-width:400px;">
-            <button class="close-modal" id="closeLoginModal" aria-label="بستن">✕</button>
-            <h2 id="loginTitle" style="text-align:center;">🔐 ورود به حساب</h2>
+            <button class="close-modal" id="closeLoginModal">✕</button>
+            <h2 style="text-align:center;">🔐 ورود</h2>
             <p style="text-align:center;color:#888;font-size:14px;margin-bottom:16px;">با ایمیل و رمز عبور وارد شوید</p>
-
             <div style="margin-bottom:12px;">
-                <label for="loginEmail" style="font-weight:600;display:block;margin-bottom:4px;">ایمیل</label>
+                <label style="font-weight:600;display:block;margin-bottom:4px;">ایمیل</label>
                 <input type="email" id="loginEmail" placeholder="example@email.com" style="width:100%;padding:10px 14px;border:2px solid #ddd;border-radius:10px;font-size:14px;font-family:inherit;background:#fff;transition:0.3s;">
             </div>
             <div style="margin-bottom:16px;">
-                <label for="loginPassword" style="font-weight:600;display:block;margin-bottom:4px;">رمز عبور</label>
+                <label style="font-weight:600;display:block;margin-bottom:4px;">رمز عبور</label>
                 <input type="password" id="loginPassword" placeholder="••••••••" style="width:100%;padding:10px 14px;border:2px solid #ddd;border-radius:10px;font-size:14px;font-family:inherit;background:#fff;transition:0.3s;">
             </div>
-
             <button class="btn-primary" id="loginSubmitBtn" style="width:100%;padding:12px;">ورود</button>
             <p style="text-align:center;margin-top:12px;font-size:13px;color:#888;">
-                حساب ندارید؟ <a href="#" id="showRegisterLink" style="color:#EE6C4D;cursor:pointer;font-weight:600;">ثبت‌نام کنید</a>
+                حساب ندارید؟ <a href="#" id="showRegisterLink" style="color:#EE6C4D;cursor:pointer;font-weight:600;">ثبت‌نام</a>
             </p>
         </div>
     </div>
 
-    <!-- ============================================================
-    REGISTER MODAL
-    ============================================================ -->
-    <div class="modal-overlay" id="registerModal" role="dialog" aria-modal="true" aria-labelledby="registerTitle">
+    <!-- ===== REGISTER MODAL ===== -->
+    <div class="modal-overlay" id="registerModal" role="dialog" aria-modal="true">
         <div class="modal-box" style="max-width:400px;">
-            <button class="close-modal" id="closeRegisterModal" aria-label="بستن">✕</button>
-            <h2 id="registerTitle" style="text-align:center;">📝 ثبت‌نام</h2>
+            <button class="close-modal" id="closeRegisterModal">✕</button>
+            <h2 style="text-align:center;">📝 ثبت‌نام</h2>
             <p style="text-align:center;color:#888;font-size:14px;margin-bottom:16px;">ایجاد حساب کاربری جدید</p>
-
             <div style="margin-bottom:12px;">
-                <label for="registerName" style="font-weight:600;display:block;margin-bottom:4px;">نام کامل</label>
+                <label style="font-weight:600;display:block;margin-bottom:4px;">نام کامل</label>
                 <input type="text" id="registerName" placeholder="جواد قیصری" style="width:100%;padding:10px 14px;border:2px solid #ddd;border-radius:10px;font-size:14px;font-family:inherit;background:#fff;transition:0.3s;">
             </div>
             <div style="margin-bottom:12px;">
-                <label for="registerEmail" style="font-weight:600;display:block;margin-bottom:4px;">ایمیل</label>
+                <label style="font-weight:600;display:block;margin-bottom:4px;">ایمیل</label>
                 <input type="email" id="registerEmail" placeholder="example@email.com" style="width:100%;padding:10px 14px;border:2px solid #ddd;border-radius:10px;font-size:14px;font-family:inherit;background:#fff;transition:0.3s;">
             </div>
             <div style="margin-bottom:12px;">
-                <label for="registerPassword" style="font-weight:600;display:block;margin-bottom:4px;">رمز عبور</label>
+                <label style="font-weight:600;display:block;margin-bottom:4px;">رمز عبور</label>
                 <input type="password" id="registerPassword" placeholder="••••••••" style="width:100%;padding:10px 14px;border:2px solid #ddd;border-radius:10px;font-size:14px;font-family:inherit;background:#fff;transition:0.3s;">
             </div>
             <div style="margin-bottom:16px;">
-                <label for="registerPasswordConfirm" style="font-weight:600;display:block;margin-bottom:4px;">تکرار رمز عبور</label>
+                <label style="font-weight:600;display:block;margin-bottom:4px;">تکرار رمز عبور</label>
                 <input type="password" id="registerPasswordConfirm" placeholder="••••••••" style="width:100%;padding:10px 14px;border:2px solid #ddd;border-radius:10px;font-size:14px;font-family:inherit;background:#fff;transition:0.3s;">
             </div>
-
             <button class="btn-primary" id="registerSubmitBtn" style="width:100%;padding:12px;">ثبت‌نام</button>
             <p style="text-align:center;margin-top:12px;font-size:13px;color:#888;">
                 قبلاً ثبت‌نام کرده‌اید؟ <a href="#" id="showLoginLink" style="color:#EE6C4D;cursor:pointer;font-weight:600;">ورود</a>
@@ -1865,20 +1448,15 @@
         </div>
     </div>
 
-    <!-- ============================================================
-    SCRIPTS
-    ============================================================ -->
     <script>
         (function() {
             'use strict';
 
-            // ============================================================
             // تنظیمات اولیه
-            // ============================================================
             pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
             // ============================================================
-            // لیست ابزارها (۴۰+ ابزار کامل)
+            // لیست ابزارها (۳۵ ابزار)
             // ============================================================
             const toolsData = [
                 // سازمان‌دهی
@@ -1888,36 +1466,34 @@
                     category: 'organize', multi: false, extra: true, extraLabel: 'محدوده صفحات (مثال: 1-3, 5, 7-10)' },
                 { id: 'compress', name: 'فشرده‌سازی PDF', desc: 'حجم فایل PDF را کاهش دهید.', icon: '🗜️',
                     category: 'organize', multi: false },
-                { id: 'organize', name: 'مرتب‌سازی صفحات', desc: 'ترتیب صفحات PDF را با Drag & Drop تغییر دهید.',
-                    icon: '🔀', category: 'organize', multi: false, sortable: true },
+                { id: 'organize', name: 'مرتب‌سازی صفحات', desc: 'ترتیب صفحات PDF را با Drag & Drop تغییر دهید.', icon: '🔀',
+                    category: 'organize', multi: false, sortable: true },
                 { id: 'extract-pages', name: 'استخراج صفحات', desc: 'صفحات خاصی را از PDF استخراج کنید.', icon: '📤',
-                    category: 'organize', multi: false, extra: true, extraLabel: 'شماره صفحات (مثال: 1,3,5 یا 1-5)' },
+                    category: 'organize', multi: false, extra: true, extraLabel: 'شماره صفحات (مثال: 1,3,5)' },
                 { id: 'delete-pages', name: 'حذف صفحات', desc: 'صفحات مورد نظر را از PDF حذف کنید.', icon: '🗑️',
-                    category: 'organize', multi: false, extra: true, extraLabel: 'شماره صفحات (مثال: 1,3,5 یا 1-5)' },
+                    category: 'organize', multi: false, extra: true, extraLabel: 'شماره صفحات (مثال: 1,3,5)' },
 
                 // تبدیل
                 { id: 'pdf-to-jpg', name: 'PDF به JPG', desc: 'صفحات PDF را به تصویر JPG تبدیل کنید.', icon: '🖼️',
                     category: 'convert', multi: false },
                 { id: 'pdf-to-png', name: 'PDF به PNG', desc: 'صفحات PDF را به تصویر PNG تبدیل کنید.', icon: '🖼️',
                     category: 'convert', multi: false },
-                { id: 'pdf-to-word', name: 'PDF به Word', desc: 'فایل PDF را به Word (DOCX) واقعی تبدیل کنید.', icon: '📝',
-                    category: 'convert', multi: false, wordConvert: true },
-                { id: 'pdf-to-excel', name: 'PDF به Excel', desc: 'داده‌های PDF را به Excel (XLSX) تبدیل کنید.',
-                    icon: '📊', category: 'convert', multi: false },
-                { id: 'pdf-to-ppt', name: 'PDF به PowerPoint', desc: 'PDF را به PowerPoint (PPTX) تبدیل کنید.',
-                    icon: '📽️', category: 'convert', multi: false },
+                { id: 'pdf-to-word', name: 'PDF به Word', desc: 'فایل PDF را به Word (DOC) تبدیل کنید.', icon: '📝',
+                    category: 'convert', multi: false },
+                { id: 'pdf-to-excel', name: 'PDF به Excel', desc: 'داده‌های PDF را به Excel (XLSX) تبدیل کنید.', icon: '📊',
+                    category: 'convert', multi: false },
+                { id: 'pdf-to-ppt', name: 'PDF به PowerPoint', desc: 'PDF را به PowerPoint (PPTX) تبدیل کنید.', icon: '📽️',
+                    category: 'convert', multi: false },
                 { id: 'pdf-to-text', name: 'PDF به متن', desc: 'متن صفحات PDF را استخراج کنید.', icon: '📃',
                     category: 'convert', multi: false },
-
-                // تصویر به PDF
                 { id: 'jpg-to-pdf', name: 'JPG به PDF', desc: 'تصاویر JPG را به PDF تبدیل کنید.', icon: '📸',
                     category: 'convert', multi: true },
                 { id: 'png-to-pdf', name: 'PNG به PDF', desc: 'تصاویر PNG را به PDF تبدیل کنید.', icon: '📸',
                     category: 'convert', multi: true },
                 { id: 'excel-to-pdf', name: 'Excel به PDF', desc: 'فایل Excel را به PDF تبدیل کنید.', icon: '📊',
                     category: 'convert', multi: false },
-                { id: 'word-to-pdf', name: 'Word به PDF', desc: 'فایل Word را با حفظ فرمت به PDF تبدیل کنید.', icon: '📝',
-                    category: 'convert', multi: false, wordToPdf: true },
+                { id: 'word-to-pdf', name: 'Word به PDF', desc: 'فایل Word را به PDF تبدیل کنید.', icon: '📝',
+                    category: 'convert', multi: false },
 
                 // ویرایش
                 { id: 'rotate', name: 'چرخاندن PDF', desc: 'صفحات PDF را بچرخانید.', icon: '🔄', category: 'edit',
@@ -1926,8 +1502,8 @@
                     category: 'edit', multi: false, extra: true, extraLabel: 'متن واترمارک' },
                 { id: 'page-numbers', name: 'شماره‌گذاری PDF', desc: 'به صفحات PDF شماره اضافه کنید.', icon: '🔢',
                     category: 'edit', multi: false },
-                { id: 'extract-images', name: 'استخراج تصاویر واقعی', desc: 'تصاویر واقعی داخل PDF را استخراج کنید.', icon: '🖼️',
-                    category: 'edit', multi: false, imageExtract: true },
+                { id: 'extract-images', name: 'استخراج تصاویر', desc: 'تصاویر داخل PDF را استخراج کنید.', icon: '🖼️',
+                    category: 'edit', multi: false },
 
                 // امنیت
                 { id: 'protect', name: 'محافظت PDF', desc: 'برای PDF رمز عبور قرار دهید.', icon: '🔒',
@@ -1936,18 +1512,21 @@
                     category: 'security', multi: false, extra: true, extraLabel: 'رمز عبور فعلی' },
 
                 // OCR
-                { id: 'ocr', name: 'OCR پیشرفته', desc: 'متن تصاویر داخل PDF را با دقت بالا استخراج کنید.', icon: '👁️',
+                { id: 'ocr', name: 'OCR پیشرفته', desc: 'متن تصاویر داخل PDF را استخراج کنید.', icon: '👁️',
                     category: 'ocr', multi: false },
 
-                // هوش مصنوعی (با Transformers.js)
-                { id: 'ai-summarize', name: 'خلاصه‌سازی با AI', desc: 'خلاصه هوشمند از محتوای PDF با مدل‌های محلی', icon: '🤖',
+                // هوش مصنوعی
+                { id: 'ai-summarize', name: 'خلاصه‌سازی با AI', desc: 'خلاصه هوشمند از محتوای PDF', icon: '🤖',
                     category: 'ai', multi: false, ai: true },
                 { id: 'ai-qa', name: 'پرسش و پاسخ با AI', desc: 'از PDF سوال بپرسید و پاسخ بگیرید.', icon: '🧠',
                     category: 'ai', multi: false, extra: true, extraLabel: 'سوال خود را وارد کنید', ai: true },
-                { id: 'ai-translate', name: 'ترجمه هوشمند', desc: 'ترجمه خودکار PDF با مدل‌های محلی', icon: '🌍',
+                { id: 'ai-translate', name: 'ترجمه هوشمند', desc: 'ترجمه خودکار PDF', icon: '🌍',
                     category: 'ai', multi: false, extra: true, extraLabel: 'زبان مقصد', extraType: 'select',
                     extraOptions: ['انگلیسی', 'فارسی', 'عربی'], ai: true }
             ];
+
+            // به‌روزرسانی تعداد ابزارها در هدر
+            document.getElementById('toolCountDisplay').textContent = toolsData.length;
 
             // ============================================================
             // STATE
@@ -2012,29 +1591,24 @@
             // ============================================================
             function renderTools() {
                 let filtered = toolsData;
-
                 if (currentFilter !== 'all') {
                     filtered = filtered.filter(t => t.category === currentFilter);
                 }
-
                 if (searchQuery.trim()) {
                     const q = searchQuery.trim().toLowerCase();
                     filtered = filtered.filter(t =>
-                        t.name.includes(q) ||
-                        t.desc.includes(q)
+                        t.name.includes(q) || t.desc.includes(q)
                     );
                 }
-
                 if (!filtered.length) {
                     toolsGrid.innerHTML =
                         `<div style="grid-column:1/-1;text-align:center;padding:48px;color:#888;">🔍 هیچ ابزاری با این جستجو یافت نشد.</div>`;
                     return;
                 }
-
                 toolsGrid.innerHTML = filtered.map(tool => `
-                        <div class="tool-card" data-tool="${tool.id}" role="listitem">
+                        <div class="tool-card" data-tool="${tool.id}">
                             <span class="category-tag">${getCategoryLabel(tool.category)}</span>
-                            <span class="icon" aria-hidden="true">${tool.icon}</span>
+                            <span class="icon">${tool.icon}</span>
                             <div class="name">${tool.name}</div>
                             <div class="desc">${tool.desc}</div>
                             ${tool.ai ? '<span class="badge" style="background:#9b59b6;">AI</span>' : ''}
@@ -2052,14 +1626,8 @@
             }
 
             function getCategoryLabel(category) {
-                const map = {
-                    'organize': 'سازمان‌دهی',
-                    'convert': 'تبدیل',
-                    'edit': 'ویرایش',
-                    'security': 'امنیت',
-                    'ocr': 'OCR',
-                    'ai': 'AI'
-                };
+                const map = { 'organize': 'سازمان‌دهی', 'convert': 'تبدیل', 'edit': 'ویرایش', 'security': 'امنیت',
+                    'ocr': 'OCR', 'ai': 'AI' };
                 return map[category] || category;
             }
 
@@ -2074,10 +1642,8 @@
             filterBar.addEventListener('click', function(e) {
                 const tag = e.target.closest('.tag');
                 if (!tag) return;
-
                 document.querySelectorAll('.tag').forEach(t => t.classList.remove('active'));
                 tag.classList.add('active');
-
                 currentFilter = tag.dataset.filter;
                 renderTools();
             });
@@ -2086,6 +1652,10 @@
             // AUTH
             // ============================================================
             const users = {};
+            try {
+                const stored = localStorage.getItem('pdfyar_users');
+                if (stored) Object.assign(users, JSON.parse(stored));
+            } catch (e) {}
 
             function registerUser(name, email, password) {
                 if (users[email]) {
@@ -2125,22 +1695,12 @@
                 showToast('👋 خروج موفق', 'info');
             }
 
-            // Load users
-            try {
-                const stored = localStorage.getItem('pdfyar_users');
-                if (stored) {
-                    Object.assign(users, JSON.parse(stored));
-                }
-            } catch (e) {}
-
             // ============================================================
             // AUTH UI
             // ============================================================
             loginBtn.addEventListener('click', function() {
                 if (isLoggedIn) {
-                    if (confirm('آیا از خروج مطمئن هستید؟')) {
-                        logoutUser();
-                    }
+                    if (confirm('آیا از خروج مطمئن هستید؟')) logoutUser();
                     return;
                 }
                 loginModal.classList.add('open');
@@ -2151,18 +1711,15 @@
                 loginModal.classList.remove('open');
                 document.body.style.overflow = '';
             });
-
             document.getElementById('closeRegisterModal').addEventListener('click', function() {
                 registerModal.classList.remove('open');
                 document.body.style.overflow = '';
             });
-
             document.getElementById('showRegisterLink').addEventListener('click', function(e) {
                 e.preventDefault();
                 loginModal.classList.remove('open');
                 registerModal.classList.add('open');
             });
-
             document.getElementById('showLoginLink').addEventListener('click', function(e) {
                 e.preventDefault();
                 registerModal.classList.remove('open');
@@ -2172,10 +1729,7 @@
             document.getElementById('loginSubmitBtn').addEventListener('click', function() {
                 const email = document.getElementById('loginEmail').value.trim();
                 const password = document.getElementById('loginPassword').value.trim();
-                if (!email || !password) {
-                    showToast('لطفاً ایمیل و رمز عبور را وارد کنید.', 'error');
-                    return;
-                }
+                if (!email || !password) { showToast('لطفاً ایمیل و رمز عبور را وارد کنید.', 'error'); return; }
                 if (loginUser(email, password)) {
                     loginModal.classList.remove('open');
                     document.body.style.overflow = '';
@@ -2187,19 +1741,10 @@
                 const email = document.getElementById('registerEmail').value.trim();
                 const password = document.getElementById('registerPassword').value.trim();
                 const confirm = document.getElementById('registerPasswordConfirm').value.trim();
-
-                if (!name || !email || !password || !confirm) {
-                    showToast('لطفاً تمام فیلدها را پر کنید.', 'error');
-                    return;
-                }
-                if (password.length < 4) {
-                    showToast('رمز عبور حداقل ۴ کاراکتر باید باشد.', 'error');
-                    return;
-                }
-                if (password !== confirm) {
-                    showToast('رمز عبور و تکرار آن مطابقت ندارند.', 'error');
-                    return;
-                }
+                if (!name || !email || !password || !confirm) { showToast('لطفاً تمام فیلدها را پر کنید.',
+                    'error'); return; }
+                if (password.length < 4) { showToast('رمز عبور حداقل ۴ کاراکتر باید باشد.', 'error'); return; }
+                if (password !== confirm) { showToast('رمز عبور و تکرار آن مطابقت ندارند.', 'error'); return; }
                 if (registerUser(name, email, password)) {
                     registerModal.classList.remove('open');
                     document.body.style.overflow = '';
@@ -2207,18 +1752,12 @@
                 }
             });
 
-            loginModal.addEventListener('click', function(e) {
-                if (e.target === this) {
-                    loginModal.classList.remove('open');
-                    document.body.style.overflow = '';
-                }
-            });
-            registerModal.addEventListener('click', function(e) {
-                if (e.target === this) {
-                    registerModal.classList.remove('open');
-                    document.body.style.overflow = '';
-                }
-            });
+            loginModal.addEventListener('click', function(e) { if (e.target === this) { loginModal.classList.remove(
+                        'open');
+                    document.body.style.overflow = ''; } });
+            registerModal.addEventListener('click', function(e) { if (e.target === this) { registerModal.classList
+                        .remove('open');
+                    document.body.style.overflow = ''; } });
 
             // ============================================================
             // MOBILE MENU
@@ -2233,17 +1772,10 @@
                     navMain.classList.remove('open');
                     mobileMenuToggle.textContent = '☰';
                     const section = this.dataset.section;
-                    if (section === 'home') {
-                        document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
-                    } else if (section === 'tools') {
-                        document.getElementById('tools').scrollIntoView({ behavior: 'smooth' });
-                    } else if (section === 'about') {
-                        document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
-                    } else if (section === 'contact') {
-                        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-                    } else if (section === 'blog') {
-                        showToast('بخش وبلاگ به زودی...', 'info');
-                    }
+                    if (section === 'home') document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+                    else if (section === 'tools') document.getElementById('tools').scrollIntoView({ behavior: 'smooth' });
+                    else if (section === 'about') document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+                    else if (section === 'contact') document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
                     document.querySelectorAll('.nav-main a').forEach(a => a.classList.remove('active'));
                     this.classList.add('active');
                 });
@@ -2260,7 +1792,6 @@
             // OPEN TOOL
             // ============================================================
             function openTool(tool) {
-                // اگر ابزار AI است و کاربر وارد نشده
                 if (tool.ai && !isLoggedIn) {
                     showToast('⚠️ برای استفاده از ابزارهای هوش مصنوعی ابتدا وارد شوید.', 'error');
                     loginModal.classList.add('open');
@@ -2274,10 +1805,8 @@
                 resultBlob = null;
                 resultFilename = '';
                 pageOrder = [];
-                if (sortableInstance) {
-                    sortableInstance.destroy();
-                    sortableInstance = null;
-                }
+                if (sortableInstance) { sortableInstance.destroy();
+                    sortableInstance = null; }
 
                 modalIcon.textContent = tool.icon;
                 modalTitle.textContent = tool.name;
@@ -2302,7 +1831,6 @@
                 if (tool.extra) {
                     extraInput.classList.add('show');
                     extraLabel.textContent = tool.extraLabel || 'تنظیمات';
-
                     if (tool.extraType === 'select' && tool.extraOptions) {
                         const select = document.createElement('select');
                         select.id = 'extraSelect';
@@ -2331,8 +1859,6 @@
                     fileInput.removeAttribute('multiple');
                     fileInput.accept = '.pdf,.jpg,.jpeg,.png,.webp,.xlsx,.xls,.docx,.doc,.txt';
                 }
-
-                // برای ابزار مرتب‌سازی
                 if (tool.sortable) {
                     fileInput.accept = '.pdf';
                     fileInput.removeAttribute('multiple');
@@ -2353,49 +1879,37 @@
                 resultFilename = '';
                 resultSummary.classList.remove('show');
                 resultActions.classList.remove('show');
-                if (sortableInstance) {
-                    sortableInstance.destroy();
-                    sortableInstance = null;
-                }
+                if (sortableInstance) { sortableInstance.destroy();
+                    sortableInstance = null; }
                 pageSortContainer.classList.remove('show');
                 loadingSpinner.classList.remove('show');
             }
 
             closeModal.addEventListener('click', closeTool);
             cancelBtn.addEventListener('click', closeTool);
-            modalOverlay.addEventListener('click', function(e) {
-                if (e.target === this) closeTool();
-            });
+            modalOverlay.addEventListener('click', function(e) { if (e.target === this) closeTool(); });
 
             // ============================================================
             // FILE HANDLING
             // ============================================================
             uploadZone.addEventListener('click', function() { fileInput.click(); });
-
             uploadZone.addEventListener('dragover', function(e) {
                 e.preventDefault();
                 this.style.borderColor = '#EE6C4D';
                 this.style.background = 'rgba(238,108,77,0.04)';
             });
-
             uploadZone.addEventListener('dragleave', function() {
                 this.style.borderColor = '#ddd';
                 this.style.background = 'transparent';
             });
-
             uploadZone.addEventListener('drop', function(e) {
                 e.preventDefault();
                 this.style.borderColor = '#ddd';
                 this.style.background = 'transparent';
-                if (e.dataTransfer.files.length) {
-                    handleFiles(e.dataTransfer.files);
-                }
+                if (e.dataTransfer.files.length) handleFiles(e.dataTransfer.files);
             });
-
             fileInput.addEventListener('change', function() {
-                if (this.files.length) {
-                    handleFiles(this.files);
-                }
+                if (this.files.length) handleFiles(this.files);
                 this.value = '';
             });
 
@@ -2413,36 +1927,27 @@
                     selectedFiles.push(file);
                 }
                 renderFileList();
-
-                // اگر ابزار مرتب‌سازی است
                 if (currentTool?.sortable && selectedFiles.length === 1) {
                     loadPagesForSorting(selectedFiles[0]);
                 }
-
                 updateActionButton();
             }
 
             function renderFileList() {
-                if (!selectedFiles.length) {
-                    fileList.innerHTML = '';
-                    return;
-                }
+                if (!selectedFiles.length) { fileList.innerHTML = ''; return; }
                 fileList.innerHTML = selectedFiles.map((file, index) => `
                         <div class="file-item">
                             <span>📄 ${file.name}</span>
                             <span>${(file.size / 1024).toFixed(1)} KB</span>
-                            <span class="remove" data-index="${index}" aria-label="حذف فایل">✕</span>
+                            <span class="remove" data-index="${index}">✕</span>
                         </div>
                     `).join('');
-
                 document.querySelectorAll('.file-item .remove').forEach(el => {
                     el.addEventListener('click', function() {
                         const idx = parseInt(this.dataset.index);
                         selectedFiles.splice(idx, 1);
                         renderFileList();
-                        if (currentTool?.sortable) {
-                            pageSortContainer.classList.remove('show');
-                        }
+                        if (currentTool?.sortable) pageSortContainer.classList.remove('show');
                         updateActionButton();
                     });
                 });
@@ -2459,19 +1964,15 @@
             }
 
             // ============================================================
-            // LOAD PAGES FOR SORTING (مرتب‌سازی)
+            // LOAD PAGES FOR SORTING
             // ============================================================
             async function loadPagesForSorting(file) {
                 try {
                     const arrayBuffer = await file.arrayBuffer();
                     const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
                     const totalPages = pdf.numPages;
-
                     pageOrder = [];
-                    for (let i = 1; i <= totalPages; i++) {
-                        pageOrder.push(i);
-                    }
-
+                    for (let i = 1; i <= totalPages; i++) pageOrder.push(i);
                     pageSortContainer.classList.add('show');
                     pageSortList.innerHTML = pageOrder.map(num => `
                             <div class="page-item" data-page="${num}">
@@ -2479,25 +1980,17 @@
                                 <span class="drag-handle">⠿</span>
                             </div>
                         `).join('');
-
-                    // راه‌اندازی SortableJS
-                    if (sortableInstance) {
-                        sortableInstance.destroy();
-                    }
+                    if (sortableInstance) sortableInstance.destroy();
                     sortableInstance = new Sortable(pageSortList, {
                         animation: 150,
                         handle: '.page-item',
                         onEnd: function() {
                             const items = pageSortList.querySelectorAll('.page-item');
                             pageOrder = [];
-                            items.forEach(el => {
-                                pageOrder.push(parseInt(el.dataset.page));
-                            });
+                            items.forEach(el => pageOrder.push(parseInt(el.dataset.page)));
                         }
                     });
-
-                    showToast(`📄 ${totalPages} صفحه بارگذاری شد. برای تغییر ترتیب بکشید.`, 'info');
-
+                    showToast(`📄 ${totalPages} صفحه بارگذاری شد.`, 'info');
                 } catch (err) {
                     showToast('❌ خطا در بارگذاری صفحات: ' + err.message, 'error');
                 }
@@ -2547,14 +2040,12 @@
             // IMPLEMENTATIONS
             // ============================================================
 
-            // ----- MERGE PDF -----
             async function mergePDF() {
                 startProcessing();
                 try {
                     const { PDFDocument } = PDFLib;
                     const mergedPdf = await PDFDocument.create();
                     let totalPages = 0;
-
                     for (let i = 0; i < selectedFiles.length; i++) {
                         const arrayBuffer = await selectedFiles[i].arrayBuffer();
                         const pdf = await PDFDocument.load(arrayBuffer);
@@ -2564,22 +2055,18 @@
                         copiedPages.forEach(page => mergedPdf.addPage(page));
                         updateProgress(Math.round(((i + 1) / selectedFiles.length) * 100));
                     }
-
                     const pdfBytes = await mergedPdf.save();
                     resultBlob = new Blob([pdfBytes], { type: 'application/pdf' });
                     resultFilename = 'merged.pdf';
-                    showResult(`✅ ادغام با موفقیت انجام شد!`,
-                        `📄 ${totalPages} صفحه از ${selectedFiles.length} فایل با موفقیت ادغام شدند.`);
+                    showResult(`✅ ادغام با موفقیت انجام شد!`, `📄 ${totalPages} صفحه از ${selectedFiles.length} فایل ادغام شدند.`);
                     completeProcessing();
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- SPLIT PDF -----
             async function splitPDF() {
                 const rangeInput = document.getElementById('extraValue') || document.getElementById('extraSelect');
                 const ranges = rangeInput ? rangeInput.value.trim() : '';
                 if (!ranges) { showToast('لطفاً محدوده صفحات را وارد کنید.', 'error'); return; }
-
                 startProcessing();
                 try {
                     const { PDFDocument } = PDFLib;
@@ -2587,23 +2074,18 @@
                     const arrayBuffer = await file.arrayBuffer();
                     const pdf = await PDFDocument.load(arrayBuffer);
                     const totalPages = pdf.getPageCount();
-
                     const zip = new JSZip();
                     const pageGroups = parsePageRange(ranges, totalPages);
-
                     if (!pageGroups.length) { showToast('محدوده صفحات نامعتبر است.', 'error'); return; }
-
                     for (let g of pageGroups) {
                         const newPdf = await PDFDocument.create();
                         const pages = await newPdf.copyPages(pdf, g);
                         pages.forEach(page => newPdf.addPage(page));
                         const pdfBytes = await newPdf.save();
-                        const fileName =
-                            `${file.name.replace('.pdf', '')}_pages_${g[0]+1}-${g[g.length-1]+1}.pdf`;
+                        const fileName = `${file.name.replace('.pdf', '')}_pages_${g[0]+1}-${g[g.length-1]+1}.pdf`;
                         zip.file(fileName, pdfBytes);
                         updateProgress(Math.round(((pageGroups.indexOf(g) + 1) / pageGroups.length) * 100));
                     }
-
                     const zipBlob = await zip.generateAsync({ type: 'blob' });
                     resultBlob = zipBlob;
                     resultFilename = `${file.name.replace('.pdf', '')}_split.zip`;
@@ -2612,7 +2094,6 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- COMPRESS PDF -----
             async function compressPDF() {
                 startProcessing();
                 try {
@@ -2620,14 +2101,11 @@
                     const file = selectedFiles[0];
                     const arrayBuffer = await file.arrayBuffer();
                     const originalSize = arrayBuffer.byteLength;
-
                     const pdf = await PDFDocument.load(arrayBuffer);
                     const pdfBytes = await pdf.save({ useObjectStreams: true });
                     const newSize = pdfBytes.byteLength;
-
                     resultBlob = new Blob([pdfBytes], { type: 'application/pdf' });
                     resultFilename = `compressed_${file.name}`;
-
                     const reduction = ((1 - newSize / originalSize) * 100).toFixed(1);
                     showResult(`✅ فشرده‌سازی با موفقیت انجام شد!`,
                         `📊 حجم قبل: ${formatSize(originalSize)}<br>📊 حجم بعد: ${formatSize(newSize)}<br>📉 کاهش: ${reduction}%`
@@ -2636,12 +2114,10 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- ROTATE PDF -----
             async function rotatePDF() {
                 const angleInput = document.getElementById('extraValue') || document.getElementById('extraSelect');
                 let angle = parseInt(angleInput ? angleInput.value : '90');
                 if (isNaN(angle)) angle = 90;
-
                 startProcessing();
                 try {
                     const { PDFDocument, degrees } = PDFLib;
@@ -2649,12 +2125,10 @@
                     const arrayBuffer = await file.arrayBuffer();
                     const pdf = await PDFDocument.load(arrayBuffer);
                     const pages = pdf.getPages();
-
                     pages.forEach((page, index) => {
                         page.setRotation(degrees(angle));
                         updateProgress(Math.round(((index + 1) / pages.length) * 100));
                     });
-
                     const pdfBytes = await pdf.save();
                     resultBlob = new Blob([pdfBytes], { type: 'application/pdf' });
                     resultFilename = `rotated_${file.name}`;
@@ -2663,11 +2137,9 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- DELETE PAGES -----
             async function deletePages() {
                 const pagesStr = document.getElementById('extraValue')?.value.trim() || '';
                 if (!pagesStr) { showToast('شماره صفحات را وارد کنید.', 'error'); return; }
-
                 startProcessing();
                 try {
                     const { PDFDocument } = PDFLib;
@@ -2675,16 +2147,9 @@
                     const arrayBuffer = await file.arrayBuffer();
                     const pdf = await PDFDocument.load(arrayBuffer);
                     const totalPages = pdf.getPageCount();
-
                     const pageNumbers = parsePageRange(pagesStr, totalPages).map(p => p);
                     const sorted = pageNumbers.sort((a, b) => b - a);
-
-                    for (let num of sorted) {
-                        if (num < totalPages) {
-                            pdf.removePage(num);
-                        }
-                    }
-
+                    for (let num of sorted) { if (num < totalPages) pdf.removePage(num); }
                     const pdfBytes = await pdf.save();
                     resultBlob = new Blob([pdfBytes], { type: 'application/pdf' });
                     resultFilename = `deleted_${file.name}`;
@@ -2693,11 +2158,9 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- EXTRACT PAGES -----
             async function extractPages() {
                 const pagesStr = document.getElementById('extraValue')?.value.trim() || '';
                 if (!pagesStr) { showToast('شماره صفحات را وارد کنید.', 'error'); return; }
-
                 startProcessing();
                 try {
                     const { PDFDocument } = PDFLib;
@@ -2705,14 +2168,11 @@
                     const arrayBuffer = await file.arrayBuffer();
                     const pdf = await PDFDocument.load(arrayBuffer);
                     const totalPages = pdf.getPageCount();
-
                     const pageNumbers = parsePageRange(pagesStr, totalPages).map(p => p);
                     if (!pageNumbers.length) { showToast('صفحه‌ای برای استخراج وجود ندارد.', 'error'); return; }
-
                     const newPdf = await PDFDocument.create();
                     const pages = await newPdf.copyPages(pdf, pageNumbers);
                     pages.forEach(page => newPdf.addPage(page));
-
                     const pdfBytes = await newPdf.save();
                     resultBlob = new Blob([pdfBytes], { type: 'application/pdf' });
                     resultFilename = `extracted_${file.name}`;
@@ -2721,11 +2181,9 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- ADD WATERMARK -----
             async function addWatermark() {
                 const text = document.getElementById('extraValue')?.value.trim() || '';
                 if (!text) { showToast('متن واترمارک را وارد کنید.', 'error'); return; }
-
                 startProcessing();
                 try {
                     const { PDFDocument, rgb, degrees } = PDFLib;
@@ -2733,7 +2191,6 @@
                     const arrayBuffer = await file.arrayBuffer();
                     const pdf = await PDFDocument.load(arrayBuffer);
                     const pages = pdf.getPages();
-
                     pages.forEach((page, index) => {
                         const { width, height } = page.getSize();
                         page.drawText(text, {
@@ -2746,7 +2203,6 @@
                         });
                         updateProgress(Math.round(((index + 1) / pages.length) * 100));
                     });
-
                     const pdfBytes = await pdf.save();
                     resultBlob = new Blob([pdfBytes], { type: 'application/pdf' });
                     resultFilename = `watermarked_${file.name}`;
@@ -2755,27 +2211,20 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- PROTECT PDF -----
             async function protectPDF() {
                 const password = document.getElementById('extraValue')?.value.trim() || '';
-                if (!password || password.length < 4) {
-                    showToast('رمز عبور حداقل ۴ کاراکتر باید باشد.', 'error');
-                    return;
-                }
-
+                if (!password || password.length < 4) { showToast('رمز عبور حداقل ۴ کاراکتر باید باشد.', 'error'); return; }
                 startProcessing();
                 try {
                     const { PDFDocument } = PDFLib;
                     const file = selectedFiles[0];
                     const arrayBuffer = await file.arrayBuffer();
                     const pdf = await PDFDocument.load(arrayBuffer);
-
                     pdf.encrypt({
                         userPassword: password,
                         ownerPassword: password,
                         permissions: { printing: 'highResolution', modifying: false, extracting: true }
                     });
-
                     const pdfBytes = await pdf.save();
                     resultBlob = new Blob([pdfBytes], { type: 'application/pdf' });
                     resultFilename = `protected_${file.name}`;
@@ -2784,17 +2233,14 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- UNLOCK PDF -----
             async function unlockPDF() {
                 const password = document.getElementById('extraValue')?.value.trim() || '';
                 if (!password) { showToast('لطفاً رمز عبور را وارد کنید.', 'error'); return; }
-
                 startProcessing();
                 try {
                     const { PDFDocument } = PDFLib;
                     const file = selectedFiles[0];
                     const arrayBuffer = await file.arrayBuffer();
-
                     const pdf = await PDFDocument.load(arrayBuffer, { password: password });
                     const pdfBytes = await pdf.save();
                     resultBlob = new Blob([pdfBytes], { type: 'application/pdf' });
@@ -2809,7 +2255,6 @@
                 }
             }
 
-            // ----- PDF TO JPG -----
             async function pdfToJPG() {
                 startProcessing();
                 try {
@@ -2817,7 +2262,6 @@
                     const arrayBuffer = await file.arrayBuffer();
                     const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
                     const totalPages = pdf.numPages;
-
                     const zip = new JSZip();
                     for (let i = 1; i <= totalPages; i++) {
                         const page = await pdf.getPage(i);
@@ -2827,12 +2271,10 @@
                         canvas.height = viewport.height;
                         const ctx = canvas.getContext('2d');
                         await page.render({ canvasContext: ctx, viewport: viewport }).promise;
-
                         const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/jpeg', 0.9));
                         zip.file(`page_${i}.jpg`, blob);
                         updateProgress(Math.round((i / totalPages) * 100));
                     }
-
                     const zipBlob = await zip.generateAsync({ type: 'blob' });
                     resultBlob = zipBlob;
                     resultFilename = `PDF-Yar-JPG.zip`;
@@ -2841,7 +2283,6 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- PDF TO PNG -----
             async function pdfToPNG() {
                 startProcessing();
                 try {
@@ -2849,7 +2290,6 @@
                     const arrayBuffer = await file.arrayBuffer();
                     const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
                     const totalPages = pdf.numPages;
-
                     const zip = new JSZip();
                     for (let i = 1; i <= totalPages; i++) {
                         const page = await pdf.getPage(i);
@@ -2859,12 +2299,10 @@
                         canvas.height = viewport.height;
                         const ctx = canvas.getContext('2d');
                         await page.render({ canvasContext: ctx, viewport: viewport }).promise;
-
                         const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
                         zip.file(`page_${i}.png`, blob);
                         updateProgress(Math.round((i / totalPages) * 100));
                     }
-
                     const zipBlob = await zip.generateAsync({ type: 'blob' });
                     resultBlob = zipBlob;
                     resultFilename = `PDF-Yar-PNG.zip`;
@@ -2873,7 +2311,6 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- PDF TO WORD (با mammoth.js برای خروجی واقعی) -----
             async function pdfToWord() {
                 startProcessing();
                 try {
@@ -2881,7 +2318,6 @@
                     const arrayBuffer = await file.arrayBuffer();
                     const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
                     const totalPages = pdf.numPages;
-
                     let fullText = '';
                     for (let i = 1; i <= totalPages; i++) {
                         const page = await pdf.getPage(i);
@@ -2889,21 +2325,8 @@
                         fullText += content.items.map(item => item.str).join(' ') + '\n\n';
                         updateProgress(Math.round((i / totalPages) * 100));
                     }
-
-                    // ساخت یک DOCX واقعی با mammoth
-                    const docxContent = `<!DOCTYPE html>
-                        <html xmlns:o='urn:schemas-microsoft-com:office:office' 
-                              xmlns:w='urn:schemas-microsoft-com:office:word' 
-                              xmlns='http://www.w3.org/TR/REC-html40'>
-                        <head><meta charset="UTF-8"></head>
-                        <body>
-                            <h1>PDF به Word</h1>
-                            <p>${fullText.replace(/\n/g, '<br>')}</p>
-                        </body>
-                        </html>`;
-
-                    // برای ساخت DOCX واقعی از کتابخانه docx استفاده می‌کنیم
-                    // اما برای سادگی، از HTML با پسوند doc استفاده می‌کنیم که Word باز می‌کند
+                    const docxContent =
+                        `<!DOCTYPE html><html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset="UTF-8"></head><body><h1>PDF به Word</h1><p>${fullText.replace(/\n/g, '<br>')}</p></body></html>`;
                     const blob = new Blob([docxContent], { type: 'application/msword' });
                     resultBlob = blob;
                     resultFilename = `${file.name.replace('.pdf', '')}.doc`;
@@ -2912,7 +2335,6 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- PDF TO EXCEL -----
             async function pdfToExcel() {
                 startProcessing();
                 try {
@@ -2920,7 +2342,6 @@
                     const arrayBuffer = await file.arrayBuffer();
                     const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
                     const totalPages = pdf.numPages;
-
                     const data = [];
                     for (let i = 1; i <= totalPages; i++) {
                         const page = await pdf.getPage(i);
@@ -2928,20 +2349,18 @@
                         data.push([`صفحه ${i}`, content.items.map(item => item.str).join(' ')]);
                         updateProgress(Math.round((i / totalPages) * 100));
                     }
-
                     const wb = XLSX.utils.book_new();
                     const ws = XLSX.utils.aoa_to_sheet(data);
                     XLSX.utils.book_append_sheet(wb, ws, 'PDF');
                     const wbOut = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
-
-                    resultBlob = new Blob([wbOut], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+                    resultBlob = new Blob([wbOut],
+                    { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
                     resultFilename = `${file.name.replace('.pdf', '')}.xlsx`;
                     showResult(`✅ تبدیل به Excel با موفقیت انجام شد!`, `📄 ${totalPages} صفحه تبدیل شدند.`);
                     completeProcessing();
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- PDF TO PPT -----
             async function pdfToPPT() {
                 startProcessing();
                 try {
@@ -2949,11 +2368,9 @@
                     const arrayBuffer = await file.arrayBuffer();
                     const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
                     const totalPages = pdf.numPages;
-
                     const pptx = new PptxGenJS();
                     pptx.defineLayout({ name: 'WIDE', width: 10, height: 7.5 });
                     pptx.layout = 'WIDE';
-
                     for (let i = 1; i <= totalPages; i++) {
                         const page = await pdf.getPage(i);
                         const content = await page.getTextContent();
@@ -2962,7 +2379,6 @@
                         slide.addText(text, { x: 0.5, y: 0.5, w: 9, h: 6.5, fontSize: 16, color: '000000' });
                         updateProgress(Math.round((i / totalPages) * 100));
                     }
-
                     const pptBlob = await pptx.write({ outputType: 'blob' });
                     resultBlob = pptBlob;
                     resultFilename = `${file.name.replace('.pdf', '')}.pptx`;
@@ -2971,7 +2387,6 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- PDF TO TEXT -----
             async function pdfToText() {
                 startProcessing();
                 try {
@@ -2979,7 +2394,6 @@
                     const arrayBuffer = await file.arrayBuffer();
                     const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
                     const totalPages = pdf.numPages;
-
                     let fullText = '';
                     for (let i = 1; i <= totalPages; i++) {
                         const page = await pdf.getPage(i);
@@ -2987,7 +2401,6 @@
                         fullText += `--- صفحه ${i} ---\n${content.items.map(item => item.str).join(' ')}\n\n`;
                         updateProgress(Math.round((i / totalPages) * 100));
                     }
-
                     resultBlob = new Blob([fullText], { type: 'text/plain' });
                     resultFilename = `${file.name.replace('.pdf', '')}_text.txt`;
                     showResult(`✅ استخراج متن با موفقیت انجام شد!`, `📄 ${totalPages} صفحه استخراج شد.`);
@@ -2995,27 +2408,21 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- IMAGES TO PDF -----
             async function imagesToPDF() {
                 startProcessing();
                 try {
                     const { PDFDocument } = PDFLib;
                     const pdf = await PDFDocument.create();
-
                     for (let i = 0; i < selectedFiles.length; i++) {
                         const file = selectedFiles[i];
                         const arrayBuffer = await file.arrayBuffer();
                         let image;
-                        try {
-                            image = await pdf.embedPng(arrayBuffer);
-                        } catch (e) {
-                            image = await pdf.embedJpg(arrayBuffer);
-                        }
+                        try { image = await pdf.embedPng(arrayBuffer); } catch (e) { image = await pdf.embedJpg(
+                            arrayBuffer); }
                         const page = pdf.addPage([image.width, image.height]);
                         page.drawImage(image, { x: 0, y: 0, width: image.width, height: image.height });
                         updateProgress(Math.round(((i + 1) / selectedFiles.length) * 100));
                     }
-
                     const pdfBytes = await pdf.save();
                     resultBlob = new Blob([pdfBytes], { type: 'application/pdf' });
                     resultFilename = `converted_from_image.pdf`;
@@ -3024,7 +2431,6 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- EXCEL TO PDF -----
             async function excelToPDF() {
                 startProcessing();
                 try {
@@ -3033,11 +2439,9 @@
                     const wb = XLSX.read(arrayBuffer, { type: 'array' });
                     const ws = wb.Sheets[wb.SheetNames[0]];
                     const data = XLSX.utils.sheet_to_json(ws, { header: 1 });
-
                     const { PDFDocument, rgb } = PDFLib;
                     const pdf = await PDFDocument.create();
                     const page = pdf.addPage([600, 800]);
-
                     let y = 750;
                     for (let row of data) {
                         if (y < 40) break;
@@ -3046,7 +2450,6 @@
                         y -= 20;
                         updateProgress(Math.round(((data.indexOf(row) + 1) / data.length) * 100));
                     }
-
                     const pdfBytes = await pdf.save();
                     resultBlob = new Blob([pdfBytes], { type: 'application/pdf' });
                     resultFilename = `${file.name.replace(/\.[^.]+$/, '')}.pdf`;
@@ -3055,28 +2458,23 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- WORD TO PDF (با mammoth.js برای خواندن واقعی) -----
             async function wordToPDF() {
                 startProcessing();
                 try {
                     const file = selectedFiles[0];
                     const arrayBuffer = await file.arrayBuffer();
-
-                    // استفاده از mammoth برای خواندن DOCX
                     let text = '';
                     try {
                         const result = await mammoth.extractRawText({ arrayBuffer: arrayBuffer });
                         text = result.value;
                     } catch (e) {
-                        // اگر mammoth کار نکرد، از روش معمولی استفاده می‌کنیم
-                        const blob = new Blob([arrayBuffer], { type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' });
+                        const blob = new Blob([arrayBuffer],
+                        { type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' });
                         text = await blob.text();
                     }
-
                     const { PDFDocument, rgb } = PDFLib;
                     const pdf = await PDFDocument.create();
                     const page = pdf.addPage([600, 800]);
-
                     const lines = text.split('\n').filter(l => l.trim());
                     let y = 750;
                     for (let line of lines) {
@@ -3085,7 +2483,6 @@
                         y -= 18;
                         updateProgress(Math.round(((lines.indexOf(line) + 1) / lines.length) * 100));
                     }
-
                     const pdfBytes = await pdf.save();
                     resultBlob = new Blob([pdfBytes], { type: 'application/pdf' });
                     resultFilename = `${file.name.replace(/\.[^.]+$/, '')}.pdf`;
@@ -3094,13 +2491,11 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- ORGANIZE PDF (مرتب‌سازی با Drag & Drop) -----
             async function organizePDF() {
                 if (!pageOrder || pageOrder.length < 2) {
                     showToast('حداقل ۲ صفحه برای مرتب‌سازی نیاز است.', 'error');
                     return;
                 }
-
                 startProcessing();
                 try {
                     const { PDFDocument } = PDFLib;
@@ -3108,8 +2503,6 @@
                     const arrayBuffer = await file.arrayBuffer();
                     const pdf = await PDFDocument.load(arrayBuffer);
                     const totalPages = pdf.getPageCount();
-
-                    // ایجاد PDF جدید با ترتیب جدید
                     const newPdf = await PDFDocument.create();
                     for (let pageNum of pageOrder) {
                         const index = pageNum - 1;
@@ -3119,7 +2512,6 @@
                         }
                         updateProgress(Math.round(((pageOrder.indexOf(pageNum) + 1) / pageOrder.length) * 100));
                     }
-
                     const pdfBytes = await newPdf.save();
                     resultBlob = new Blob([pdfBytes], { type: 'application/pdf' });
                     resultFilename = `organized_${file.name}`;
@@ -3128,7 +2520,6 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- ADD PAGE NUMBERS -----
             async function addPageNumbers() {
                 startProcessing();
                 try {
@@ -3137,18 +2528,12 @@
                     const arrayBuffer = await file.arrayBuffer();
                     const pdf = await PDFDocument.load(arrayBuffer);
                     const pages = pdf.getPages();
-
                     pages.forEach((page, index) => {
                         const { width, height } = page.getSize();
-                        page.drawText(String(index + 1), {
-                            x: width / 2 - 10,
-                            y: 20,
-                            size: 16,
-                            color: rgb(0, 0, 0)
-                        });
+                        page.drawText(String(index + 1), { x: width / 2 - 10, y: 20, size: 16, color: rgb(0,
+                            0, 0) });
                         updateProgress(Math.round(((index + 1) / pages.length) * 100));
                     });
-
                     const pdfBytes = await pdf.save();
                     resultBlob = new Blob([pdfBytes], { type: 'application/pdf' });
                     resultFilename = `numbered_${file.name}`;
@@ -3157,7 +2542,6 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- EXTRACT IMAGES (استخراج واقعی با pdf.js) -----
             async function extractImages() {
                 startProcessing();
                 try {
@@ -3165,62 +2549,22 @@
                     const arrayBuffer = await file.arrayBuffer();
                     const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
                     const totalPages = pdf.numPages;
-
                     const zip = new JSZip();
                     let imageCount = 0;
-
                     for (let i = 1; i <= totalPages; i++) {
                         const page = await pdf.getPage(i);
-                        const ops = await page.getOperatorList();
-
-                        // استخراج تصاویر از اپراتورها
-                        const images = [];
-                        for (let j = 0; j < ops.fnArray.length; j++) {
-                            if (ops.fnArray[j] === pdfjsLib.OPS.paintImageXObject) {
-                                const imgName = ops.argsArray[j][0];
-                                try {
-                                    const imgData = await page.getImage({
-                                        name: imgName,
-                                        type: 'png'
-                                    });
-                                    if (imgData && imgData.data) {
-                                        const canvas = document.createElement('canvas');
-                                        canvas.width = imgData.width;
-                                        canvas.height = imgData.height;
-                                        const ctx = canvas.getContext('2d');
-                                        const imageData = ctx.createImageData(imgData.width, imgData.height);
-                                        imageData.data.set(imgData.data);
-                                        ctx.putImageData(imageData, 0, 0);
-                                        const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
-                                        zip.file(`image_${++imageCount}.png`, blob);
-                                    }
-                                } catch (e) {
-                                    // برخی از تصاویر ممکن است قابل استخراج نباشند
-                                }
-                            }
-                        }
-
-                        // اگر تصویری استخراج نشد، از روش قدیمی استفاده می‌کنیم
-                        if (imageCount === 0) {
-                            const viewport = page.getViewport({ scale: 1.5 });
-                            const canvas = document.createElement('canvas');
-                            canvas.width = viewport.width;
-                            canvas.height = viewport.height;
-                            const ctx = canvas.getContext('2d');
-                            await page.render({ canvasContext: ctx, viewport: viewport }).promise;
-                            const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
-                            zip.file(`page_${i}.png`, blob);
-                            imageCount++;
-                        }
-
+                        const viewport = page.getViewport({ scale: 1.5 });
+                        const canvas = document.createElement('canvas');
+                        canvas.width = viewport.width;
+                        canvas.height = viewport.height;
+                        const ctx = canvas.getContext('2d');
+                        await page.render({ canvasContext: ctx, viewport: viewport }).promise;
+                        const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+                        zip.file(`page_${i}.png`, blob);
+                        imageCount++;
                         updateProgress(Math.round((i / totalPages) * 100));
                     }
-
-                    if (imageCount === 0) {
-                        showToast('هیچ تصویری در این PDF یافت نشد.', 'error');
-                        return;
-                    }
-
+                    if (imageCount === 0) { showToast('هیچ تصویری در این PDF یافت نشد.', 'error'); return; }
                     const zipBlob = await zip.generateAsync({ type: 'blob' });
                     resultBlob = zipBlob;
                     resultFilename = `extracted_images.zip`;
@@ -3229,7 +2573,6 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- OCR PDF (با Tesseract پیشرفته) -----
             async function ocrPDF() {
                 startProcessing();
                 try {
@@ -3237,7 +2580,6 @@
                     const arrayBuffer = await file.arrayBuffer();
                     const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
                     const totalPages = pdf.numPages;
-
                     let fullText = '';
                     for (let i = 1; i <= totalPages; i++) {
                         const page = await pdf.getPage(i);
@@ -3247,7 +2589,6 @@
                         canvas.height = viewport.height;
                         const ctx = canvas.getContext('2d');
                         await page.render({ canvasContext: ctx, viewport: viewport }).promise;
-
                         const imageData = canvas.toDataURL('image/png');
                         const result = await Tesseract.recognize(imageData, 'fas+eng', {
                             logger: m => {
@@ -3259,7 +2600,6 @@
                         fullText += `--- صفحه ${i} ---\n${result.data.text}\n\n`;
                         updateProgress(Math.round((i / totalPages) * 100));
                     }
-
                     resultBlob = new Blob([fullText], { type: 'text/plain' });
                     resultFilename = `${file.name.replace('.pdf', '')}_ocr.txt`;
                     showResult(`✅ OCR با موفقیت انجام شد!`, `📄 ${totalPages} صفحه OCR شدند.`);
@@ -3268,10 +2608,9 @@
             }
 
             // ============================================================
-            // AI FUNCTIONS (با Transformers.js)
+            // AI FUNCTIONS
             // ============================================================
 
-            // ----- AI SUMMARIZE (با Transformers.js) -----
             async function aiSummarize() {
                 startProcessing();
                 try {
@@ -3285,27 +2624,6 @@
                         fullText += content.items.map(item => item.str).join(' ') + '\n';
                         updateProgress(Math.round((i / pdf.numPages) * 100));
                     }
-
-                    // استفاده از Transformers.js برای خلاصه‌سازی
-                    try {
-                        const { pipeline } = window.transformers;
-                        const pipe = await pipeline('summarization', 'Xenova/distilbart-cnn-6-6');
-                        const result = await pipe(fullText.slice(0, 1000), {
-                            max_length: 150,
-                            min_length: 50,
-                            do_sample: false
-                        });
-                        const summary = result[0]?.summary_text || fullText.slice(0, 300) + '...';
-                        resultBlob = new Blob([summary], { type: 'text/plain' });
-                        resultFilename = `${file.name.replace('.pdf', '')}_summary.txt`;
-                        showResult(`✅ خلاصه‌سازی با موفقیت انجام شد!`, `📝 خلاصه: ${summary.slice(0, 300)}...`);
-                        completeProcessing();
-                        return;
-                    } catch (e) {
-                        console.log('Transformers.js not available, using fallback');
-                    }
-
-                    // Fallback
                     const sentences = fullText.split(/[.!?]\s+/).filter(s => s.length > 20);
                     const summary = sentences.slice(0, 8).join('. ') + '.';
                     resultBlob = new Blob([summary], { type: 'text/plain' });
@@ -3315,11 +2633,9 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- AI QA (با Transformers.js) -----
             async function aiQA() {
                 const question = document.getElementById('extraValue')?.value.trim() || '';
                 if (!question) { showToast('لطفاً سوال خود را وارد کنید.', 'error'); return; }
-
                 startProcessing();
                 try {
                     const file = selectedFiles[0];
@@ -3332,28 +2648,9 @@
                         fullText += content.items.map(item => item.str).join(' ') + '\n';
                         updateProgress(Math.round((i / pdf.numPages) * 100));
                     }
-
-                    // استفاده از Transformers.js برای QA
-                    try {
-                        const { pipeline } = window.transformers;
-                        const pipe = await pipeline('question-answering', 'Xenova/distilbert-base-uncased-distilled-squad');
-                        const result = await pipe(question, fullText.slice(0, 500));
-                        const answer = result.answer || 'پاسخی یافت نشد.';
-                        resultBlob = new Blob([`سوال: ${question}\n\nپاسخ: ${answer}`], { type: 'text/plain' });
-                        resultFilename = `${file.name.replace('.pdf', '')}_qa.txt`;
-                        showResult(`✅ پاسخ‌گویی با موفقیت انجام شد!`, `📝 پاسخ: ${answer.slice(0, 300)}...`);
-                        completeProcessing();
-                        return;
-                    } catch (e) {
-                        console.log('Transformers.js not available, using fallback');
-                    }
-
-                    // Fallback
                     const sentences = fullText.split(/[.!?]\s+/);
                     const keywords = question.split(/\s+/).filter(w => w.length > 2);
-                    const found = sentences.filter(s =>
-                        keywords.some(k => s.toLowerCase().includes(k.toLowerCase()))
-                    );
+                    const found = sentences.filter(s => keywords.some(k => s.toLowerCase().includes(k.toLowerCase())));
                     const answer = found.length ? found.slice(0, 3).join('\n\n') : 'پاسخی یافت نشد.';
                     resultBlob = new Blob([`سوال: ${question}\n\nپاسخ: ${answer}`], { type: 'text/plain' });
                     resultFilename = `${file.name.replace('.pdf', '')}_qa.txt`;
@@ -3362,14 +2659,9 @@
                 } catch (err) { errorProcessing(err); }
             }
 
-            // ----- AI TRANSLATE (با Transformers.js) -----
             async function aiTranslate() {
                 const extraSelect = document.getElementById('extraSelect');
                 const targetLang = extraSelect ? extraSelect.value : 'انگلیسی';
-
-                const langMap = { 'انگلیسی': 'en', 'فارسی': 'fa', 'عربی': 'ar' };
-                const target = langMap[targetLang] || 'en';
-
                 startProcessing();
                 try {
                     const file = selectedFiles[0];
@@ -3382,26 +2674,6 @@
                         fullText += content.items.map(item => item.str).join(' ') + '\n';
                         updateProgress(Math.round((i / pdf.numPages) * 100));
                     }
-
-                    // استفاده از Transformers.js برای ترجمه
-                    try {
-                        const { pipeline } = window.transformers;
-                        const pipe = await pipeline('translation', 'Xenova/nllb-200-distilled-600M');
-                        const result = await pipe(fullText.slice(0, 500), {
-                            src_lang: 'pes_Arab',
-                            tgt_lang: target === 'en' ? 'eng_Latn' : target === 'fa' ? 'pes_Arab' : 'arb_Arab'
-                        });
-                        const translated = result[0]?.translation_text || 'ترجمه انجام نشد.';
-                        resultBlob = new Blob([translated], { type: 'text/plain' });
-                        resultFilename = `${file.name.replace('.pdf', '')}_translated.txt`;
-                        showResult(`✅ ترجمه با موفقیت انجام شد!`, `🌍 زبان مقصد: ${targetLang}`);
-                        completeProcessing();
-                        return;
-                    } catch (e) {
-                        console.log('Transformers.js not available, using fallback');
-                    }
-
-                    // Fallback
                     const translated =
                         `[ترجمه به ${targetLang}] ${fullText.slice(0, 500)}... (برای ترجمه کامل به سرویس واقعی نیاز است)`;
                     resultBlob = new Blob([translated], { type: 'text/plain' });
@@ -3421,15 +2693,11 @@
                     if (part.includes('-')) {
                         const [start, end] = part.split('-').map(Number);
                         if (start && end && start <= end) {
-                            for (let i = start - 1; i < end && i < totalPages; i++) {
-                                result.push(i);
-                            }
+                            for (let i = start - 1; i < end && i < totalPages; i++) result.push(i);
                         }
                     } else {
                         const num = parseInt(part);
-                        if (!isNaN(num) && num > 0 && num <= totalPages) {
-                            result.push(num - 1);
-                        }
+                        if (!isNaN(num) && num > 0 && num <= totalPages) result.push(num - 1);
                     }
                 }
                 return [...new Set(result)].sort((a, b) => a - b);
@@ -3526,10 +2794,8 @@
                 fileInput.value = '';
                 pageOrder = [];
                 pageSortContainer.classList.remove('show');
-                if (sortableInstance) {
-                    sortableInstance.destroy();
-                    sortableInstance = null;
-                }
+                if (sortableInstance) { sortableInstance.destroy();
+                    sortableInstance = null; }
                 updateActionButton();
                 progressContainer.classList.remove('show');
                 loadingSpinner.classList.remove('show');
@@ -3549,6 +2815,7 @@
                 clearTimeout(toast._timer);
                 toast._timer = setTimeout(() => toast.classList.remove('show'), 4000);
             }
+            window.showToast = showToast;
 
             // ============================================================
             // THEME
@@ -3570,7 +2837,6 @@
                     }
                 } catch (e) {}
             }
-
             themeBtn.addEventListener('click', toggleTheme);
 
             // ============================================================
@@ -3589,16 +2855,9 @@
             // ============================================================
             loadTheme();
             renderTools();
-
-            console.log('📄 PDF یار نسخه ۵.۱ - ۱۴۰۵');
+            console.log('📄 PDF یار نسخه ۶ - ۱۴۰۵');
             console.log('👨‍🎨 طراحی و توسعه: جواد قیصری');
-            console.log('✨ ۴۰+ ابزار واقعی');
-            console.log('🤖 هوش مصنوعی با Transformers.js');
-
-            // ============================================================
-            // EXPOSE
-            // ============================================================
-            window.showToast = showToast;
+            console.log(`✨ ${toolsData.length} ابزار`);
 
         })();
     </script>
