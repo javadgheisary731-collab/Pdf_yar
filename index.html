@@ -18,26 +18,16 @@
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" />
 
     <!-- کتابخانه‌های اصلی -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PptxGenJS/3.12.0/pptxgen.bundle.js">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PptxGenJS/3.12.0/pptxgen.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
 
     <style>
         /* ===== RESET & BASE ===== */
@@ -67,7 +57,7 @@
             color: inherit;
         }
         .container {
-            max-width: 1360px;
+            max-width: 1280px;
             margin: 0 auto;
             padding: 0 20px;
             flex: 1;
@@ -79,30 +69,30 @@
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border-radius: 24px;
-            padding: 12px 24px;
-            margin: 16px 0 24px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+            border-radius: 20px;
+            padding: 10px 24px;
+            margin: 12px 0 20px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
             border: 1px solid rgba(255, 255, 255, 0.3);
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 12px;
+            gap: 10px;
             transition: background 0.3s, border-color 0.3s;
             position: sticky;
-            top: 0;
+            top: 8px;
             z-index: 100;
         }
         body.dark-mode .header {
-            background: rgba(20, 20, 40, 0.85);
+            background: rgba(20, 20, 40, 0.88);
             border-color: rgba(255, 255, 255, 0.06);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
         }
         .header-left {
             display: flex;
             align-items: center;
-            gap: 14px;
+            gap: 12px;
         }
         .logo {
             display: flex;
@@ -110,20 +100,20 @@
             gap: 10px;
         }
         .logo .icon {
-            width: 44px;
-            height: 44px;
+            width: 40px;
+            height: 40px;
             background: linear-gradient(145deg, #EE6C4D, #D95A3A);
-            border-radius: 14px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #fff;
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 900;
-            box-shadow: 0 4px 16px rgba(238, 108, 77, 0.25);
+            box-shadow: 0 4px 12px rgba(238, 108, 77, 0.25);
         }
         .logo-text h1 {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 800;
             letter-spacing: -0.5px;
             line-height: 1.2;
@@ -132,7 +122,7 @@
             color: #EE6C4D;
         }
         .logo-text .subtitle {
-            font-size: 11px;
+            font-size: 10px;
             color: #999;
             font-weight: 400;
         }
@@ -143,16 +133,16 @@
         .nav-main {
             display: flex;
             align-items: center;
-            gap: 4px;
+            gap: 2px;
             flex-wrap: wrap;
         }
         .nav-main a {
-            padding: 8px 16px;
+            padding: 6px 14px;
             border-radius: 30px;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 500;
             color: #555;
-            transition: 0.3s;
+            transition: 0.25s;
             position: relative;
         }
         .nav-main a:hover,
@@ -172,22 +162,23 @@
         .header-actions {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             flex-wrap: wrap;
         }
         .btn-icon {
-            width: 38px;
-            height: 38px;
+            width: 36px;
+            height: 36px;
             border: none;
             border-radius: 50%;
             background: #f0f2f5;
             color: #333;
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
-            transition: 0.3s;
+            transition: 0.25s;
             display: flex;
             align-items: center;
             justify-content: center;
+            min-width: 36px;
         }
         .btn-icon:hover {
             background: #EE6C4D;
@@ -204,30 +195,35 @@
         }
 
         .btn-primary-sm {
-            padding: 8px 20px;
+            padding: 7px 18px;
             border: none;
             border-radius: 30px;
             background: linear-gradient(145deg, #EE6C4D, #D95A3A);
             color: #fff;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 600;
             cursor: pointer;
-            transition: 0.3s;
+            transition: 0.25s;
             font-family: inherit;
             box-shadow: 0 4px 12px rgba(238, 108, 77, 0.25);
+            white-space: nowrap;
         }
         .btn-primary-sm:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(238, 108, 77, 0.35);
+            box-shadow: 0 8px 20px rgba(238, 108, 77, 0.35);
         }
         .mobile-menu-toggle {
             display: none;
             background: none;
             border: none;
-            font-size: 28px;
+            font-size: 26px;
             color: #333;
             cursor: pointer;
             padding: 4px;
+            min-width: 40px;
+            min-height: 40px;
+            align-items: center;
+            justify-content: center;
         }
         body.dark-mode .mobile-menu-toggle {
             color: #aaa;
@@ -238,9 +234,9 @@
                 display: none;
                 flex-direction: column;
                 width: 100%;
-                padding: 16px 0;
+                padding: 14px 0;
                 border-top: 1px solid #eee;
-                margin-top: 12px;
+                margin-top: 10px;
             }
             body.dark-mode .nav-main {
                 border-top-color: #2a2a44;
@@ -254,39 +250,45 @@
                 padding: 12px;
             }
             .mobile-menu-toggle {
-                display: block;
+                display: flex;
             }
             .header {
-                padding: 12px 16px;
+                padding: 10px 16px;
             }
         }
         @media (max-width: 600px) {
             .logo .icon {
-                width: 36px;
-                height: 36px;
-                font-size: 18px;
+                width: 34px;
+                height: 34px;
+                font-size: 16px;
+                border-radius: 10px;
             }
             .logo-text h1 {
-                font-size: 18px;
+                font-size: 17px;
             }
             .header-actions .btn-primary-sm {
                 font-size: 11px;
-                padding: 6px 14px;
+                padding: 5px 12px;
             }
             .btn-icon {
-                width: 34px;
-                height: 34px;
-                font-size: 15px;
+                width: 32px;
+                height: 32px;
+                font-size: 14px;
+                min-width: 32px;
+            }
+            .header {
+                top: 4px;
+                border-radius: 16px;
             }
         }
 
         /* ===== HERO ===== */
         .hero {
             text-align: center;
-            padding: 48px 20px 36px;
+            padding: 40px 24px 32px;
             background: linear-gradient(160deg, #fff 0%, #f8f9fc 100%);
-            border-radius: 28px;
-            margin-bottom: 32px;
+            border-radius: 24px;
+            margin-bottom: 24px;
             border: 1px solid rgba(0, 0, 0, 0.04);
             position: relative;
             overflow: hidden;
@@ -309,7 +311,7 @@
             background: radial-gradient(ellipse at 70% 50%, rgba(238, 108, 77, 0.08) 0%, transparent 70%);
         }
         .hero h2 {
-            font-size: 40px;
+            font-size: 38px;
             font-weight: 800;
             line-height: 1.2;
             position: relative;
@@ -319,75 +321,612 @@
             color: #EE6C4D;
         }
         .hero .sub-hero {
-            font-size: 18px;
+            font-size: 17px;
             color: #666;
             margin-top: 10px;
-            max-width: 600px;
+            max-width: 620px;
             margin-left: auto;
             margin-right: auto;
             position: relative;
             z-index: 1;
+            line-height: 1.7;
         }
         body.dark-mode .hero .sub-hero {
             color: #999;
         }
-        .hero .badges {
-            margin-top: 20px;
+        .hero-actions {
             display: flex;
             justify-content: center;
             gap: 12px;
+            margin-top: 24px;
             flex-wrap: wrap;
             position: relative;
             z-index: 1;
         }
-        .hero .badges span {
-            padding: 6px 18px;
+        .hero-actions .btn-hero-primary {
+            padding: 12px 36px;
+            border: none;
             border-radius: 30px;
-            background: rgba(238, 108, 77, 0.08);
+            background: linear-gradient(145deg, #EE6C4D, #D95A3A);
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.25s;
+            font-family: inherit;
+            box-shadow: 0 4px 16px rgba(238, 108, 77, 0.25);
+        }
+        .hero-actions .btn-hero-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(238, 108, 77, 0.35);
+        }
+        .hero-actions .btn-hero-secondary {
+            padding: 12px 36px;
+            border: 2px solid #e0e0e0;
+            border-radius: 30px;
+            background: transparent;
             color: #555;
-            font-size: 13px;
-            font-weight: 500;
-            border: 1px solid rgba(238, 108, 77, 0.1);
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.25s;
+            font-family: inherit;
         }
-        body.dark-mode .hero .badges span {
-            background: rgba(238, 108, 77, 0.12);
+        .hero-actions .btn-hero-secondary:hover {
+            border-color: #EE6C4D;
+            color: #EE6C4D;
+            background: rgba(238, 108, 77, 0.04);
+        }
+        body.dark-mode .hero-actions .btn-hero-secondary {
+            border-color: #3a3a5a;
             color: #aaa;
-            border-color: rgba(238, 108, 77, 0.15);
         }
-        .hero .badges span strong {
+        body.dark-mode .hero-actions .btn-hero-secondary:hover {
+            border-color: #EE6C4D;
+            color: #EE6C4D;
+            background: rgba(238, 108, 77, 0.08);
+        }
+        .hero .trust-row {
+            margin-top: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+            font-size: 13px;
+            color: #777;
+        }
+        body.dark-mode .hero .trust-row {
+            color: #888;
+        }
+        .hero .trust-row span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .hero .trust-row span strong {
             color: #EE6C4D;
         }
+
+        /* ===== HERO UPLOAD ===== */
+        .hero-upload {
+            max-width: 640px;
+            margin: 24px auto 0;
+            position: relative;
+            z-index: 1;
+        }
+        .hero-upload .upload-box {
+            border: 2px dashed #ddd;
+            border-radius: 20px;
+            padding: 32px 20px;
+            background: #fff;
+            cursor: pointer;
+            transition: 0.3s;
+            text-align: center;
+        }
+        body.dark-mode .hero-upload .upload-box {
+            background: #1a1a30;
+            border-color: #2a2a44;
+        }
+        .hero-upload .upload-box:hover {
+            border-color: #EE6C4D;
+            background: rgba(238, 108, 77, 0.03);
+        }
+        body.dark-mode .hero-upload .upload-box:hover {
+            background: rgba(238, 108, 77, 0.06);
+        }
+        .hero-upload .upload-box .icon-svg {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 10px;
+            color: #EE6C4D;
+        }
+        .hero-upload .upload-box h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 4px;
+        }
+        body.dark-mode .hero-upload .upload-box h4 {
+            color: #e0e0e0;
+        }
+        .hero-upload .upload-box p {
+            font-size: 13px;
+            color: #999;
+        }
+        .hero-upload .upload-box .formats {
+            font-size: 11px;
+            color: #bbb;
+            margin-top: 8px;
+            letter-spacing: 0.5px;
+        }
+        .hero-upload .upload-box input {
+            display: none;
+        }
+        .hero-upload .file-preview {
+            display: none;
+            margin-top: 14px;
+            text-align: right;
+            background: #f8f9fa;
+            border-radius: 14px;
+            padding: 14px 18px;
+            border: 1px solid #eee;
+        }
+        body.dark-mode .hero-upload .file-preview {
+            background: #22223a;
+            border-color: #2a2a44;
+        }
+        .hero-upload .file-preview.show {
+            display: block;
+        }
+        .hero-upload .file-preview .file-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .hero-upload .file-preview .file-info .name {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .hero-upload .file-preview .file-info .size {
+            font-size: 12px;
+            color: #888;
+        }
+        .hero-upload .file-preview .file-info .remove-btn {
+            background: none;
+            border: none;
+            color: #e74c3c;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 4px 8px;
+            border-radius: 8px;
+            transition: 0.2s;
+        }
+        .hero-upload .file-preview .file-info .remove-btn:hover {
+            background: rgba(231, 76, 60, 0.08);
+        }
+        .hero-upload .quick-actions {
+            display: none;
+            margin-top: 16px;
+            text-align: right;
+        }
+        .hero-upload .quick-actions.show {
+            display: block;
+        }
+        .hero-upload .quick-actions h5 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        body.dark-mode .hero-upload .quick-actions h5 {
+            color: #aaa;
+        }
+        .hero-upload .quick-actions .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .hero-upload .quick-actions .chips button {
+            padding: 6px 16px;
+            border-radius: 30px;
+            border: 1px solid #e0e0e0;
+            background: #fff;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.25s;
+            font-family: inherit;
+            color: #555;
+        }
+        .hero-upload .quick-actions .chips button:hover {
+            border-color: #EE6C4D;
+            color: #EE6C4D;
+            background: rgba(238, 108, 77, 0.04);
+        }
+        body.dark-mode .hero-upload .quick-actions .chips button {
+            background: #1e1e32;
+            border-color: #2d2d44;
+            color: #aaa;
+        }
+        body.dark-mode .hero-upload .quick-actions .chips button:hover {
+            border-color: #EE6C4D;
+            color: #EE6C4D;
+            background: rgba(238, 108, 77, 0.1);
+        }
+
         @media (max-width: 768px) {
             .hero h2 {
-                font-size: 30px;
+                font-size: 28px;
             }
             .hero .sub-hero {
                 font-size: 15px;
             }
             .hero {
-                padding: 32px 16px 24px;
+                padding: 28px 16px 24px;
+            }
+            .hero-actions .btn-hero-primary,
+            .hero-actions .btn-hero-secondary {
+                padding: 10px 24px;
+                font-size: 13px;
+            }
+            .hero-upload .upload-box {
+                padding: 24px 16px;
             }
         }
         @media (max-width: 480px) {
             .hero h2 {
+                font-size: 23px;
+            }
+            .hero .trust-row {
+                font-size: 11px;
+                gap: 12px;
+            }
+            .hero-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero-actions .btn-hero-primary,
+            .hero-actions .btn-hero-secondary {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        /* ===== SECTION TITLES ===== */
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .section-title span {
+            color: #EE6C4D;
+        }
+        .section-sub {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 24px;
+        }
+        body.dark-mode .section-sub {
+            color: #777;
+        }
+        @media (max-width: 600px) {
+            .section-title {
+                font-size: 20px;
+            }
+        }
+
+        /* ===== POPULAR TOOLS ===== */
+        .popular-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 14px;
+            margin-bottom: 40px;
+        }
+        .popular-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 18px 16px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            border: 1px solid #f0f0f0;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        body.dark-mode .popular-card {
+            background: #1a1a30;
+            border-color: #2a2a44;
+        }
+        .popular-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            border-color: #EE6C4D;
+        }
+        body.dark-mode .popular-card:hover {
+            border-color: #EE6C4D;
+            box-shadow: 0 8px 32px rgba(238, 108, 77, 0.08);
+        }
+        .popular-card .card-icon {
+            width: 36px;
+            height: 36px;
+            color: #EE6C4D;
+            margin-bottom: 10px;
+        }
+        .popular-card .card-name {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .popular-card .card-desc {
+            font-size: 12px;
+            color: #888;
+            line-height: 1.6;
+            flex: 1;
+        }
+        body.dark-mode .popular-card .card-desc {
+            color: #777;
+        }
+        .popular-card .card-action {
+            margin-top: 10px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #EE6C4D;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: 0.2s;
+        }
+        .popular-card .card-action:hover {
+            gap: 8px;
+        }
+
+        /* ===== CATEGORIES ===== */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 14px;
+            margin-bottom: 40px;
+        }
+        .category-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 22px 18px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            border: 1px solid #f0f0f0;
+            transition: 0.3s;
+            cursor: pointer;
+            text-align: right;
+        }
+        body.dark-mode .category-card {
+            background: #1a1a30;
+            border-color: #2a2a44;
+        }
+        .category-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+            border-color: #EE6C4D;
+        }
+        body.dark-mode .category-card:hover {
+            border-color: #EE6C4D;
+        }
+        .category-card .cat-icon {
+            font-size: 28px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .category-card .cat-name {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .category-card .cat-desc {
+            font-size: 12px;
+            color: #888;
+            line-height: 1.6;
+        }
+        body.dark-mode .category-card .cat-desc {
+            color: #777;
+        }
+
+        /* ===== ALL TOOLS ===== */
+        .tools-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .filter-bar .tag {
+            padding: 6px 16px;
+            border-radius: 30px;
+            background: #fff;
+            color: #666;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            border: 1px solid #e8e8e8;
+            transition: 0.25s;
+            font-family: inherit;
+            white-space: nowrap;
+        }
+        .filter-bar .tag:hover {
+            border-color: #EE6C4D;
+            color: #EE6C4D;
+        }
+        .filter-bar .tag.active {
+            background: #EE6C4D;
+            color: #fff;
+            border-color: #EE6C4D;
+        }
+        body.dark-mode .filter-bar .tag {
+            background: #1e1e32;
+            color: #aaa;
+            border-color: #2d2d44;
+        }
+        body.dark-mode .filter-bar .tag.active {
+            background: #EE6C4D;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .filter-bar {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                padding-bottom: 4px;
+                -webkit-overflow-scrolling: touch;
+                width: 100%;
+            }
+            .filter-bar::-webkit-scrollbar {
+                height: 2px;
+            }
+            .filter-bar::-webkit-scrollbar-thumb {
+                background: #ccc;
+                border-radius: 10px;
+            }
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+            gap: 14px;
+            margin-bottom: 40px;
+        }
+        .tool-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 18px 14px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            border: 1px solid #f0f0f0;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        body.dark-mode .tool-card {
+            background: #1a1a30;
+            border-color: #2a2a44;
+        }
+        .tool-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+            border-color: #EE6C4D;
+        }
+        body.dark-mode .tool-card:hover {
+            border-color: #EE6C4D;
+            box-shadow: 0 8px 32px rgba(238, 108, 77, 0.06);
+        }
+        .tool-card .icon {
+            font-size: 30px;
+            display: block;
+            margin-bottom: 6px;
+        }
+        .tool-card .name {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+        .tool-card .desc {
+            font-size: 11px;
+            color: #888;
+            line-height: 1.5;
+            flex: 1;
+        }
+        body.dark-mode .tool-card .desc {
+            color: #777;
+        }
+        .tool-card .badge {
+            display: inline-block;
+            font-size: 8px;
+            padding: 2px 10px;
+            border-radius: 30px;
+            background: #2ecc71;
+            color: #fff;
+            font-weight: 600;
+            margin-top: 6px;
+        }
+        .tool-card .badge.ai {
+            background: #9b59b6;
+        }
+        .tool-card .badge.popular {
+            background: #f39c12;
+        }
+        .tool-card .category-tag {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            font-size: 8px;
+            padding: 2px 8px;
+            border-radius: 30px;
+            background: rgba(0, 0, 0, 0.04);
+            color: #999;
+        }
+        body.dark-mode .tool-card .category-tag {
+            background: rgba(255, 255, 255, 0.06);
+            color: #777;
+        }
+        .tool-card .card-btn {
+            margin-top: 8px;
+            padding: 5px 12px;
+            border: none;
+            border-radius: 20px;
+            background: rgba(238, 108, 77, 0.08);
+            color: #EE6C4D;
+            font-size: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+            font-family: inherit;
+        }
+        .tool-card .card-btn:hover {
+            background: #EE6C4D;
+            color: #fff;
+        }
+        body.dark-mode .tool-card .card-btn {
+            background: rgba(238, 108, 77, 0.15);
+        }
+        @media (max-width: 600px) {
+            .tools-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            .tool-card {
+                padding: 14px 10px;
+            }
+            .tool-card .icon {
                 font-size: 24px;
             }
-            .hero .badges span {
-                font-size: 11px;
-                padding: 4px 12px;
+            .tool-card .name {
+                font-size: 12px;
+            }
+            .tool-card .desc {
+                font-size: 10px;
             }
         }
 
         /* ===== SEARCH ===== */
         .search-section {
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
         .search-section input {
             width: 100%;
-            padding: 14px 24px;
+            padding: 12px 22px;
             border: 2px solid #e8e8e8;
             border-radius: 50px;
-            font-size: 15px;
+            font-size: 14px;
             font-family: inherit;
             background: #fff;
             color: #1a1a2e;
@@ -408,155 +947,402 @@
             box-shadow: 0 0 0 4px rgba(238, 108, 77, 0.15);
         }
 
-        /* ===== TOOLS ===== */
-        .tools-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-bottom: 20px;
-        }
-        .tools-header h3 {
-            font-size: 22px;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .tools-header h3 span {
-            color: #EE6C4D;
-        }
-        .filter-bar {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-        }
-        .filter-bar .tag {
-            padding: 6px 16px;
-            border-radius: 30px;
-            background: #fff;
-            color: #666;
-            font-size: 12px;
-            font-weight: 500;
-            cursor: pointer;
-            border: 1px solid #e8e8e8;
-            transition: 0.3s;
-            font-family: inherit;
-        }
-        .filter-bar .tag:hover {
-            border-color: #EE6C4D;
-            color: #EE6C4D;
-        }
-        .filter-bar .tag.active {
-            background: #EE6C4D;
+        /* ===== AI SECTION ===== */
+        .ai-section {
+            background: linear-gradient(145deg, #1a1a2e 0%, #2a2a44 100%);
+            border-radius: 24px;
+            padding: 40px 32px;
+            margin: 40px 0;
             color: #fff;
-            border-color: #EE6C4D;
+            position: relative;
+            overflow: hidden;
         }
-        body.dark-mode .filter-bar .tag {
-            background: #1e1e32;
+        .ai-section::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            left: -10%;
+            width: 50%;
+            height: 160%;
+            background: radial-gradient(ellipse at 30% 50%, rgba(238, 108, 77, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .ai-section h2 {
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
+        }
+        .ai-section h2 span {
+            color: #EE6C4D;
+        }
+        .ai-section .ai-sub {
+            font-size: 15px;
             color: #aaa;
-            border-color: #2d2d44;
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 1;
         }
-        body.dark-mode .filter-bar .tag.active {
-            background: #EE6C4D;
-            color: #fff;
-        }
-
-        .tools-grid {
+        .ai-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 16px;
+            gap: 14px;
+            position: relative;
+            z-index: 1;
+        }
+        .ai-card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 20px 18px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .ai-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(238, 108, 77, 0.3);
+            transform: translateY(-3px);
+        }
+        .ai-card .ai-icon {
+            font-size: 26px;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .ai-card .ai-name {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #fff;
+        }
+        .ai-card .ai-desc {
+            font-size: 12px;
+            color: #999;
+            line-height: 1.6;
+        }
+        @media (max-width: 600px) {
+            .ai-section {
+                padding: 28px 16px;
+            }
+            .ai-section h2 {
+                font-size: 20px;
+            }
+            .ai-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+        }
+
+        /* ===== WHY ===== */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 14px;
             margin-bottom: 40px;
         }
-        .tool-card {
+        .why-card {
             background: #fff;
-            border-radius: 18px;
-            padding: 20px 16px;
+            border-radius: 16px;
+            padding: 22px 18px;
             box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
             border: 1px solid #f0f0f0;
             text-align: center;
-            cursor: pointer;
             transition: 0.3s;
-            position: relative;
         }
-        .tool-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
-            border-color: #EE6C4D;
-        }
-        body.dark-mode .tool-card {
+        body.dark-mode .why-card {
             background: #1a1a30;
             border-color: #2a2a44;
         }
-        body.dark-mode .tool-card:hover {
-            border-color: #EE6C4D;
-            box-shadow: 0 12px 40px rgba(238, 108, 77, 0.08);
+        .why-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
         }
-        .tool-card .icon {
-            font-size: 34px;
-            display: block;
+        .why-card .why-icon {
+            font-size: 32px;
             margin-bottom: 8px;
+            display: block;
         }
-        .tool-card .name {
+        .why-card .why-name {
             font-size: 15px;
             font-weight: 700;
-            margin-bottom: 2px;
+            margin-bottom: 4px;
         }
-        .tool-card .desc {
+        .why-card .why-desc {
             font-size: 12px;
             color: #888;
-            line-height: 1.5;
+            line-height: 1.6;
         }
-        body.dark-mode .tool-card .desc {
+        body.dark-mode .why-card .why-desc {
             color: #777;
         }
-        .tool-card .badge {
-            display: inline-block;
-            font-size: 9px;
-            padding: 2px 12px;
-            border-radius: 30px;
-            background: #2ecc71;
-            color: #fff;
-            font-weight: 600;
-            margin-top: 6px;
+
+        /* ===== HOW IT WORKS ===== */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+            position: relative;
         }
-        .tool-card .category-tag {
+        .steps-grid::before {
+            content: '';
             position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 9px;
-            padding: 2px 10px;
-            border-radius: 30px;
-            background: rgba(0, 0, 0, 0.04);
+            top: 30px;
+            right: 20%;
+            left: 20%;
+            height: 2px;
+            background: linear-gradient(90deg, #EE6C4D, #f0a08a, #EE6C4D);
+            opacity: 0.3;
+            z-index: 0;
+        }
+        .step-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px 18px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            border: 1px solid #f0f0f0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            transition: 0.3s;
+        }
+        body.dark-mode .step-card {
+            background: #1a1a30;
+            border-color: #2a2a44;
+        }
+        .step-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+        }
+        .step-card .step-num {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #EE6C4D, #D95A3A);
+            color: #fff;
+            font-size: 20px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 12px;
+            box-shadow: 0 4px 12px rgba(238, 108, 77, 0.25);
+        }
+        .step-card .step-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .step-card .step-desc {
+            font-size: 13px;
+            color: #888;
+            line-height: 1.6;
+        }
+        body.dark-mode .step-card .step-desc {
+            color: #777;
+        }
+        @media (max-width: 768px) {
+            .steps-grid {
+                grid-template-columns: 1fr;
+                gap: 14px;
+            }
+            .steps-grid::before {
+                display: none;
+            }
+        }
+
+        /* ===== STATS ===== */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+        .stat-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px 16px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            border: 1px solid #f0f0f0;
+            text-align: center;
+            transition: 0.3s;
+        }
+        body.dark-mode .stat-card {
+            background: #1a1a30;
+            border-color: #2a2a44;
+        }
+        .stat-card .stat-num {
+            font-size: 28px;
+            font-weight: 800;
+            color: #EE6C4D;
+            line-height: 1.2;
+        }
+        .stat-card .stat-label {
+            font-size: 13px;
+            color: #888;
+            margin-top: 4px;
+        }
+        body.dark-mode .stat-card .stat-label {
+            color: #777;
+        }
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+            .stat-card .stat-num {
+                font-size: 22px;
+            }
+        }
+
+        /* ===== FAQ ===== */
+        .faq-list {
+            margin-bottom: 40px;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 14px;
+            margin-bottom: 8px;
+            border: 1px solid #f0f0f0;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+        body.dark-mode .faq-item {
+            background: #1a1a30;
+            border-color: #2a2a44;
+        }
+        .faq-item:hover {
+            border-color: #EE6C4D;
+        }
+        .faq-item .faq-q {
+            padding: 16px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.2s;
+            user-select: none;
+        }
+        .faq-item .faq-q:hover {
+            color: #EE6C4D;
+        }
+        .faq-item .faq-q .arrow {
+            transition: 0.3s;
+            font-size: 18px;
             color: #999;
         }
-        body.dark-mode .tool-card .category-tag {
-            background: rgba(255, 255, 255, 0.04);
-            color: #666;
+        .faq-item.open .faq-q .arrow {
+            transform: rotate(180deg);
         }
-        @media (max-width: 600px) {
-            .tools-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-            }
-            .tool-card {
-                padding: 14px 10px;
-            }
-            .tool-card .icon {
-                font-size: 28px;
-            }
-            .tool-card .name {
-                font-size: 13px;
-            }
+        .faq-item .faq-a {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.3s ease;
+            padding: 0 20px;
+            font-size: 13px;
+            color: #666;
+            line-height: 1.8;
+        }
+        body.dark-mode .faq-item .faq-a {
+            color: #999;
+        }
+        .faq-item.open .faq-a {
+            max-height: 300px;
+            padding: 0 20px 16px;
+        }
+
+        /* ===== CONTACT ===== */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+        .contact-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px 20px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            border: 1px solid #f0f0f0;
+            text-align: center;
+            transition: 0.3s;
+        }
+        body.dark-mode .contact-card {
+            background: #1a1a30;
+            border-color: #2a2a44;
+        }
+        .contact-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+        }
+        .contact-card .contact-icon {
+            font-size: 32px;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .contact-card .contact-label {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 4px;
+        }
+        body.dark-mode .contact-card .contact-label {
+            color: #777;
+        }
+        .contact-card .contact-value {
+            font-size: 15px;
+            font-weight: 700;
+            word-break: break-all;
+        }
+        .contact-card .contact-btn {
+            margin-top: 10px;
+            padding: 8px 24px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(145deg, #EE6C4D, #D95A3A);
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.25s;
+            font-family: inherit;
+            box-shadow: 0 4px 12px rgba(238, 108, 77, 0.2);
+        }
+        .contact-card .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(238, 108, 77, 0.3);
+        }
+
+        /* ===== ABOUT ===== */
+        .about-section {
+            background: #fff;
+            border-radius: 20px;
+            padding: 32px 28px;
+            margin-bottom: 40px;
+            border: 1px solid #f0f0f0;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+        }
+        body.dark-mode .about-section {
+            background: #1a1a30;
+            border-color: #2a2a44;
+        }
+        .about-section p {
+            font-size: 14px;
+            line-height: 2;
+            color: #666;
+            max-width: 800px;
+        }
+        body.dark-mode .about-section p {
+            color: #999;
         }
 
         /* ===== FOOTER ===== */
         .footer {
             background: #fff;
-            border-radius: 24px;
-            padding: 36px 32px 24px;
-            margin: 20px 0 30px;
+            border-radius: 20px;
+            padding: 32px 28px 20px;
+            margin: 20px 0 24px;
             border: 1px solid #f0f0f0;
             transition: background 0.3s, border-color 0.3s;
         }
@@ -566,12 +1352,12 @@
         }
         .footer-grid {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 32px;
-            margin-bottom: 28px;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 24px;
         }
         .footer-brand h3 {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 800;
             margin-bottom: 8px;
         }
@@ -580,17 +1366,17 @@
         }
         .footer-brand p {
             color: #888;
-            font-size: 14px;
+            font-size: 13px;
             line-height: 1.8;
-            max-width: 320px;
+            max-width: 300px;
         }
         body.dark-mode .footer-brand p {
             color: #777;
         }
         .footer-col h4 {
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 700;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             color: #1a1a2e;
         }
         body.dark-mode .footer-col h4 {
@@ -600,12 +1386,12 @@
             list-style: none;
         }
         .footer-col ul li {
-            margin-bottom: 6px;
+            margin-bottom: 5px;
         }
         .footer-col ul li a {
             color: #888;
-            font-size: 13px;
-            transition: 0.3s;
+            font-size: 12px;
+            transition: 0.25s;
             cursor: pointer;
             display: inline-block;
         }
@@ -619,45 +1405,27 @@
         body.dark-mode .footer-col ul li a:hover {
             color: #EE6C4D;
         }
-        .footer-social {
-            display: flex;
-            gap: 12px;
-            margin-top: 16px;
+        .footer-col .contact-item {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 4px;
+            line-height: 1.6;
         }
-        .footer-social a {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: #f0f2f5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            color: #555;
-            transition: 0.3s;
+        body.dark-mode .footer-col .contact-item {
+            color: #777;
         }
-        .footer-social a:hover {
-            background: #EE6C4D;
-            color: #fff;
-            transform: translateY(-3px);
-        }
-        body.dark-mode .footer-social a {
-            background: #2a2a44;
-            color: #aaa;
-        }
-        body.dark-mode .footer-social a:hover {
-            background: #EE6C4D;
-            color: #fff;
+        .footer-col .contact-item a {
+            color: #EE6C4D;
         }
         .footer-bottom {
             border-top: 1px solid #f0f0f0;
-            padding-top: 20px;
+            padding-top: 18px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 12px;
-            font-size: 13px;
+            gap: 10px;
+            font-size: 12px;
             color: #888;
         }
         body.dark-mode .footer-bottom {
@@ -667,28 +1435,10 @@
         .footer-bottom .designer strong {
             color: #EE6C4D;
         }
-        .footer-bottom .links {
-            display: flex;
-            gap: 16px;
-        }
-        .footer-bottom .links a {
-            color: #888;
-            font-size: 12px;
-            transition: 0.3s;
-        }
-        .footer-bottom .links a:hover {
-            color: #EE6C4D;
-        }
-        body.dark-mode .footer-bottom .links a {
-            color: #777;
-        }
-        body.dark-mode .footer-bottom .links a:hover {
-            color: #EE6C4D;
-        }
         @media (max-width: 992px) {
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
-                gap: 24px;
+                gap: 20px;
             }
             .footer-brand {
                 grid-column: 1 / -1;
@@ -699,20 +1449,16 @@
         }
         @media (max-width: 600px) {
             .footer {
-                padding: 24px 16px 18px;
+                padding: 20px 16px 16px;
                 border-radius: 16px;
             }
             .footer-grid {
                 grid-template-columns: 1fr;
-                gap: 20px;
+                gap: 16px;
             }
             .footer-bottom {
                 flex-direction: column;
                 text-align: center;
-            }
-            .footer-bottom .links {
-                flex-wrap: wrap;
-                justify-content: center;
             }
         }
 
@@ -733,13 +1479,13 @@
         }
         .modal-box {
             background: #fff;
-            border-radius: 28px;
-            max-width: 760px;
+            border-radius: 24px;
+            max-width: 720px;
             width: 100%;
-            padding: 32px;
+            padding: 28px;
             max-height: 92vh;
             overflow-y: auto;
-            animation: fadeUp 0.3s ease;
+            animation: fadeUp 0.25s ease;
         }
         body.dark-mode .modal-box {
             background: #1a1a30;
@@ -747,7 +1493,7 @@
         @keyframes fadeUp {
             from {
                 opacity: 0;
-                transform: translateY(20px);
+                transform: translateY(16px);
             }
             to {
                 opacity: 1;
@@ -755,28 +1501,28 @@
             }
         }
         .modal-box h2 {
-            font-size: 22px;
-            margin-bottom: 6px;
+            font-size: 20px;
+            margin-bottom: 4px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
         .modal-box .desc {
             color: #666;
-            font-size: 14px;
-            margin-bottom: 18px;
+            font-size: 13px;
+            margin-bottom: 16px;
         }
         body.dark-mode .modal-box .desc {
             color: #999;
         }
         .modal-box .upload-zone {
             border: 2px dashed #ddd;
-            border-radius: 16px;
-            padding: 32px 20px;
+            border-radius: 14px;
+            padding: 28px 18px;
             text-align: center;
             cursor: pointer;
             transition: 0.3s;
-            margin-bottom: 16px;
+            margin-bottom: 14px;
         }
         .modal-box .upload-zone:hover {
             border-color: #EE6C4D;
@@ -790,13 +1536,13 @@
             background: rgba(238, 108, 77, 0.08);
         }
         .modal-box .upload-zone .icon {
-            font-size: 44px;
+            font-size: 38px;
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
         .modal-box .upload-zone p {
             color: #888;
-            font-size: 14px;
+            font-size: 13px;
         }
         .modal-box .upload-zone input[type="file"] {
             display: none;
@@ -804,7 +1550,7 @@
 
         .page-sort-container {
             display: none;
-            margin: 12px 0;
+            margin: 10px 0;
             background: #f8f9fa;
             border-radius: 12px;
             padding: 12px;
@@ -835,22 +1581,23 @@
         }
         .page-sort-container .page-item .drag-handle {
             color: #999;
-            font-size: 18px;
+            font-size: 16px;
         }
 
         .modal-box .file-list {
-            margin: 12px 0;
-            max-height: 200px;
+            margin: 10px 0;
+            max-height: 180px;
             overflow-y: auto;
         }
         .modal-box .file-item {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 8px 14px;
+            padding: 7px 12px;
             background: #f8f9fa;
             border-radius: 10px;
             margin-bottom: 4px;
+            font-size: 13px;
         }
         body.dark-mode .modal-box .file-item {
             background: #2a2a44;
@@ -858,18 +1605,18 @@
         .modal-box .file-item .remove {
             color: #e74c3c;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 15px;
         }
 
         .modal-box .extra-input {
             display: none;
-            margin: 12px 0;
+            margin: 10px 0;
         }
         .modal-box .extra-input.show {
             display: block;
         }
         .modal-box .extra-input label {
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 600;
             display: block;
             margin-bottom: 4px;
@@ -877,14 +1624,14 @@
         .modal-box .extra-input input,
         .modal-box .extra-input select {
             width: 100%;
-            padding: 10px 14px;
+            padding: 9px 13px;
             border: 2px solid #ddd;
             border-radius: 10px;
-            font-size: 14px;
+            font-size: 13px;
             font-family: inherit;
             background: #fff;
             color: #1a1a2e;
-            transition: 0.3s;
+            transition: 0.25s;
         }
         .modal-box .extra-input input:focus,
         .modal-box .extra-input select:focus {
@@ -901,14 +1648,14 @@
 
         .progress-container {
             display: none;
-            margin-top: 14px;
+            margin-top: 12px;
         }
         .progress-container.show {
             display: block;
         }
         .progress-bar {
             width: 100%;
-            height: 6px;
+            height: 5px;
             background: #eee;
             border-radius: 10px;
             overflow: hidden;
@@ -923,7 +1670,7 @@
         .progress-info {
             display: flex;
             justify-content: space-between;
-            font-size: 12px;
+            font-size: 11px;
             color: #888;
             margin-top: 4px;
         }
@@ -935,13 +1682,13 @@
             display: none;
             background: #f0f8ff;
             border-radius: 14px;
-            padding: 18px;
-            margin: 14px 0;
+            padding: 16px;
+            margin: 12px 0;
             border: 1px solid #d0e8ff;
         }
         .result-summary.show {
             display: block;
-            animation: fadeUp 0.3s ease;
+            animation: fadeUp 0.25s ease;
         }
         body.dark-mode .result-summary {
             background: rgba(238, 108, 77, 0.08);
@@ -949,7 +1696,7 @@
         }
         .result-summary .title {
             font-weight: 700;
-            font-size: 15px;
+            font-size: 14px;
             color: #2c3e50;
             margin-bottom: 4px;
         }
@@ -957,7 +1704,7 @@
             color: #e0e0e0;
         }
         .result-summary .detail {
-            font-size: 13px;
+            font-size: 12px;
             color: #555;
             line-height: 1.8;
         }
@@ -971,21 +1718,21 @@
 
         .result-actions {
             display: none;
-            gap: 10px;
-            margin-top: 14px;
+            gap: 8px;
+            margin-top: 12px;
             flex-wrap: wrap;
         }
         .result-actions.show {
             display: flex;
         }
         .result-actions button {
-            padding: 10px 24px;
+            padding: 9px 20px;
             border: none;
             border-radius: 30px;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 600;
             cursor: pointer;
-            transition: 0.3s;
+            transition: 0.25s;
             font-family: inherit;
         }
         .result-actions .btn-view {
@@ -1019,28 +1766,28 @@
 
         .actions {
             display: flex;
-            gap: 10px;
-            margin-top: 16px;
+            gap: 8px;
+            margin-top: 14px;
             flex-wrap: wrap;
         }
         .actions button {
-            padding: 12px 32px;
+            padding: 10px 28px;
             border: none;
             border-radius: 30px;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 600;
             cursor: pointer;
-            transition: 0.3s;
+            transition: 0.25s;
             font-family: inherit;
         }
         .actions .btn-primary {
             background: linear-gradient(145deg, #EE6C4D, #D95A3A);
             color: #fff;
-            box-shadow: 0 4px 16px rgba(238, 108, 77, 0.25);
+            box-shadow: 0 4px 14px rgba(238, 108, 77, 0.25);
         }
         .actions .btn-primary:hover:not(:disabled) {
             transform: translateY(-2px);
-            box-shadow: 0 6px 24px rgba(238, 108, 77, 0.35);
+            box-shadow: 0 6px 22px rgba(238, 108, 77, 0.35);
         }
         .actions .btn-primary:disabled {
             opacity: 0.5;
@@ -1068,12 +1815,12 @@
             float: left;
             background: none;
             border: none;
-            font-size: 26px;
+            font-size: 24px;
             color: #888;
             cursor: pointer;
-            padding: 0 8px;
+            padding: 0 6px;
             z-index: 10;
-            transition: 0.3s;
+            transition: 0.25s;
         }
         .close-modal:hover {
             color: #333;
@@ -1088,18 +1835,18 @@
         /* ===== TOAST ===== */
         .toast {
             position: fixed;
-            bottom: 30px;
+            bottom: 24px;
             left: 50%;
             transform: translateX(-50%);
             background: #1a1a2e;
             color: #fff;
-            padding: 14px 28px;
+            padding: 12px 24px;
             border-radius: 30px;
-            font-size: 14px;
+            font-size: 13px;
             box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
             display: none;
             z-index: 2000;
-            animation: fadeUp 0.3s ease;
+            animation: fadeUp 0.25s ease;
             max-width: 90%;
             text-align: center;
         }
@@ -1119,12 +1866,12 @@
         /* ===== SPINNER ===== */
         .spinner {
             display: none;
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
             border: 4px solid #f3f3f3;
             border-top: 4px solid #EE6C4D;
             border-radius: 50%;
-            animation: spin 1s linear infinite;
+            animation: spin 0.8s linear infinite;
             margin: 10px auto;
         }
         .spinner.show {
@@ -1164,14 +1911,15 @@
         /* ===== RESPONSIVE MODAL ===== */
         @media (max-width: 600px) {
             .modal-box {
-                padding: 20px;
+                padding: 18px;
                 max-height: 95vh;
+                border-radius: 18px;
             }
             .modal-box .upload-zone {
                 padding: 20px 12px;
             }
             .modal-box .upload-zone .icon {
-                font-size: 32px;
+                font-size: 30px;
             }
         }
     </style>
@@ -1194,19 +1942,17 @@
             </div>
 
             <nav class="nav-main" id="navMain">
-                <a href="#" class="active" data-section="home">🏠 خانه</a>
-                <a href="#" data-section="tools">🧰 ابزارها</a>
-                <a href="#" data-section="about">ℹ️ درباره</a>
-                <a href="#" data-section="contact">📧 تماس</a>
+                <a href="#" class="active" data-section="home">خانه</a>
+                <a href="#" data-section="tools">ابزارها</a>
+                <a href="#" data-section="features">امکانات</a>
+                <a href="#" data-section="about">درباره ما</a>
+                <a href="#" data-section="faq">سوالات متداول</a>
             </nav>
 
             <div class="header-actions">
                 <button class="btn-icon" id="themeBtn" title="تغییر تم" aria-label="تغییر تم">🌙</button>
                 <button class="btn-icon" id="loginBtn" title="ورود" aria-label="ورود" style="background:#EE6C4D;color:#fff;">👤</button>
                 <button class="btn-primary-sm" id="getStartedBtn">شروع کنید</button>
-                <span style="font-size:12px;color:#888;background:#f8f9fa;padding:4px 14px;border-radius:30px;border:1px solid #eee;">
-                    ✍️ <strong style="color:#EE6C4D;">جواد قیصری</strong>
-                </span>
             </div>
         </header>
 
@@ -1214,25 +1960,105 @@
         <section class="hero" id="home">
             <h2 id="hero-title">همه ابزارهای <span>PDF</span> در یکجا</h2>
             <p class="sub-hero">
-                ویرایش، تبدیل، ادغام، فشرده‌سازی، OCR و مدیریت PDF با سرعت بالا
+                ویرایش، تبدیل، مدیریت و پردازش فایل‌های PDF؛ سریع، ساده و بدون نیاز به نصب نرم‌افزار.
             </p>
-            <div class="badges">
-                <span>🔒 <strong>امن</strong></span>
+            <div class="hero-actions">
+                <button class="btn-hero-primary" id="heroStartBtn">شروع کنید</button>
+                <button class="btn-hero-secondary" id="heroToolsBtn">مشاهده ابزارها</button>
+            </div>
+            <div class="trust-row">
+                <span>🔒 <strong>حریم خصوصی</strong></span>
                 <span>⚡ <strong>سریع</strong></span>
-                <span>💯 <strong>رایگان</strong></span>
-                <span>📄 <strong id="toolCountDisplay">۳۵</strong> ابزار</span>
-                <span>🏷️ <span style="background:linear-gradient(145deg,#EE6C4D,#D95A3A);color:#fff;padding:2px 12px;border-radius:30px;font-size:11px;font-weight:600;">۱۴۰۵</span></span>
+                <span>💯 <strong>۲۶ ابزار</strong></span>
+                <span>📱 <strong>بدون نصب</strong></span>
+                <span style="font-size:11px;color:#aaa;">پردازش داخل مرورگر</span>
+            </div>
+
+            <!-- ===== HERO UPLOAD ===== -->
+            <div class="hero-upload">
+                <div class="upload-box" id="heroUploadBox" role="button" tabindex="0">
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="17 8 12 3 7 8"/>
+                        <line x1="12" y1="3" x2="12" y2="15"/>
+                    </svg>
+                    <h4>فایل خود را اینجا رها کنید</h4>
+                    <p>یا برای انتخاب فایل کلیک کنید</p>
+                    <div class="formats">PDF • JPG • PNG • Word • Excel</div>
+                    <input type="file" id="heroFileInput" accept=".pdf,.jpg,.jpeg,.png,.webp,.xlsx,.xls,.docx,.doc,.txt" aria-label="انتخاب فایل">
+                </div>
+                <div class="file-preview" id="heroFilePreview">
+                    <div class="file-info">
+                        <span class="name" id="heroFileName">file.pdf</span>
+                        <span class="size" id="heroFileSize">۰ KB</span>
+                        <button class="remove-btn" id="heroRemoveFile" aria-label="حذف فایل">✕</button>
+                    </div>
+                </div>
+                <div class="quick-actions" id="heroQuickActions">
+                    <h5>با این فایل چه کاری می‌خواهید انجام دهید؟</h5>
+                    <div class="chips" id="heroChips">
+                        <button data-tool="compress">فشرده‌سازی</button>
+                        <button data-tool="pdf-to-word">تبدیل به Word</button>
+                        <button data-tool="pdf-to-jpg">تبدیل به JPG</button>
+                        <button data-tool="ocr">OCR</button>
+                        <button data-tool="merge">ادغام</button>
+                        <button data-tool="pdf-to-text">استخراج متن</button>
+                        <button data-tool="ai-summarize">خلاصه‌سازی</button>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- ===== SEARCH ===== -->
+        <!-- ===== POPULAR TOOLS ===== -->
+        <h3 class="section-title">🔥 <span>ابزارهای پرکاربرد</span></h3>
+        <p class="section-sub">۶ ابزار محبوب برای کارهای روزمره با PDF</p>
+        <div class="popular-grid" id="popularGrid"></div>
+
+        <!-- ===== CATEGORIES ===== -->
+        <h3 class="section-title">🧰 <span>چه کاری می‌خواهید انجام دهید؟</span></h3>
+        <p class="section-sub">دسته‌بندی مورد نظر خود را انتخاب کنید</p>
+        <div class="categories-grid" id="categoriesGrid">
+            <div class="category-card" data-category="organize">
+                <span class="cat-icon">📂</span>
+                <div class="cat-name">سازمان‌دهی PDF</div>
+                <div class="cat-desc">ادغام، تقسیم، مرتب‌سازی و مدیریت صفحات</div>
+            </div>
+            <div class="category-card" data-category="convert">
+                <span class="cat-icon">🔄</span>
+                <div class="cat-name">تبدیل PDF</div>
+                <div class="cat-desc">تبدیل PDF به Word، JPG و سایر فرمت‌ها</div>
+            </div>
+            <div class="category-card" data-category="edit">
+                <span class="cat-icon">✏️</span>
+                <div class="cat-name">ویرایش PDF</div>
+                <div class="cat-desc">ویرایش و تغییر ساختار فایل</div>
+            </div>
+            <div class="category-card" data-category="security">
+                <span class="cat-icon">🔒</span>
+                <div class="cat-name">امنیت PDF</div>
+                <div class="cat-desc">رمزگذاری و محافظت از فایل</div>
+            </div>
+            <div class="category-card" data-category="ocr">
+                <span class="cat-icon">👁️</span>
+                <div class="cat-name">OCR</div>
+                <div class="cat-desc">استخراج متن از تصویر و PDF اسکن‌شده</div>
+            </div>
+            <div class="category-card" data-category="ai">
+                <span class="cat-icon">🤖</span>
+                <div class="cat-name">هوش مصنوعی</div>
+                <div class="cat-desc">خلاصه‌سازی، پرسش‌وپاسخ و قابلیت‌های هوشمند</div>
+            </div>
+        </div>
+
+        <!-- ===== ALL TOOLS ===== -->
+        <h3 class="section-title" id="tools">🧰 <span>همه ابزارهای PDF</span></h3>
+        <p class="section-sub">۲۶ ابزار برای مدیریت و پردازش PDF</p>
+
         <div class="search-section">
             <input type="text" id="toolSearch" placeholder="🔍 جستجوی ابزار (مثال: ادغام، تبدیل، فشرده‌سازی...)" aria-label="جستجوی ابزار">
         </div>
 
-        <!-- ===== TOOLS ===== -->
-        <div class="tools-header" id="tools">
-            <h3>🧰 <span>ابزارهای</span> PDF</h3>
+        <div class="tools-header">
             <div class="filter-bar" id="filterBar">
                 <span class="tag active" data-filter="all">همه</span>
                 <span class="tag" data-filter="organize">سازمان‌دهی</span>
@@ -1246,43 +2072,183 @@
 
         <div class="tools-grid" id="toolsGrid"></div>
 
-        <!-- ===== INFO ===== -->
-        <div class="info-section" id="about" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin:30px 0 40px;">
-            <div class="info-card" style="background:#fff;border-radius:18px;padding:28px 24px;box-shadow:0 2px 12px rgba(0,0,0,0.04);border:1px solid #f0f0f0;text-align:center;transition:0.3s;">
-                <span style="font-size:40px;display:block;margin-bottom:12px;">📖</span>
-                <h4 style="font-size:18px;margin-bottom:8px;">درباره <span style="color:#EE6C4D;">PDF یار</span></h4>
-                <p style="color:#666;font-size:14px;line-height:1.8;">
-                    <strong>PDF یار</strong> یک پلتفرم حرفه‌ای برای مدیریت و پردازش فایل‌های PDF است.
-                    تمام ابزارهای مورد نیاز شما برای کار با فایل‌های PDF در یکجا جمع‌آوری شده‌اند.
-                    <br><br>
-                    <span style="color:#EE6C4D;font-weight:600;">✨ 26 ابزار</span><br>
-                    <span style="color:#EE6C4D;font-weight:600;">🔒 کاملاً امن و محرمانه</span>
-                </p>
-                <div style="margin-top:12px;font-weight:600;color:#1a1a2e;">
-                    طراحی و توسعه: <span style="color:#EE6C4D;">جواد قیصری</span>
-                    <br><span style="font-size:12px;color:#888;">سال ۱۴۰۵</span>
+        <!-- ===== AI SECTION ===== -->
+        <section class="ai-section" id="features">
+            <h2>🤖 PDF یار با <span>هوش مصنوعی</span></h2>
+            <p class="ai-sub">فایل PDF خود را بهتر بشناسید و سریع‌تر اطلاعات موردنیازتان را پیدا کنید.</p>
+            <div class="ai-grid">
+                <div class="ai-card" data-tool="ai-summarize">
+                    <span class="ai-icon">📝</span>
+                    <div class="ai-name">خلاصه‌سازی PDF</div>
+                    <div class="ai-desc">خلاصه‌ای از محتوای فایل دریافت کنید.</div>
+                </div>
+                <div class="ai-card" data-tool="ai-qa">
+                    <span class="ai-icon">💬</span>
+                    <div class="ai-name">پرسش و پاسخ با PDF</div>
+                    <div class="ai-desc">از محتوای فایل سؤال بپرسید.</div>
+                </div>
+                <div class="ai-card" data-tool="ai-translate">
+                    <span class="ai-icon">🌍</span>
+                    <div class="ai-name">ترجمه PDF</div>
+                    <div class="ai-desc">متن فایل را به زبان موردنظر ترجمه کنید.</div>
+                </div>
+                <div class="ai-card" data-tool="ocr">
+                    <span class="ai-icon">🔍</span>
+                    <div class="ai-name">استخراج هوشمند متن</div>
+                    <div class="ai-desc">اطلاعات مهم فایل را استخراج کنید.</div>
                 </div>
             </div>
-            <div class="info-card" style="background:#fff;border-radius:18px;padding:28px 24px;box-shadow:0 2px 12px rgba(0,0,0,0.04);border:1px solid #f0f0f0;text-align:center;transition:0.3s;">
-                <span style="font-size:40px;display:block;margin-bottom:12px;">🔒</span>
-                <h4 style="font-size:18px;margin-bottom:8px;">حریم <span style="color:#EE6C4D;">خصوصی</span></h4>
-                <p style="color:#666;font-size:14px;line-height:1.8;">
-                    فایل‌های شما کاملاً <strong>خصوصی</strong> هستند.
-                    تمام پردازش‌ها در مرورگر شما انجام می‌شود
-                    و هیچ فایلی به سرور ارسال نمی‌شود.
-                </p>
-                <p style="margin-top:10px;font-size:13px;color:#888;">✅ امن · ✅ محرمانه · ✅ خودکار حذف</p>
+        </section>
+
+        <!-- ===== WHY ===== -->
+        <h3 class="section-title">چرا <span>PDF یار</span>؟</h3>
+        <p class="section-sub">دلایلی که PDF یار را انتخاب می‌کنید</p>
+        <div class="why-grid">
+            <div class="why-card">
+                <span class="why-icon">🔒</span>
+                <div class="why-name">حریم خصوصی</div>
+                <div class="why-desc">فایل‌های کاربران تا حد امکان به‌صورت امن پردازش شوند.</div>
             </div>
-            <div class="info-card" style="background:#fff;border-radius:18px;padding:28px 24px;box-shadow:0 2px 12px rgba(0,0,0,0.04);border:1px solid #f0f0f0;text-align:center;transition:0.3s;">
-                <span style="font-size:40px;display:block;margin-bottom:12px;">🤖</span>
-                <h4 style="font-size:18px;margin-bottom:8px;">هوش <span style="color:#EE6C4D;">مصنوعی</span></h4>
-                <p style="color:#666;font-size:14px;line-height:1.8;">
-                    🔹 خلاصه‌سازی خودکار PDF با AI<br>
-                    🔹 پاسخ به سوالات از روی PDF<br>
-                    🔹 تشخیص دست خط و امضا<br>
-                </p>
-                <p style="margin-top:8px;font-size:13px;color:#888;">🚀 قدرت AI در پردازش PDF</p>
+            <div class="why-card">
+                <span class="why-icon">⚡</span>
+                <div class="why-name">سرعت</div>
+                <div class="why-desc">رابط سریع و پردازش بهینه.</div>
             </div>
+            <div class="why-card">
+                <span class="why-icon">💯</span>
+                <div class="why-name">ساده و کاربردی</div>
+                <div class="why-desc">بدون مراحل پیچیده.</div>
+            </div>
+            <div class="why-card">
+                <span class="why-icon">📱</span>
+                <div class="why-name">همه دستگاه‌ها</div>
+                <div class="why-desc">مناسب موبایل، تبلت و کامپیوتر.</div>
+            </div>
+            <div class="why-card">
+                <span class="why-icon">🌐</span>
+                <div class="why-name">بدون نصب</div>
+                <div class="why-desc">استفاده مستقیم از مرورگر.</div>
+            </div>
+            <div class="why-card">
+                <span class="why-icon">🧰</span>
+                <div class="why-name">۲۶ ابزار</div>
+                <div class="why-desc">مجموعه‌ای از ابزارهای کاربردی PDF در یکجا.</div>
+            </div>
+        </div>
+
+        <!-- ===== HOW IT WORKS ===== -->
+        <h3 class="section-title">چگونه از <span>PDF یار</span> استفاده کنیم؟</h3>
+        <p class="section-sub">در سه مرحله ساده</p>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-num">۱</div>
+                <div class="step-title">ابزار را انتخاب کنید</div>
+                <div class="step-desc">ابزار موردنظر خود را انتخاب کنید.</div>
+            </div>
+            <div class="step-card">
+                <div class="step-num">۲</div>
+                <div class="step-title">فایل را اضافه کنید</div>
+                <div class="step-desc">فایل را با Drag & Drop یا انتخاب فایل اضافه کنید.</div>
+            </div>
+            <div class="step-card">
+                <div class="step-num">۳</div>
+                <div class="step-title">نتیجه را دریافت کنید</div>
+                <div class="step-desc">پس از پردازش، فایل نهایی را مشاهده و دانلود کنید.</div>
+            </div>
+        </div>
+
+        <!-- ===== STATS ===== -->
+        <h3 class="section-title">PDF یار در <span>یک نگاه</span></h3>
+        <p class="section-sub">آمار و اطلاعات کلی</p>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-num">۲۶</div>
+                <div class="stat-label">ابزار</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">رایگان</div>
+                <div class="stat-label">استفاده از ابزارهای اصلی</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">بدون نصب</div>
+                <div class="stat-label">مستقیماً در مرورگر</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">چندفرمتی</div>
+                <div class="stat-label">پشتیبانی از فرمت‌های مختلف</div>
+            </div>
+        </div>
+
+        <!-- ===== FAQ ===== -->
+        <h3 class="section-title" id="faq">❓ <span>سوالات متداول</span></h3>
+        <p class="section-sub">پاسخ سوالات پرتکرار شما</p>
+        <div class="faq-list" id="faqList">
+            <div class="faq-item">
+                <div class="faq-q">آیا PDF یار رایگان است؟ <span class="arrow">▼</span></div>
+                <div class="faq-a">بله، استفاده از ابزارهای اصلی PDF یار رایگان است و نیازی به پرداخت هزینه ندارید.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">آیا فایل‌های من روی سرور ذخیره می‌شوند؟ <span class="arrow">▼</span></div>
+                <div class="faq-a">خیر، تمام پردازش‌ها به صورت محلی در مرورگر شما انجام می‌شود و فایل‌ها به سرور ارسال نمی‌شوند.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">حداکثر حجم فایل چقدر است؟ <span class="arrow">▼</span></div>
+                <div class="faq-a">حداکثر حجم مجاز برای هر فایل ۵۰ مگابایت است.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">آیا PDF یار روی موبایل کار می‌کند؟ <span class="arrow">▼</span></div>
+                <div class="faq-a">بله، PDF یار کاملاً واکنش‌گرا طراحی شده و روی موبایل، تبلت و کامپیوتر کار می‌کند.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">آیا OCR فارسی دارد؟ <span class="arrow">▼</span></div>
+                <div class="faq-a">بله، ابزار OCR از زبان فارسی و انگلیسی پشتیبانی می‌کند.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">آیا برای استفاده نیاز به نصب نرم‌افزار دارم؟ <span class="arrow">▼</span></div>
+                <div class="faq-a">خیر، تمام ابزارها مستقیماً در مرورگر شما اجرا می‌شوند و نیازی به نصب نرم‌افزار ندارید.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">آیا می‌توانم چند فایل PDF را با هم ترکیب کنم؟ <span class="arrow">▼</span></div>
+                <div class="faq-a">بله، با استفاده از ابزار ادغام PDF می‌توانید چند فایل را به یک فایل ترکیب کنید.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">آیا ابزارهای هوش مصنوعی واقعاً فعال هستند؟ <span class="arrow">▼</span></div>
+                <div class="faq-a">ابزارهای هوش مصنوعی در PDF یار بر اساس پردازش محلی و الگوریتم‌های متن‌کاوی کار می‌کنند و نتایج اولیه را ارائه می‌دهند.</div>
+            </div>
+        </div>
+
+        <!-- ===== CONTACT ===== -->
+        <h3 class="section-title">📞 <span>تماس با PDF یار</span></h3>
+        <p class="section-sub">از راه‌های زیر با ما در ارتباط باشید</p>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <span class="contact-icon">📧</span>
+                <div class="contact-label">ایمیل</div>
+                <div class="contact-value">javadgheisasary731@gmail.com</div>
+                <button class="contact-btn" id="contactEmailBtn">ارسال ایمیل</button>
+            </div>
+            <div class="contact-card">
+                <span class="contact-icon">📞</span>
+                <div class="contact-label">شماره تلفن</div>
+                <div class="contact-value">09167657022</div>
+                <button class="contact-btn" id="contactPhoneBtn">تماس</button>
+            </div>
+            <div class="contact-card">
+                <span class="contact-icon">📍</span>
+                <div class="contact-label">موقعیت</div>
+                <div class="contact-value">استان فارس، شهرستان لامرد، ایران</div>
+            </div>
+        </div>
+
+        <!-- ===== ABOUT ===== -->
+        <div class="about-section" id="about">
+            <h3 class="section-title">درباره <span>PDF یار</span></h3>
+            <p>
+                PDF یار مجموعه‌ای از ابزارهای کاربردی برای مدیریت، ویرایش، تبدیل و پردازش فایل‌های PDF است که تلاش می‌کند انجام کارهای روزمره با فایل‌های PDF را ساده، سریع و در دسترس کند.
+            </p>
+            <p style="margin-top:12px;font-size:13px;color:#888;">
+                طراحی و توسعه: <strong style="color:#EE6C4D;">جواد قیصری</strong> — سال ۱۴۰۵
+            </p>
         </div>
 
         <!-- ===== FOOTER ===== -->
@@ -1291,52 +2257,52 @@
                 <div class="footer-brand">
                     <h3>PDF <span>یار</span></h3>
                     <p>مجموعه‌ای کامل از ابزارهای حرفه‌ای برای مدیریت، ویرایش و تبدیل فایل‌های PDF. تمام ابزارها به صورت رایگان و بدون نیاز به نصب در دسترس شماست.</p>
-                    <div class="footer-social">
-                        <a href="#" onclick="showToast('به زودی...', 'info')" title="تلگرام">📱</a>
-                        <a href="#" onclick="showToast('به زودی...', 'info')" title="اینستاگرام">📸</a>
-                        <a href="#" onclick="showToast('به زودی...', 'info')" title="لینکدین">💼</a>
-                        <a href="#" onclick="showToast('به زودی...', 'info')" title="گیت‌هاب">🐙</a>
-                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>PDF یار</h4>
+                    <ul>
+                        <li><a href="#" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">درباره PDF یار</a></li>
+                        <li><a href="#" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">امکانات</a></li>
+                        <li><a href="#" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">تماس با ما</a></li>
+                    </ul>
                 </div>
                 <div class="footer-col">
                     <h4>ابزارها</h4>
                     <ul>
                         <li><a href="#" data-tool="merge">ادغام PDF</a></li>
-                        <li><a href="#" data-tool="split">تقسیم PDF</a></li>
                         <li><a href="#" data-tool="compress">فشرده‌سازی</a></li>
+                        <li><a href="#" data-tool="pdf-to-word">PDF به Word</a></li>
                         <li><a href="#" data-tool="pdf-to-jpg">PDF به JPG</a></li>
-                        <li><a href="#" data-tool="protect">محافظت PDF</a></li>
+                        <li><a href="#" data-tool="ocr">OCR</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>دسترسی</h4>
+                    <h4>راهنما</h4>
                     <ul>
-                        <li><a href="#" onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'})">خانه</a></li>
-                        <li><a href="#" onclick="document.getElementById('tools').scrollIntoView({behavior:'smooth'})">ابزارها</a></li>
-                        <li><a href="#" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">درباره</a></li>
-                        <li><a href="#" onclick="showToast('info@pdfyar.ir', 'info')">تماس</a></li>
+                        <li><a href="#" onclick="document.getElementById('faq').scrollIntoView({behavior:'smooth'})">سوالات متداول</a></li>
+                        <li><a href="#" onclick="document.getElementById('tools').scrollIntoView({behavior:'smooth'})">راهنمای استفاده</a></li>
+                        <li><a href="#" onclick="showToast('گزارش مشکل از طریق ایمیل ثبت شود.', 'info')">گزارش مشکل</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>اطلاعات</h4>
+                    <h4>قانونی</h4>
                     <ul>
                         <li><a href="#" onclick="showToast('تمام فایل‌ها در مرورگر شما پردازش می‌شوند.', 'info')">حریم خصوصی</a></li>
-                        <li><a href="#" onclick="showToast('نسخه ۶ - ۱۴۰۵', 'info')">نسخه</a></li>
+                        <li><a href="#" onclick="showToast('استفاده از ابزارها به عهده کاربر است.', 'info')">قوانین استفاده</a></li>
                     </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>تماس</h4>
+                    <div class="contact-item">ایمیل: <a href="mailto:javadgheisasary731@gmail.com">javadgheisasary731@gmail.com</a></div>
+                    <div class="contact-item">شماره: <a href="tel:09167657022">09167657022</a></div>
+                    <div class="contact-item">موقعیت: استان فارس، شهرستان لامرد، ایران</div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <div>
-                    © ۱۴۰۵ <strong>PDF یار</strong> — تمامی حقوق محفوظ است
+                    © ۱۴۰۵ <strong>PDF یار</strong> — تمامی حقوق محفوظ است.
                     <span style="margin:0 8px;">|</span>
                     طراحی و توسعه توسط <span class="designer"><strong>جواد قیصری</strong></span>
-                    <span style="margin:0 8px;">|</span>
-                    <span style="font-size:11px;color:#aaa;">نسخه ۶</span>
-                </div>
-                <div class="links">
-                    <a href="#" onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'})">خانه</a>
-                    <a href="#" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">درباره</a>
-                    <a href="#" onclick="showToast('info@pdfyar.ir', 'info')">تماس</a>
                 </div>
             </div>
         </footer>
@@ -1362,7 +2328,7 @@
             </div>
 
             <div class="page-sort-container" id="pageSortContainer">
-                <p style="font-size:13px;color:#888;margin-bottom:8px;">🔀 برای تغییر ترتیب، هر صفحه را بکشید و رها کنید</p>
+                <p style="font-size:12px;color:#888;margin-bottom:8px;">🔀 برای تغییر ترتیب، هر صفحه را بکشید و رها کنید</p>
                 <div id="pageSortList"></div>
             </div>
 
@@ -1398,56 +2364,6 @@
     <!-- ===== TOAST ===== -->
     <div class="toast" id="toast" role="alert"><span id="toastMessage"></span></div>
 
-    <!-- ===== LOGIN MODAL ===== -->
-    <div class="modal-overlay" id="loginModal" role="dialog" aria-modal="true">
-        <div class="modal-box" style="max-width:400px;">
-            <button class="close-modal" id="closeLoginModal">✕</button>
-            <h2 style="text-align:center;">🔐 ورود</h2>
-            <p style="text-align:center;color:#888;font-size:14px;margin-bottom:16px;">با ایمیل و رمز عبور وارد شوید</p>
-            <div style="margin-bottom:12px;">
-                <label style="font-weight:600;display:block;margin-bottom:4px;">ایمیل</label>
-                <input type="email" id="loginEmail" placeholder="example@email.com" style="width:100%;padding:10px 14px;border:2px solid #ddd;border-radius:10px;font-size:14px;font-family:inherit;background:#fff;transition:0.3s;">
-            </div>
-            <div style="margin-bottom:16px;">
-                <label style="font-weight:600;display:block;margin-bottom:4px;">رمز عبور</label>
-                <input type="password" id="loginPassword" placeholder="••••••••" style="width:100%;padding:10px 14px;border:2px solid #ddd;border-radius:10px;font-size:14px;font-family:inherit;background:#fff;transition:0.3s;">
-            </div>
-            <button class="btn-primary" id="loginSubmitBtn" style="width:100%;padding:12px;">ورود</button>
-            <p style="text-align:center;margin-top:12px;font-size:13px;color:#888;">
-                حساب ندارید؟ <a href="#" id="showRegisterLink" style="color:#EE6C4D;cursor:pointer;font-weight:600;">ثبت‌نام</a>
-            </p>
-        </div>
-    </div>
-
-    <!-- ===== REGISTER MODAL ===== -->
-    <div class="modal-overlay" id="registerModal" role="dialog" aria-modal="true">
-        <div class="modal-box" style="max-width:400px;">
-            <button class="close-modal" id="closeRegisterModal">✕</button>
-            <h2 style="text-align:center;">📝 ثبت‌نام</h2>
-            <p style="text-align:center;color:#888;font-size:14px;margin-bottom:16px;">ایجاد حساب کاربری جدید</p>
-            <div style="margin-bottom:12px;">
-                <label style="font-weight:600;display:block;margin-bottom:4px;">نام کامل</label>
-                <input type="text" id="registerName" placeholder="جواد قیصری" style="width:100%;padding:10px 14px;border:2px solid #ddd;border-radius:10px;font-size:14px;font-family:inherit;background:#fff;transition:0.3s;">
-            </div>
-            <div style="margin-bottom:12px;">
-                <label style="font-weight:600;display:block;margin-bottom:4px;">ایمیل</label>
-                <input type="email" id="registerEmail" placeholder="example@email.com" style="width:100%;padding:10px 14px;border:2px solid #ddd;border-radius:10px;font-size:14px;font-family:inherit;background:#fff;transition:0.3s;">
-            </div>
-            <div style="margin-bottom:12px;">
-                <label style="font-weight:600;display:block;margin-bottom:4px;">رمز عبور</label>
-                <input type="password" id="registerPassword" placeholder="••••••••" style="width:100%;padding:10px 14px;border:2px solid #ddd;border-radius:10px;font-size:14px;font-family:inherit;background:#fff;transition:0.3s;">
-            </div>
-            <div style="margin-bottom:16px;">
-                <label style="font-weight:600;display:block;margin-bottom:4px;">تکرار رمز عبور</label>
-                <input type="password" id="registerPasswordConfirm" placeholder="••••••••" style="width:100%;padding:10px 14px;border:2px solid #ddd;border-radius:10px;font-size:14px;font-family:inherit;background:#fff;transition:0.3s;">
-            </div>
-            <button class="btn-primary" id="registerSubmitBtn" style="width:100%;padding:12px;">ثبت‌نام</button>
-            <p style="text-align:center;margin-top:12px;font-size:13px;color:#888;">
-                قبلاً ثبت‌نام کرده‌اید؟ <a href="#" id="showLoginLink" style="color:#EE6C4D;cursor:pointer;font-weight:600;">ورود</a>
-            </p>
-        </div>
-    </div>
-
     <script>
         (function() {
             'use strict';
@@ -1456,30 +2372,30 @@
             pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
             // ============================================================
-            // لیست ابزارها (۳۵ ابزار)
+            // لیست ابزارها (۲۶ ابزار)
             // ============================================================
             const toolsData = [
                 // سازمان‌دهی
                 { id: 'merge', name: 'ادغام PDF', desc: 'چند فایل PDF را به یک فایل تبدیل کنید.', icon: '📑',
-                    category: 'organize', multi: true },
+                    category: 'organize', multi: true, popular: true },
                 { id: 'split', name: 'تقسیم PDF', desc: 'یک فایل PDF را به چند فایل جداگانه تقسیم کنید.', icon: '✂️',
                     category: 'organize', multi: false, extra: true, extraLabel: 'محدوده صفحات (مثال: 1-3, 5, 7-10)' },
                 { id: 'compress', name: 'فشرده‌سازی PDF', desc: 'حجم فایل PDF را کاهش دهید.', icon: '🗜️',
-                    category: 'organize', multi: false },
+                    category: 'organize', multi: false, popular: true },
                 { id: 'organize', name: 'مرتب‌سازی صفحات', desc: 'ترتیب صفحات PDF را با Drag & Drop تغییر دهید.', icon: '🔀',
                     category: 'organize', multi: false, sortable: true },
                 { id: 'extract-pages', name: 'استخراج صفحات', desc: 'صفحات خاصی را از PDF استخراج کنید.', icon: '📤',
                     category: 'organize', multi: false, extra: true, extraLabel: 'شماره صفحات (مثال: 1,3,5)' },
                 { id: 'delete-pages', name: 'حذف صفحات', desc: 'صفحات مورد نظر را از PDF حذف کنید.', icon: '🗑️',
-                    category: 'organize', multi: false, extra: true, extraLabel: 'شماره صفحات (مثال: 1,3,5)' },
+                    category: 'organize', multi: false, extra: true, extraLabel: 'شماره صفحات (مثال: 1,3,5)', popular: true },
 
                 // تبدیل
                 { id: 'pdf-to-jpg', name: 'PDF به JPG', desc: 'صفحات PDF را به تصویر JPG تبدیل کنید.', icon: '🖼️',
-                    category: 'convert', multi: false },
+                    category: 'convert', multi: false, popular: true },
                 { id: 'pdf-to-png', name: 'PDF به PNG', desc: 'صفحات PDF را به تصویر PNG تبدیل کنید.', icon: '🖼️',
                     category: 'convert', multi: false },
                 { id: 'pdf-to-word', name: 'PDF به Word', desc: 'فایل PDF را به Word (DOC) تبدیل کنید.', icon: '📝',
-                    category: 'convert', multi: false },
+                    category: 'convert', multi: false, popular: true },
                 { id: 'pdf-to-excel', name: 'PDF به Excel', desc: 'داده‌های PDF را به Excel (XLSX) تبدیل کنید.', icon: '📊',
                     category: 'convert', multi: false },
                 { id: 'pdf-to-ppt', name: 'PDF به PowerPoint', desc: 'PDF را به PowerPoint (PPTX) تبدیل کنید.', icon: '📽️',
@@ -1513,7 +2429,7 @@
 
                 // OCR
                 { id: 'ocr', name: 'OCR پیشرفته', desc: 'متن تصاویر داخل PDF را استخراج کنید.', icon: '👁️',
-                    category: 'ocr', multi: false },
+                    category: 'ocr', multi: false, popular: true },
 
                 // هوش مصنوعی
                 { id: 'ai-summarize', name: 'خلاصه‌سازی با AI', desc: 'خلاصه هوشمند از محتوای PDF', icon: '🤖',
@@ -1525,9 +2441,6 @@
                     extraOptions: ['انگلیسی', 'فارسی', 'عربی'], ai: true }
             ];
 
-            // به‌روزرسانی تعداد ابزارها در هدر
-            document.getElementById('toolCountDisplay').textContent = toolsData.length;
-
             // ============================================================
             // STATE
             // ============================================================
@@ -1537,12 +2450,11 @@
             let resultBlob = null;
             let resultFilename = '';
             let darkMode = false;
-            let isLoggedIn = false;
-            let currentUser = null;
             let currentFilter = 'all';
             let searchQuery = '';
             let pageOrder = [];
             let sortableInstance = null;
+            let heroFile = null;
 
             // ============================================================
             // DOM REFS
@@ -1577,14 +2489,42 @@
             const downloadResultBtn = document.getElementById('downloadResultBtn');
             const newProcessBtn = document.getElementById('newProcessBtn');
             const actionButtons = document.getElementById('actionButtons');
-            const loginBtn = document.getElementById('loginBtn');
-            const loginModal = document.getElementById('loginModal');
-            const registerModal = document.getElementById('registerModal');
             const mobileMenuToggle = document.getElementById('mobileMenuToggle');
             const navMain = document.getElementById('navMain');
             const pageSortContainer = document.getElementById('pageSortContainer');
             const pageSortList = document.getElementById('pageSortList');
             const loadingSpinner = document.getElementById('loadingSpinner');
+            const popularGrid = document.getElementById('popularGrid');
+            const heroUploadBox = document.getElementById('heroUploadBox');
+            const heroFileInput = document.getElementById('heroFileInput');
+            const heroFilePreview = document.getElementById('heroFilePreview');
+            const heroFileName = document.getElementById('heroFileName');
+            const heroFileSize = document.getElementById('heroFileSize');
+            const heroRemoveFile = document.getElementById('heroRemoveFile');
+            const heroQuickActions = document.getElementById('heroQuickActions');
+            const heroChips = document.getElementById('heroChips');
+
+            // ============================================================
+            // RENDER POPULAR TOOLS
+            // ============================================================
+            function renderPopular() {
+                const popular = toolsData.filter(t => t.popular);
+                popularGrid.innerHTML = popular.map(tool => `
+                    <div class="popular-card" data-tool="${tool.id}">
+                        <div class="card-icon">${tool.icon}</div>
+                        <div class="card-name">${tool.name}</div>
+                        <div class="card-desc">${tool.desc}</div>
+                        <div class="card-action">استفاده از ابزار ←</div>
+                    </div>
+                `).join('');
+                document.querySelectorAll('.popular-card').forEach(card => {
+                    card.addEventListener('click', function() {
+                        const id = this.dataset.tool;
+                        const tool = toolsData.find(t => t.id === id);
+                        if (tool) openTool(tool);
+                    });
+                });
+            }
 
             // ============================================================
             // RENDER TOOLS
@@ -1602,26 +2542,41 @@
                 }
                 if (!filtered.length) {
                     toolsGrid.innerHTML =
-                        `<div style="grid-column:1/-1;text-align:center;padding:48px;color:#888;">🔍 هیچ ابزاری با این جستجو یافت نشد.</div>`;
+                        `<div style="grid-column:1/-1;text-align:center;padding:48px;color:#888;">
+                            🔍 ابزاری با این نام پیدا نشد.
+                            <br><br>
+                            <button onclick="document.getElementById('toolSearch').value='';document.getElementById('toolSearch').dispatchEvent(new Event('input'));" style="padding:8px 24px;border:none;border-radius:30px;background:#EE6C4D;color:#fff;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;">مشاهده همه ابزارها</button>
+                        </div>`;
                     return;
                 }
                 toolsGrid.innerHTML = filtered.map(tool => `
-                        <div class="tool-card" data-tool="${tool.id}">
-                            <span class="category-tag">${getCategoryLabel(tool.category)}</span>
-                            <span class="icon">${tool.icon}</span>
-                            <div class="name">${tool.name}</div>
-                            <div class="desc">${tool.desc}</div>
-                            ${tool.ai ? '<span class="badge" style="background:#9b59b6;">AI</span>' : ''}
-                            ${tool.sortable ? '<span class="badge" style="background:#f39c12;">Drag & Drop</span>' : ''}
-                        </div>
-                    `).join('');
+                    <div class="tool-card" data-tool="${tool.id}">
+                        <span class="category-tag">${getCategoryLabel(tool.category)}</span>
+                        <span class="icon">${tool.icon}</span>
+                        <div class="name">${tool.name}</div>
+                        <div class="desc">${tool.desc}</div>
+                        ${tool.ai ? '<span class="badge ai">AI</span>' : ''}
+                        ${tool.popular ? '<span class="badge popular">محبوب</span>' : ''}
+                        <button class="card-btn">استفاده از ابزار</button>
+                    </div>
+                `).join('');
 
                 document.querySelectorAll('.tool-card').forEach(card => {
-                    card.addEventListener('click', function() {
+                    card.addEventListener('click', function(e) {
+                        if (e.target.closest('.card-btn')) return;
                         const id = this.dataset.tool;
                         const tool = toolsData.find(t => t.id === id);
                         if (tool) openTool(tool);
                     });
+                    const btn = card.querySelector('.card-btn');
+                    if (btn) {
+                        btn.addEventListener('click', function(e) {
+                            e.stopPropagation();
+                            const id = card.dataset.tool;
+                            const tool = toolsData.find(t => t.id === id);
+                            if (tool) openTool(tool);
+                        });
+                    }
                 });
             }
 
@@ -1649,115 +2604,20 @@
             });
 
             // ============================================================
-            // AUTH
+            // CATEGORY CARDS
             // ============================================================
-            const users = {};
-            try {
-                const stored = localStorage.getItem('pdfyar_users');
-                if (stored) Object.assign(users, JSON.parse(stored));
-            } catch (e) {}
-
-            function registerUser(name, email, password) {
-                if (users[email]) {
-                    showToast('این ایمیل قبلاً ثبت شده است.', 'error');
-                    return false;
-                }
-                users[email] = { name, email, password, joined: new Date().toISOString() };
-                localStorage.setItem('pdfyar_users', JSON.stringify(users));
-                showToast('✅ ثبت‌نام با موفقیت انجام شد!', 'success');
-                return true;
-            }
-
-            function loginUser(email, password) {
-                const stored = localStorage.getItem('pdfyar_users');
-                if (stored) {
-                    const allUsers = JSON.parse(stored);
-                    if (allUsers[email] && allUsers[email].password === password) {
-                        isLoggedIn = true;
-                        currentUser = allUsers[email];
-                        loginBtn.textContent = currentUser.name.charAt(0).toUpperCase();
-                        loginBtn.style.background = '#2ecc71';
-                        loginBtn.style.color = '#fff';
-                        showToast(`✅ خوش آمدید ${currentUser.name}!`, 'success');
-                        return true;
-                    }
-                }
-                showToast('❌ ایمیل یا رمز عبور اشتباه است.', 'error');
-                return false;
-            }
-
-            function logoutUser() {
-                isLoggedIn = false;
-                currentUser = null;
-                loginBtn.textContent = '👤';
-                loginBtn.style.background = '#EE6C4D';
-                loginBtn.style.color = '#fff';
-                showToast('👋 خروج موفق', 'info');
-            }
-
-            // ============================================================
-            // AUTH UI
-            // ============================================================
-            loginBtn.addEventListener('click', function() {
-                if (isLoggedIn) {
-                    if (confirm('آیا از خروج مطمئن هستید؟')) logoutUser();
-                    return;
-                }
-                loginModal.classList.add('open');
-                document.body.style.overflow = 'hidden';
+            document.querySelectorAll('.category-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const cat = this.dataset.category;
+                    document.querySelectorAll('.tag').forEach(t => {
+                        t.classList.remove('active');
+                        if (t.dataset.filter === cat) t.classList.add('active');
+                    });
+                    currentFilter = cat;
+                    renderTools();
+                    document.getElementById('tools').scrollIntoView({ behavior: 'smooth' });
+                });
             });
-
-            document.getElementById('closeLoginModal').addEventListener('click', function() {
-                loginModal.classList.remove('open');
-                document.body.style.overflow = '';
-            });
-            document.getElementById('closeRegisterModal').addEventListener('click', function() {
-                registerModal.classList.remove('open');
-                document.body.style.overflow = '';
-            });
-            document.getElementById('showRegisterLink').addEventListener('click', function(e) {
-                e.preventDefault();
-                loginModal.classList.remove('open');
-                registerModal.classList.add('open');
-            });
-            document.getElementById('showLoginLink').addEventListener('click', function(e) {
-                e.preventDefault();
-                registerModal.classList.remove('open');
-                loginModal.classList.add('open');
-            });
-
-            document.getElementById('loginSubmitBtn').addEventListener('click', function() {
-                const email = document.getElementById('loginEmail').value.trim();
-                const password = document.getElementById('loginPassword').value.trim();
-                if (!email || !password) { showToast('لطفاً ایمیل و رمز عبور را وارد کنید.', 'error'); return; }
-                if (loginUser(email, password)) {
-                    loginModal.classList.remove('open');
-                    document.body.style.overflow = '';
-                }
-            });
-
-            document.getElementById('registerSubmitBtn').addEventListener('click', function() {
-                const name = document.getElementById('registerName').value.trim();
-                const email = document.getElementById('registerEmail').value.trim();
-                const password = document.getElementById('registerPassword').value.trim();
-                const confirm = document.getElementById('registerPasswordConfirm').value.trim();
-                if (!name || !email || !password || !confirm) { showToast('لطفاً تمام فیلدها را پر کنید.',
-                    'error'); return; }
-                if (password.length < 4) { showToast('رمز عبور حداقل ۴ کاراکتر باید باشد.', 'error'); return; }
-                if (password !== confirm) { showToast('رمز عبور و تکرار آن مطابقت ندارند.', 'error'); return; }
-                if (registerUser(name, email, password)) {
-                    registerModal.classList.remove('open');
-                    document.body.style.overflow = '';
-                    loginUser(email, password);
-                }
-            });
-
-            loginModal.addEventListener('click', function(e) { if (e.target === this) { loginModal.classList.remove(
-                        'open');
-                    document.body.style.overflow = ''; } });
-            registerModal.addEventListener('click', function(e) { if (e.target === this) { registerModal.classList
-                        .remove('open');
-                    document.body.style.overflow = ''; } });
 
             // ============================================================
             // MOBILE MENU
@@ -1774,33 +2634,100 @@
                     const section = this.dataset.section;
                     if (section === 'home') document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
                     else if (section === 'tools') document.getElementById('tools').scrollIntoView({ behavior: 'smooth' });
+                    else if (section === 'features') document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
                     else if (section === 'about') document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
-                    else if (section === 'contact') document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+                    else if (section === 'faq') document.getElementById('faq').scrollIntoView({ behavior: 'smooth' });
                     document.querySelectorAll('.nav-main a').forEach(a => a.classList.remove('active'));
                     this.classList.add('active');
                 });
             });
 
             // ============================================================
-            // GET STARTED
+            // HERO ACTIONS
             // ============================================================
+            document.getElementById('heroStartBtn').addEventListener('click', function() {
+                document.getElementById('tools').scrollIntoView({ behavior: 'smooth' });
+            });
+            document.getElementById('heroToolsBtn').addEventListener('click', function() {
+                document.getElementById('tools').scrollIntoView({ behavior: 'smooth' });
+            });
             document.getElementById('getStartedBtn').addEventListener('click', function() {
                 document.getElementById('tools').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            // ============================================================
+            // HERO UPLOAD
+            // ============================================================
+            heroUploadBox.addEventListener('click', function() { heroFileInput.click(); });
+            heroUploadBox.addEventListener('dragover', function(e) {
+                e.preventDefault();
+                this.style.borderColor = '#EE6C4D';
+                this.style.background = 'rgba(238,108,77,0.04)';
+            });
+            heroUploadBox.addEventListener('dragleave', function() {
+                this.style.borderColor = '#ddd';
+                this.style.background = '#fff';
+            });
+            heroUploadBox.addEventListener('drop', function(e) {
+                e.preventDefault();
+                this.style.borderColor = '#ddd';
+                this.style.background = '#fff';
+                if (e.dataTransfer.files.length) handleHeroFile(e.dataTransfer.files[0]);
+            });
+            heroFileInput.addEventListener('change', function() {
+                if (this.files.length) handleHeroFile(this.files[0]);
+                this.value = '';
+            });
+
+            function handleHeroFile(file) {
+                if (file.size > 50 * 1024 * 1024) {
+                    showToast('حجم فایل بیش از ۵۰ مگابایت است.', 'error');
+                    return;
+                }
+                heroFile = file;
+                heroFileName.textContent = file.name;
+                heroFileSize.textContent = formatSize(file.size);
+                heroFilePreview.classList.add('show');
+                heroQuickActions.classList.add('show');
+                showToast('📄 فایل انتخاب شد. گزینه مورد نظر را انتخاب کنید.', 'success');
+            }
+
+            heroRemoveFile.addEventListener('click', function() {
+                heroFile = null;
+                heroFilePreview.classList.remove('show');
+                heroQuickActions.classList.remove('show');
+                heroFileInput.value = '';
+            });
+
+            heroChips.addEventListener('click', function(e) {
+                const btn = e.target.closest('button');
+                if (!btn) return;
+                if (!heroFile) { showToast('لطفاً ابتدا فایل را انتخاب کنید.', 'error'); return; }
+                const toolId = btn.dataset.tool;
+                const tool = toolsData.find(t => t.id === toolId);
+                if (tool) {
+                    openTool(tool);
+                    selectedFiles = [heroFile];
+                    renderFileList();
+                    updateActionButton();
+                    if (tool.sortable && selectedFiles.length === 1) {
+                        loadPagesForSorting(selectedFiles[0]);
+                    }
+                }
             });
 
             // ============================================================
             // OPEN TOOL
             // ============================================================
             function openTool(tool) {
-                if (tool.ai && !isLoggedIn) {
-                    showToast('⚠️ برای استفاده از ابزارهای هوش مصنوعی ابتدا وارد شوید.', 'error');
-                    loginModal.classList.add('open');
-                    document.body.style.overflow = 'hidden';
-                    return;
+                if (tool.ai) {
+                    showToast('⚠️ ابزارهای هوش مصنوعی در حال حاضر بر اساس پردازش محلی کار می‌کنند.', 'info');
                 }
 
                 currentTool = tool;
-                selectedFiles = [];
+                if (heroFile && !selectedFiles.length) {
+                    selectedFiles = [heroFile];
+                }
                 isProcessing = false;
                 resultBlob = null;
                 resultFilename = '';
@@ -1835,7 +2762,7 @@
                         const select = document.createElement('select');
                         select.id = 'extraSelect';
                         select.style.cssText =
-                            'width:100%;padding:10px 14px;border:2px solid #ddd;border-radius:10px;font-size:14px;font-family:inherit;background:#fff;transition:0.3s;';
+                            'width:100%;padding:9px 13px;border:2px solid #ddd;border-radius:10px;font-size:13px;font-family:inherit;background:#fff;transition:0.25s;';
                         tool.extraOptions.forEach(opt => {
                             const option = document.createElement('option');
                             option.value = opt;
@@ -1848,7 +2775,7 @@
                     } else {
                         const row = document.getElementById('extraRow');
                         row.innerHTML =
-                            `<input type="text" id="extraValue" placeholder="${tool.extraLabel || 'مقدار را وارد کنید...'}" style="width:100%;padding:10px 14px;border:2px solid #ddd;border-radius:10px;font-size:14px;font-family:inherit;background:#fff;transition:0.3s;">`;
+                            `<input type="text" id="extraValue" placeholder="${tool.extraLabel || 'مقدار را وارد کنید...'}" style="width:100%;padding:9px 13px;border:2px solid #ddd;border-radius:10px;font-size:13px;font-family:inherit;background:#fff;transition:0.25s;">`;
                     }
                 }
 
@@ -1862,6 +2789,13 @@
                 if (tool.sortable) {
                     fileInput.accept = '.pdf';
                     fileInput.removeAttribute('multiple');
+                }
+
+                renderFileList();
+                updateActionButton();
+
+                if (tool.sortable && selectedFiles.length === 1) {
+                    loadPagesForSorting(selectedFiles[0]);
                 }
 
                 modalOverlay.classList.add('open');
@@ -1883,6 +2817,11 @@
                     sortableInstance = null; }
                 pageSortContainer.classList.remove('show');
                 loadingSpinner.classList.remove('show');
+                selectedFiles = [];
+                heroFile = null;
+                heroFilePreview.classList.remove('show');
+                heroQuickActions.classList.remove('show');
+                heroFileInput.value = '';
             }
 
             closeModal.addEventListener('click', closeTool);
@@ -1936,12 +2875,12 @@
             function renderFileList() {
                 if (!selectedFiles.length) { fileList.innerHTML = ''; return; }
                 fileList.innerHTML = selectedFiles.map((file, index) => `
-                        <div class="file-item">
-                            <span>📄 ${file.name}</span>
-                            <span>${(file.size / 1024).toFixed(1)} KB</span>
-                            <span class="remove" data-index="${index}">✕</span>
-                        </div>
-                    `).join('');
+                    <div class="file-item">
+                        <span>📄 ${file.name}</span>
+                        <span>${(file.size / 1024).toFixed(1)} KB</span>
+                        <span class="remove" data-index="${index}">✕</span>
+                    </div>
+                `).join('');
                 document.querySelectorAll('.file-item .remove').forEach(el => {
                     el.addEventListener('click', function() {
                         const idx = parseInt(this.dataset.index);
@@ -1975,11 +2914,11 @@
                     for (let i = 1; i <= totalPages; i++) pageOrder.push(i);
                     pageSortContainer.classList.add('show');
                     pageSortList.innerHTML = pageOrder.map(num => `
-                            <div class="page-item" data-page="${num}">
-                                <span>📄 صفحه ${num}</span>
-                                <span class="drag-handle">⠿</span>
-                            </div>
-                        `).join('');
+                        <div class="page-item" data-page="${num}">
+                            <span>📄 صفحه ${num}</span>
+                            <span class="drag-handle">⠿</span>
+                        </div>
+                    `).join('');
                     if (sortableInstance) sortableInstance.destroy();
                     sortableInstance = new Sortable(pageSortList, {
                         animation: 150,
@@ -2675,7 +3614,7 @@
                         updateProgress(Math.round((i / pdf.numPages) * 100));
                     }
                     const translated =
-                        `[ترجمه به ${targetLang}] ${fullText.slice(0, 500)}... (برای ترجمه کامل به سرویس واقعی نیاز است)`;
+                        `[ترجمه به ${targetLang}] ${fullText.slice(0, 500)}... (ترجمه کامل نیاز به سرویس ترجمه دارد)`;
                     resultBlob = new Blob([translated], { type: 'text/plain' });
                     resultFilename = `${file.name.replace('.pdf', '')}_translated.txt`;
                     showResult(`✅ ترجمه با موفقیت انجام شد!`, `🌍 زبان مقصد: ${targetLang}`);
@@ -2840,6 +3779,28 @@
             themeBtn.addEventListener('click', toggleTheme);
 
             // ============================================================
+            // FAQ ACCORDION
+            // ============================================================
+            document.querySelectorAll('.faq-item').forEach(item => {
+                const q = item.querySelector('.faq-q');
+                q.addEventListener('click', function() {
+                    const isOpen = item.classList.contains('open');
+                    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                    if (!isOpen) item.classList.add('open');
+                });
+            });
+
+            // ============================================================
+            // CONTACT BUTTONS
+            // ============================================================
+            document.getElementById('contactEmailBtn').addEventListener('click', function() {
+                window.location.href = 'mailto:javadgheisasary731@gmail.com';
+            });
+            document.getElementById('contactPhoneBtn').addEventListener('click', function() {
+                window.location.href = 'tel:09167657022';
+            });
+
+            // ============================================================
             // FOOTER TOOL LINKS
             // ============================================================
             document.querySelectorAll('[data-tool]').forEach(el => {
@@ -2854,6 +3815,7 @@
             // INIT
             // ============================================================
             loadTheme();
+            renderPopular();
             renderTools();
             console.log('📄 PDF یار نسخه ۶ - ۱۴۰۵');
             console.log('👨‍🎨 طراحی و توسعه: جواد قیصری');
